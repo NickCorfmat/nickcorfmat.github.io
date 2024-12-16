@@ -8,14 +8,9 @@
 
 .project-row-items {
     display: flex;
+    flex-direction: row;
     flex-wrap: nowrap;
     overflow-x: auto;
     gap: 20px;
     padding: 10px 0;
-}
-
-.project-card {
-    flex: 0 0 auto;
-    max-width: 200px;
-    margin-right: 10px;
 }

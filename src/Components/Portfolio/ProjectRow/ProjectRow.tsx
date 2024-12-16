@@ -1,5 +1,6 @@
 import React from 'react';
-import Project from '../Project/Project';
+import './ProjectRow.css'
+import Project from './Project/Project';
 
 interface ProjectRow {
     title: string;

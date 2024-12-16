@@ -1,5 +1,6 @@
 import React from 'react';
-import { isVideo } from '../../utils/mediaUtils';
+import './Project.css'
+import { isVideo } from '../../../../utils/mediaUtils';
 
 interface Project {
     name: string;
@@ -10,9 +11,9 @@ interface Project {
 
 const Project: React.FC<Project> = ({ media }) => {
     return (
-        <div className="project-card">
+        <div className="project">
             {isVideo(media) ? (
-                <video className="project-media" controls>
+                <video className="project-media" autoPlay muted loop>
                     <source src={media} type="video/mp4" />
                 </video>
             ) : (

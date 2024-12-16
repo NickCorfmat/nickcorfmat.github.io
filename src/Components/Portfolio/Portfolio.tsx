@@ -1,5 +1,6 @@
 import React from 'react'
-import ProjectRow from '../ProjectRow/ProjectRow';
+import './Portfolio.css'
+import ProjectRow from './ProjectRow/ProjectRow';
 import portfolio from '../../../public/Assets/portfolio.json'
 
 const Portfolio = () => {
