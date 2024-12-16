@@ -1,13 +1,7 @@
 import React from 'react';
 import './Project.css'
-import { isVideo } from '../../../../utils/mediaUtils';
-
-interface Project {
-    name: string;
-    media: string;
-    url: string;
-    description: string;
-}
+import { isVideo } from '../../utils/mediaUtils';
+import { Project } from '../../../public/Assets/portfolio'
 
 const Project: React.FC<Project> = ({ media }) => {
     return (

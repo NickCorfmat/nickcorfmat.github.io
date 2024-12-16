@@ -27,9 +27,14 @@ h1 {
   line-height: 1.1;
 }
 
-body {
+html, body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+}
+
+.container {
+  overflow-x: hidden;
 }
 
 button {
@@ -54,7 +59,7 @@ button:focus-visible {
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
-    background-color: #ffffff;
+    background-color: rgb(31, 31, 31);
   }
   a:hover {
     color: #747bff;
