@@ -1,16 +1,35 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar: React.FC = () => {
+    const [isScrolled, setIsScrolled] = useState(false);
+    const transitionLimit = 50;
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > transitionLimit) {
+                setIsScrolled(true);
+            } else {
+                setIsScrolled(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
-        <nav className="navbar">
-            <p className="nav-logo">NICK CORFMAT</p>
+        <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
+            <p className="nav-site-name">NICK CORFMAT</p>
             <ul className="nav-menu">
-                <li><Link to="/">HOME</Link></li>
-                <li><Link to="/portfolio">PORTFOLIO</Link></li>
-                <li><Link to="/resume">RESUME</Link></li>
-                <li><Link to="/contact">CONTACT</Link></li>
+                <li><Link to="/" className="nav-link">HOME</Link></li>
+                <li><Link to="/portfolio" className="nav-link">PORTFOLIO</Link></li>
+                <li><Link to="/resume" className="nav-link">RESUME</Link></li>
+                <li><Link to="/contact" className="nav-link">CONTACT</Link></li>
             </ul>
         </nav>
     );

@@ -4,7 +4,6 @@ import { isVideo, getRandomProject } from '../../utils/mediaUtils'
 
 const Hero = () => {
   const randomProject = getRandomProject();
-  console.log(randomProject)
 
   return (
     <div className='hero'>
@@ -17,6 +16,7 @@ const Hero = () => {
                 ) : (
                     <img className='hero-media' src={randomProject.media}/>
                 )}
+                <div className=''></div>
             </>
         )}
     </div>
