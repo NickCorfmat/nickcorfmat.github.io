@@ -2,6 +2,9 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css'
 import Navbar from '../Components/Navbar/Navbar'
 import Home from '../Pages/Home';
+import Portfolio from '../Pages/Portfolio';
+import Resume from '../Pages/Resume';
+import Contact from '../Pages/Contact';
 
 
 function App() {
@@ -11,9 +14,9 @@ function App() {
         <Navbar/>
         <Routes>
           <Route path='/' element={<Home/>}/>
-          <Route path='/portfolio' element={<Home/>}/>
-          <Route path='/resume' element={<Home/>}/>
-          <Route path='/contact' element={<Home/>}/>
+          <Route path='/portfolio' element={<Portfolio/>}/>
+          <Route path='/resume' element={<Resume/>}/>
+          <Route path='/contact' element={<Contact/>}/>
         </Routes>
       </BrowserRouter>
     </div>
