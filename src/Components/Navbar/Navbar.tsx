@@ -24,7 +24,6 @@ const Navbar: React.FC = () => {
 
     return (
         <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
-            <p className="nav-site-name">NICK CORFMAT</p>
             <ul className="nav-menu">
                 <li><Link to="/" className="nav-link">HOME</Link></li>
                 <li><Link to="/portfolio" className="nav-link">PORTFOLIO</Link></li>

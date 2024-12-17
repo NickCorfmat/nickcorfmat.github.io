@@ -1,0 +1,9 @@
+.category {
+    display: flex;
+    flex-direction: column;
+}
+
+.category-grid {
+    display: flex;
+    flex-direction: row;
+}

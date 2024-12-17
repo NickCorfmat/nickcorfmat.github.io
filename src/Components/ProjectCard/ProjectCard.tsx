@@ -1,11 +1,11 @@
 import React from 'react';
-import './Project.css'
+import './ProjectCard.css';
 import { isVideo } from '../../utils/mediaUtils';
-import { Project } from '../../../public/Assets/portfolio'
+import { Project } from '../../../public/Assets/portfolio';
 
-const Project: React.FC<Project> = ({ media }) => {
+const ProjectCard: React.FC<Project> = ({ media }) => {
     return (
-        <div className="project">
+        <div className="project-card">
             {isVideo(media) ? (
                 <video className="project-media" autoPlay muted loop>
                     <source src={media} type="video/mp4" />
@@ -17,4 +17,4 @@ const Project: React.FC<Project> = ({ media }) => {
     );
 };
 
-export default Project;
+export default ProjectCard;

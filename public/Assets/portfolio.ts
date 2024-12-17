@@ -10,7 +10,7 @@ export interface ProjectCategory {
   projects: Project[];
 }
 
-export const projects: ProjectCategory[] = [
+export const categories: ProjectCategory[] = [
   {
     title: "Games",
     projects: [
@@ -80,5 +80,26 @@ export const projects: ProjectCategory[] = [
         description: "A task management app to organize daily tasks.",
       },
     ],
+  },
+];
+
+export const featuredProjects: Project[] = [
+  {
+    name: "Fight Fighters",
+    media: "/Assets/videos/fightfighters.mp4",
+    url: "https://nickcorfmat.github.io/FightFighters/",
+    description: "Fight Fighters game created with Phaser 3.",
+  },
+  {
+    name: "Woofmart",
+    media: "/Assets/videos/woofmart.mp4",
+    url: "https://nickcorf.itch.io/woofmart",
+    description: "Endless runner game created with Unity.",
+  },
+  {
+    name: "Polaroid Onestep SX-70",
+    media: "/Assets/videos/polaroid.mp4",
+    url: "https://ideas.lego.com/projects/200dd32e-8ec8-44aa-8f7d-e4dcc6f74e5c",
+    description: "A task management app to organize daily tasks.",
   },
 ];
