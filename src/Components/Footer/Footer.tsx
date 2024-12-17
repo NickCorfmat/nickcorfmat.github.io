@@ -11,7 +11,7 @@ const Footer = () => {
           <li><Link to="/" className="nav-link">HOME</Link></li>
           <li><Link to="/portfolio" className="nav-link">PORTFOLIO</Link></li>
           <li><Link to="/resume" className="nav-link">RESUME</Link></li>
-          <li><Link to="/contact" className="nav-link">CONTACT</Link></li>
+          <li><Link to="/about" className="nav-link">ABOUT</Link></li>
         </ul>
         <div className="footer-social-icons">
           <a href="https://www.linkedin.com/in/nicolascorfmat/" target="_blank" rel="noopener noreferrer">

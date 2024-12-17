@@ -46,6 +46,18 @@ export const categories: ProjectCategory[] = [
         url: "https://nickcorfmat.github.io/Unconventional-Game/",
         description: "",
       },
+      {
+        name: "Wail of the Sirenheads",
+        media: "/Assets/videos/wailofthesirenheads.mp4",
+        url: "https://nickcorf.itch.io/through-the-sirenheads",
+        description: "",
+      },
+      {
+        name: "Modern Simulator",
+        media: "/Assets/videos/modernsimulator.mp4",
+        url: "https://nickcorf.itch.io/modernism-simulator",
+        description: "",
+      },
     ],
   },
   {

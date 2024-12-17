@@ -1,0 +1,22 @@
+.bio {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-top: 90px;
+}
+
+.bio-left {
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-container {
+    width: 80%;
+    height: 80%;
+    background-color: white;
+}
+
+.bio-left img {
+    width: 100%;
+}

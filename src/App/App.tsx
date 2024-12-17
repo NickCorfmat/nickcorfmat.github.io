@@ -4,7 +4,7 @@ import Navbar from '../Components/Navbar/Navbar'
 import Home from '../Pages/Home';
 import Portfolio from '../Pages/Portfolio';
 import Resume from '../Pages/Resume';
-import Contact from '../Pages/Contact';
+import About from '../Pages/About';
 import Footer from '../Components/Footer/Footer';
 
 
@@ -17,7 +17,7 @@ function App() {
           <Route path='/' element={<Home/>}/>
           <Route path='/portfolio' element={<Portfolio/>}/>
           <Route path='/resume' element={<Resume/>}/>
-          <Route path='/contact' element={<Contact/>}/>
+          <Route path='/about' element={<About/>}/>
         </Routes>
         <Footer/>
       </BrowserRouter>

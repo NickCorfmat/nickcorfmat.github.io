@@ -15,8 +15,8 @@ const Popup: React.FC<PopupProps> = ({ project, onClose }) => {
     };
 
     return (
-        <div className="centered-modal" onClick={handleBackgroundClick}>
-            <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+        <div className="popup-overlay" onClick={handleBackgroundClick}>
+            <div className="popup-media" onClick={(e) => e.stopPropagation()}>
                 {isVideo(project.media) ? (
                     <video className="project-media" autoPlay muted loop>
                         <source src={project.media} type="video/mp4" />
@@ -25,6 +25,7 @@ const Popup: React.FC<PopupProps> = ({ project, onClose }) => {
                     <img className="project-media" src={project.media} alt={project.name} />
                 )}
             </div>
+            <div className='popup-info'></div>
         </div>
     );
 };
