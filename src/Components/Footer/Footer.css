@@ -17,12 +17,12 @@
     font-size: 14px;
 }
 
-.nav-link {
+.footer-links .nav-link {
     color: inherit;
     text-decoration: none;
 }
 
-.nav-link:hover {
+.footer-links .nav-link:hover {
     color: rgb(225, 239, 255);
 }
 
