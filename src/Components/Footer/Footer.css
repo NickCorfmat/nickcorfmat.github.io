@@ -22,12 +22,29 @@
 }
 
 .nav-link:hover {
-    color: rgb(198, 224, 255);
+    color: rgb(225, 239, 255);
 }
 
 .footer-social-icons {
-    padding: 10px;
-    padding-bottom: 10px;
-    background: #fbfbfb;
-    border: 1px solid #ebebeb;
+    display: flex;
+    gap: 15px;
+    padding-left: 100px;
+}
+
+.footer-social-icons img {
+    padding: 0px 5px 0px 5px;
+}
+
+.linkedin-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.github-icon {
+    width: 23px;
+    height: 23px;
+}
+
+.footer-social-icons img:hover {
+    cursor: pointer;
 }
