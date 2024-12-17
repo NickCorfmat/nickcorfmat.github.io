@@ -17,6 +17,18 @@
     filter: blur(2px);
 }
 
+.hero-left {
+    text-align: left;
+    position: absolute;
+    left: 20%;
+}
+
+.hero-left h1 {
+    font-size: 5em;
+    font-weight: 800;
+    color: white;
+}
+
 .hero-introduction {
     position: absolute;
     width: 30%;

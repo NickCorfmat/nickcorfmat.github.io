@@ -10,6 +10,9 @@
 .category-grid {
     display: flex;
     flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .centered-modal {
@@ -26,12 +29,28 @@
 }
 
 .modal-content {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 17px;
+    width: 45%;
+    background: rgb(255, 255, 255);
+    border-radius: 12px;
     transform: scale(0);
     animation: modal-animate 0.4s forwards;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project-media {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.modal-content h1 {
+    font-size: 32px;
 }
 
 @keyframes modal-animate {

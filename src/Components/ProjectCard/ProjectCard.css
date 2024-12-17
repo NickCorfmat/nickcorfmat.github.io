@@ -1,21 +1,25 @@
 .project-card {
   text-decoration: none;
   color: inherit;
-  display: block;
+  display: flex;
+  flex-direction: column;
   transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.project-card.hovered {
-  transform: scale(1.05);
+  max-width: 25vw;
+  min-width: 250px;
+  flex-grow: 0;
+  flex-shrink: 0;
 }
 
 .project-media {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
   margin: 10px;
-  width: 30vw;
-  min-width: 200px;
+  width: 100%;
   aspect-ratio: 16/9;
   object-fit: cover;
   transition: 0.1s ease-out;
+}
+
+.project-card.hovered {
+  transform: scale(1.05);
 }
