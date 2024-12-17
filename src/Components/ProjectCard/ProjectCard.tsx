@@ -1,17 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './ProjectCard.css';
 import { isVideo } from '../../utils/mediaUtils';
 import { Project } from '../../../public/Assets/portfolio';
 
-const ProjectCard: React.FC<Project> = ({ media }) => {
+interface ProjectCardProps extends Project {
+    onClick: (project: Project) => void;
+}
+
+const ProjectCard: React.FC<ProjectCardProps> = ({ name, media, description, url, onClick }) => {
+    const [isHovered, setIsHovered] = useState(false);
+
     return (
-        <div className="project-card">
+        <div 
+            className={`project-card ${isHovered ? 'hovered' : ''}`} 
+            onMouseEnter={() => setIsHovered(true)} 
+            onMouseLeave={() => setIsHovered(false)} 
+            onClick={() => onClick({ name, media, description, url })}
+        >
             {isVideo(media) ? (
                 <video className="project-media" autoPlay muted loop>
                     <source src={media} type="video/mp4" />
                 </video>
             ) : (
-                <img className="project-media" src={media} />
+                <img className="project-media" src={media} alt={name} />
             )}
         </div>
     );

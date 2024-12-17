@@ -1,9 +1,19 @@
-import React from 'react';
-import { categories, ProjectCategory } from '../../../public/Assets/portfolio';
+import React, { useState } from 'react';
+import { categories, ProjectCategory, Project } from '../../../public/Assets/portfolio';
 import ProjectCard from '../ProjectCard/ProjectCard';
-import './Library.css'
+import './Library.css';
 
-const Portfolio: React.FC = () => {
+const Library: React.FC = () => {
+    const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+
+    const handleCardClick = (project: Project) => {
+        setSelectedProject(project);
+    };
+
+    const handleModalBackgroundClick = () => {
+        setSelectedProject(null);
+    };
+
     return (
         <div>
             {categories.map((category: ProjectCategory) => (
@@ -17,13 +27,23 @@ const Portfolio: React.FC = () => {
                                 media={project.media}
                                 description={project.description}
                                 url={project.url}
+                                onClick={handleCardClick}
                             />
                         ))}
                     </div>
                 </div>
             ))}
+            {selectedProject && (
+                <div className="centered-modal" onClick={handleModalBackgroundClick}>
+                    <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+                        <h1>{selectedProject.name}</h1>
+                        <p>{selectedProject.description}</p>
+                        <a href={selectedProject.url} target="_blank" rel="noopener noreferrer">View Project</a>
+                    </div>
+                </div>
+            )}
         </div>
     );
 };
 
-export default Portfolio;
+export default Library;

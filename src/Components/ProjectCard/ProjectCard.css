@@ -1,3 +1,14 @@
+.project-card {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card.hovered {
+  transform: scale(1.05);
+}
+
 .project-media {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
