@@ -1,6 +1,7 @@
 export interface Project {
   name: string;
   media: string;
+  logo?: string;
   url: string;
   description: string;
 }
@@ -17,6 +18,7 @@ export const categories: ProjectCategory[] = [
       {
         name: "Fight Fighters",
         media: "/Assets/videos/fightfighters.mp4",
+        logo: "/Assets/logos/fightfighters_logo.png",
         url: "https://nickcorfmat.github.io/FightFighters/",
         description: "Fight Fighters game created with Phaser 3.",
       },
@@ -87,6 +89,7 @@ export const featuredProjects: Project[] = [
   {
     name: "Fight Fighters",
     media: "/Assets/videos/fightfighters.mp4",
+    logo: "/Assets/logos/fightfighters_logo.png",
     url: "https://nickcorfmat.github.io/FightFighters/",
     description: "Fight Fighters game created with Phaser 3.",
   },

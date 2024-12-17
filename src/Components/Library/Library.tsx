@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { categories, ProjectCategory, Project } from '../../../public/Assets/portfolio';
 import ProjectCard from '../ProjectCard/ProjectCard';
-import { isVideo } from '../../utils/mediaUtils';
+import Popup from '../Popup/Popup';
 import './Library.css';
 
 const Library: React.FC = () => {
@@ -11,7 +11,7 @@ const Library: React.FC = () => {
         setSelectedProject(project);
     };
 
-    const handleModalBackgroundClick = () => {
+    const handleModalClose = () => {
         setSelectedProject(null);
     };
 
@@ -35,20 +35,7 @@ const Library: React.FC = () => {
                 </div>
             ))}
             {selectedProject && (
-                <div className="centered-modal" onClick={handleModalBackgroundClick}>
-                    <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-                        {isVideo(selectedProject.media) ? (
-                            <video className="project-media" autoPlay muted loop>
-                                <source src={selectedProject.media} type="video/mp4" />
-                            </video>
-                        ) : (
-                            <img className="project-media" src={selectedProject.media} alt={selectedProject.name} />
-                        )}
-                        <h1>{selectedProject.name}</h1>
-                        <p>{selectedProject.description}</p>
-                        <a href={selectedProject.url} target="_blank" rel="noopener noreferrer">View Project</a>
-                    </div>
-                </div>
+                <Popup project={selectedProject} onClose={handleModalClose} />
             )}
         </div>
     );
