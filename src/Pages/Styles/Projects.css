@@ -1,7 +1,7 @@
 .projects {
     width: 100%;
     margin-top: 80px;
-    padding: 5px 0 5px 0;
+    padding: 5px 0 0 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -9,5 +9,51 @@
 }
 
 .projects h1 {
+    
+}
 
+.project-box-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    max-width: 100%;
+    height: 200px;
+    gap: 20px;
+    margin: 20px 0 20px 0;
+}
+
+.project-box video, img {
+    border-radius: 8px;
+    width: auto;
+    height: 100%;
+}
+
+.project-box-left {
+    width: 45%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-box-right {
+    width: 45%;
+    height: 100%;
+    background-color: red;
+}
+
+.project-box-info {
+    text-align: left;
+    width: 400px;
 }

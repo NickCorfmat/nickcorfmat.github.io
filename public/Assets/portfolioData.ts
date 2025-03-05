@@ -45,7 +45,7 @@ export const games: Project[] = [
     description: "",
   },
   {
-    name: "Modern Simulator",
+    name: "Modernism Simulator",
     media: "/Assets/videos/modernsimulator.mp4",
     url: "https://nickcorf.itch.io/modernism-simulator",
     description: "",
