@@ -1,5 +1,5 @@
 import React from 'react';
-import { Project } from '../../../public/Assets/portfolio';
+import { Project } from '../../../public/Assets/portfolioData';
 import { isVideo } from '../../utils/mediaUtils';
 import './Popup.css';
 

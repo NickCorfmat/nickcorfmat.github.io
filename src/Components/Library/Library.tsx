@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { categories, ProjectCategory, Project } from '../../../public/Assets/portfolio';
+import { categories, ProjectCategory, Project } from '../../../public/Assets/portfolioData';
 import ProjectCard from '../ProjectCard/ProjectCard';
 import Popup from '../Popup/Popup';
 import './Library.css';

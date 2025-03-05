@@ -1,4 +1,4 @@
-import { featuredProjects } from "../../public/Assets/portfolio";
+import { featuredProjects } from "../../public/Assets/portfolioData";
 
 export const isVideo = (media: string) => {
   return media.endsWith(".mp4");

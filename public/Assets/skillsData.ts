@@ -1,0 +1,26 @@
+const skills: string[] = [
+  "JavaScript",
+  "TypeScript",
+  "React",
+  "C++",
+  "C#",
+  "C",
+  "Java",
+  "Unity",
+  "Unreal Engine",
+  "Phaser",
+  "Blender",
+  "Python",
+  "HTML",
+  "CSS",
+  "Git",
+  "WebGL",
+  "Windows",
+  "Ubuntu",
+  "MacOS",
+  "Premiere Pro",
+  "Inkscape",
+  "Game Development",
+];
+
+export default skills;
