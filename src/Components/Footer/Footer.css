@@ -24,6 +24,7 @@
 
 .footer-links .nav-link:hover {
     color: rgb(225, 239, 255);
+    transition: 0.2s ease;
 }
 
 .footer-social-icons {
