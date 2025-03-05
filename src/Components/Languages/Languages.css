@@ -1,7 +1,7 @@
 .languages {
     width: 100%;
     min-height: 150px;
-    background-color: #ebebeb;
+    background-color: #d6d6db;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,9 +19,20 @@
 }
 
 .languages-list {
-    
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    overflow: hidden;
 }
 
 .language-tag {
-    
+    background-color: #ebebeb;
+    color: #3b4357;
+    font-size: 1.4em;
+    padding: 4px 12px 4px 12px;
+    white-space: nowrap;
 }

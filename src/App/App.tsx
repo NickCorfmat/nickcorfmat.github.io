@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css'
 import Navbar from '../Components/Navbar/Navbar'
 import Home from '../Pages/Home';
-import Portfolio from '../Pages/Portfolio';
+import Projects from '../Pages/Projects';
 import Resume from '../Pages/Resume';
 import About from '../Pages/About';
 import Footer from '../Components/Footer/Footer';
@@ -15,7 +15,7 @@ function App() {
         <Navbar/>
         <Routes>
           <Route path='/' element={<Home/>}/>
-          <Route path='/portfolio' element={<Portfolio/>}/>
+          <Route path='/projects' element={<Projects/>}/>
           <Route path='/resume' element={<Resume/>}/>
           <Route path='/about' element={<About/>}/>
         </Routes>

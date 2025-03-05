@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Project } from '../../../public/Assets/portfolioData';
 import { isVideo } from '../../utils/mediaUtils';
 import './Popup.css';
@@ -9,10 +9,24 @@ interface PopupProps {
 }
 
 const Popup: React.FC<PopupProps> = ({ project, onClose }) => {
-    const handleBackgroundClick = (e: React.MouseEvent) => {
-        e.stopPropagation();
+    const handleBackgroundClick = (ev: React.MouseEvent) => {
+        ev.stopPropagation();
         onClose();
     };
+
+    const handleKeyDown = (ev: KeyboardEvent) => {
+        if (ev.key === 'Escape') {
+            onClose();
+        }
+    };
+
+    useEffect(() => {
+        window.addEventListener('keydown', handleKeyDown);
+
+        return () => {
+            window.removeEventListener('keydown', handleKeyDown);
+        };
+    });
 
     return (
         <div className="popup-overlay" onClick={handleBackgroundClick}>
