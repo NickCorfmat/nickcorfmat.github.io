@@ -18,7 +18,16 @@ const Hero = () => {
                 )}
                 <div className='hero-text'>
                     <h1>NICK CORFMAT</h1>
-                    <h2>SOFTWARE DEVELOPER</h2>
+                    <div className='card'>
+                        <div className='loader'>
+                            <div className='words'>
+                                <span className='word'>Software</span>
+                                <span className='word'>Game</span>
+                                <span className='word'>Web</span>
+                            </div>
+                            <p>Developer</p>
+                        </div>
+                    </div>
                 </div>
             </>
         )}
