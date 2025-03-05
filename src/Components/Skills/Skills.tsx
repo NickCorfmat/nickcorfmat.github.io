@@ -1,6 +1,6 @@
 import React from 'react'
 import './Skills.css'
-import skills from '../../../public/Assets/skillsData'
+import { skills } from '../../../public/Assets/personalData'
 
 const Skills = () => {
   return (

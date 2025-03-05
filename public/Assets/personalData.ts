@@ -1,4 +1,4 @@
-const skills: string[] = [
+export const skills: string[] = [
   "JavaScript",
   "TypeScript",
   "React",
@@ -17,10 +17,10 @@ const skills: string[] = [
   "WebGL",
   "Windows",
   "Ubuntu",
-  "MacOS",
+  "macOS",
   "Premiere Pro",
   "Inkscape",
   "Game Development",
 ];
 
-export default skills;
+export const languages: string[] = ["English", "Spanish", "French"];
