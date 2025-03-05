@@ -16,7 +16,7 @@ const Hero = () => {
                 ) : (
                     <img className='hero-media' src={randomProject.media}/>
                 )}
-                <div className='hero-left'>
+                <div className='hero-text'>
                     <h1>NICK CORFMAT</h1>
                     <h2>SOFTWARE DEVELOPER</h2>
                 </div>

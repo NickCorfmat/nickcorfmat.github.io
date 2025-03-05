@@ -30,21 +30,20 @@
     filter: blur(2px);
 }
 
-.hero-left {
+.hero-text {
     text-align: center;
     position: absolute;
     z-index: 2;
-    padding-left: 5%;
 }
 
-.hero-left h1 {
+.hero-text h1 {
     font-size: 5em;
     font-weight: 800;
     color: white;
     padding: 0;
 }
 
-.hero-left h2 {
+.hero-text h2 {
     font-size: 2em;
     font-weight: 600;
     color: white;
