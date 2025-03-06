@@ -35,6 +35,12 @@ html, body {
   overflow-x: hidden;
 }
 
+video {
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
 .container {
   overflow-x: hidden;
 }
