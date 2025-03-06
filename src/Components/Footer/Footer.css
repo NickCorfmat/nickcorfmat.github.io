@@ -41,11 +41,13 @@
     width: 20px;
     height: 20px;
     border-radius: 0;
+    filter: none;
 }
 
 .github-icon {
     width: 23px;
     height: 23px;
+    filter: none;
 }
 
 .footer-social-icons img:hover {

@@ -29,6 +29,11 @@ const Hero = () => {
                         </div>
                     </div>
                 </div>
+                <div className='hero-options'>
+                    <a href="https://www.linkedin.com/in/nicolascorfmat/" className="hero-button">Resume</a>
+                    <a href="https://www.linkedin.com/in/nicolascorfmat/" className="hero-button">LinkedIn</a>
+                    <a href="https://github.com/NickCorfmat" className="hero-button">GitHub</a>
+                </div>
             </>
         )}
     </div>

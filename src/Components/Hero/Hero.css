@@ -37,7 +37,7 @@
 }
 
 .hero-text h1 {
-    font-size: 4.5em;
+    font-size: 5em;
     font-weight: 700;
     color: white;
     padding: 0;
@@ -50,7 +50,52 @@
     color: white;
 }
 
-/* From Uiverse.io by kennyotsu */ 
+.hero-options {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100px;
+    bottom: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* From Uiverse.io by CYBWEBALI */
+.hero-button {
+    display: grid;
+    place-items: center;
+    background: #e3edf7;
+    width: 110px;
+    height: 50px;
+    border-radius: 16px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+                inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+                -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+                0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+                0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+}
+
+.hero-button:hover {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transform: translateY(0.2em);
+}
+
+.hero-button:active {
+    transform: scale(0.9);
+    transition: transform 0.2s ease-in-out;
+}
+
+.hero-button:focus {
+    outline: none;
+}
+
+/* From Uiverse.io by kennyotsu */
 .card {
     --bg-color: transparent;
     background-color: var(--bg-color);
@@ -76,8 +121,9 @@
 .loader p {
     display: block;
     height: 100%;
-    color: rgb(194, 194, 194);
+    color: rgb(217, 217, 217);
     text-align: left;
+    opacity: 65%;
 }
 
 .words {
@@ -105,10 +151,24 @@
 .word {
     display: block;
     height: 100%;
-    color: rgb(244, 210, 255);
-    padding-right: 10px;
-    animation: spin_4991 4s infinite;
+    font-weight: bold;
+    font-size: 2.5rem;
+    background-image: linear-gradient(45deg, 
+        red, orange, yellow, green, cyan, blue, violet, red);
+    background-size: 300% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow 20s linear infinite, spin_4991 3s;
     text-align: right;
+    padding-right: 8px;
+    opacity: 65%;
+}
+
+@keyframes rainbow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 @keyframes spin_4991 {
