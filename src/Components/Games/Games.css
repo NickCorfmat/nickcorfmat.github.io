@@ -14,12 +14,23 @@
 }
 
 .games-list {
-    width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     gap: 25px;
     overflow: hidden;
+    width: 100%;
+    will-change: transform;
+}
+
+
+.games-list > * {
+    display: inline-block;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
 }

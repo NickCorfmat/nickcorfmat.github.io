@@ -21,6 +21,7 @@ const Hero = () => {
                     <div className='card'>
                         <div className='loader'>
                             <div className='words'>
+                                <span className='word'>Web</span>
                                 <span className='word'>Software</span>
                                 <span className='word'>Game</span>
                                 <span className='word'>Web</span>

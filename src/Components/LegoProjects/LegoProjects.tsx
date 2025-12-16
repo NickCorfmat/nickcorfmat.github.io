@@ -18,7 +18,7 @@ const LegoProjects: React.FC = () => {
   return (
     <div className='lego-projects'>
       <h2>LEGO Ideas</h2>
-      <div className="lego-projects-grid">
+      <div className="lego-projects-list">
         {legoProjects.map((project) => (
           <ProjectCard
             key={project.name}

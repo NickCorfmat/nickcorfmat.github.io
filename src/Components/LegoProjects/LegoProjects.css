@@ -13,13 +13,24 @@
     margin-top: 0;
 }
 
-.lego-projects-grid {
-    width: 100%;
+.lego-projects-list {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     gap: 25px;
     overflow: hidden;
+    width: 100%;
+    white-space: nowrap; 
+    animation: scroll-right 10s linear infinite;
+}
+
+.lego-projects-list > * {
+    display: inline-block;
+}
+
+@keyframes scroll-right {
+    0% {
+        transform: translateX(50%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
 }

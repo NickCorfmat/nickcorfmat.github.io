@@ -1,9 +1,10 @@
 import React from 'react'
+import ResumeSection from '../Components/ResumeSection/ResumeSection'
 
 const Resume = () => {
   return (
     <div>
-      
+      <ResumeSection />
     </div>
   )
 }

@@ -159,7 +159,7 @@
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    animation: rainbow 20s linear infinite, spin_4991 3s;
+    animation: rainbow 20s linear infinite, spin_4991 5s infinite;
     text-align: right;
     padding-right: 8px;
     opacity: 65%;
