@@ -1,36 +1,41 @@
 .games {
-  width: 100%;
-  overflow: hidden;
+    width: 100%;
+    overflow: hidden;
 }
 
 .games-title {
-  text-align: center;
-  margin-bottom: 2rem;
-  font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 2.5rem;
 }
 
-.carousel {
-  width: 100%;
-  overflow: hidden;
-  display: flex;
+.games .carousel {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    padding: 30px 0 30px 0;
+    background-color: white;
 }
 
-.group {
-  display: flex;
-  gap: 1.5rem;
-  animation: scroll 30s linear infinite;
-  padding-right: 1.5rem;
+.games .group {
+    display: flex;
+    gap: 1.5rem;
+    animation: scroll-left 30s linear infinite;
+    padding-right: 1.5rem;
 }
 
-.project-card {
-  position: relative;
-  flex: 0 0 320px;
-  height: 380px;
-  border-radius: 24px;
-  overflow: hidden;
-  text-decoration: none;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.35);
-  transition: transform 0.3s ease;
+.games .project-card {
+    position: relative;
+    flex: 0 0 320px;
+    height: 380px;
+    border-radius: 28px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: 6px solid rgb(174, 174, 174);
 }
 
 .project-card:hover {
@@ -38,35 +43,39 @@
 }
 
 .project-media {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+}
+
+.group video {
+    border-radius: 15px;
+    padding: 0;
+    margin: 0;
 }
 
 .project-overlay {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: flex-end;
-  padding: 1rem;
-  background: linear-gradient(
-    to top,
-    rgba(0,0,0,0.75),
-    rgba(0,0,0,0)
-  );
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: flex-end;
+    padding: 1rem;
+    background: linear-gradient(to top, rgba(0,0,0,0.75),rgba(0,0,0,0));
 }
 
 .project-name {
-  color: white;
-  font-weight: 600;
-  font-size: 1.1rem;
+    color: white;
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-left: 0.6rem;
+    margin-bottom: 0.2rem;
 }
 
-@keyframes scroll {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-100%);
-  }
+@keyframes scroll-left {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
 }

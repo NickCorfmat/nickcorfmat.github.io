@@ -1,36 +1,83 @@
 .lego-projects {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
+  width: 100%;
+  overflow: hidden;
 }
 
-.lego-projects h2 {
-    color: white;
-    font-size: 2.3em;
-    font-weight: 500;
-    margin-top: 0;
+.lego-title {
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 2.5rem;
+  color: white;
 }
 
-.lego-projects-list {
-    display: flex;
-    gap: 25px;
-    overflow: hidden;
-    width: 100%;
-    white-space: nowrap; 
-    animation: scroll-right 10s linear infinite;
+.lego-projects .carousel {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  padding: 0px;
 }
 
-.lego-projects-list > * {
-    display: inline-block;
+.lego-projects .group {
+  display: flex;
+  gap: 0rem;
+  animation: scroll-right 40s linear infinite;
+  padding-right: 0rem;
+}
+
+.lego-projects .project-card {
+  position: relative;
+  flex: 0 0 320px;
+  height: 380px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  outline: none;
+  border-radius: 0px;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.project-media {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+}
+
+.group img {
+  border-radius: 15px;
+}
+
+.project-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  padding: 1rem;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.75),
+    rgba(0,0,0,0)
+  );
+}
+
+.project-name {
+  color: white;
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin-left: 0.6rem;
+  margin-bottom: 0.2rem;
 }
 
 @keyframes scroll-right {
-    0% {
-        transform: translateX(50%);
-    }
-    100% {
-        transform: translateX(0%);
-    }
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(100%);
+  }
 }

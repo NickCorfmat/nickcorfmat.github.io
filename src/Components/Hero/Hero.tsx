@@ -44,7 +44,7 @@ const Hero = () => {
                         GitHub
                         <img src={github_icon} className="github-icon" alt="LinkedIn" />
                     </a>
-                    <a href="https://www.linkedin.com/in/nicolascorfmat/" className="hero-button download">
+                    <a href="Assets/docs/Nicolas_Corfmat_Resume_2025.pdf" className="hero-button download" download="Nick_Corfmat_Resume_2025">
                         Resume
                         <img src={download_icon} className="download_icon" alt="Download Resume" />
                     </a>

@@ -1,41 +1,82 @@
-import React, { useState } from 'react';
-import { legoProjects, Project } from '../../../public/Assets/portfolioData';
-import ProjectCard from '../ProjectCard/ProjectCard';
-import Popup from '../Popup/Popup';
-import './LegoProjects.css';
+import React, { useState } from 'react'
+import { legoProjects, Project } from '../../../public/Assets/portfolioData'
+import { isVideo } from '../../utils/mediaUtils'
+import Popup from '../Popup/Popup'
+import './LegoProjects.css'
 
 const LegoProjects: React.FC = () => {
-  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null)
 
-  const handleCardClick = (project: Project) => {
-    setSelectedProject(project);
-  };
+  const renderMedia = (project: Project) => {
+    if (isVideo(project.media)) {
+      return (
+        <video
+          className="project-media"
+          autoPlay
+          muted
+          loop
+          playsInline
+        >
+          <source src={project.media} type="video/mp4" />
+        </video>
+      )
+    }
 
-  const handleModalClose = () => {
-    setSelectedProject(null);
-  };
+    return (
+      <img
+        src={project.media}
+        alt={project.name}
+        className="project-media"
+      />
+    )
+  }
 
   return (
-    <div className='lego-projects'>
-      <h2>LEGO Ideas</h2>
-      <div className="lego-projects-list">
-        {legoProjects.map((project) => (
-          <ProjectCard
-            key={project.name}
-            name={project.name}
-            media={project.media}
-            description={project.description}
-            url={project.url}
-            onClick={handleCardClick}
-          />
-        ))}
+    <section className="lego-projects">
+      <h2 className="lego-title">LEGO Ideas</h2>
+
+      <div className="carousel">
+        <div className="group">
+          {legoProjects.map((project, index) => (
+            <div
+              key={`lego-${index}`}
+              className="project-card"
+              onClick={() => setSelectedProject(project)}
+            >
+              {renderMedia(project)}
+
+              <div className="project-overlay">
+                <span className="project-name">{project.name}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="group" aria-hidden>
+          {legoProjects.map((project, index) => (
+            <div
+              key={`lego-dup-${index}`}
+              className="project-card"
+              onClick={() => setSelectedProject(project)}
+            >
+              {renderMedia(project)}
+
+              <div className="project-overlay">
+                <span className="project-name">{project.name}</span>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
 
       {selectedProject && (
-        <Popup project={selectedProject} onClose={handleModalClose} />
+        <Popup
+          project={selectedProject}
+          onClose={() => setSelectedProject(null)}
+        />
       )}
-    </div>
-  );
-};
+    </section>
+  )
+}
 
-export default LegoProjects;
+export default LegoProjects
