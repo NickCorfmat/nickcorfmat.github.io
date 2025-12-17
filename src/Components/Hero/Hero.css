@@ -91,6 +91,7 @@
 .hero-button:hover {
     border: 1px solid rgba(0, 0, 0, 0.1);
     transform: translateY(0.2em);
+    opacity: 0.8;
 }
 
 .hero-button:active {
