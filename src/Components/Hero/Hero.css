@@ -55,7 +55,7 @@
     z-index: 2;
     width: 100%;
     height: 100px;
-    bottom: 90px;
+    bottom: 140px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -65,12 +65,19 @@
 
 /* From Uiverse.io by CYBWEBALI */
 .hero-button {
-    display: grid;
-    place-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 0 5px 0 5px;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: black;
     background: #e3edf7;
-    width: 110px;
-    height: 50px;
-    border-radius: 16px;
+    width: 120px;
+    height: 60px;
+    border-radius: 30px;
     border: 1px solid rgba(0, 0, 0, 0);
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
@@ -93,6 +100,17 @@
 
 .hero-button:focus {
     outline: none;
+}
+
+.hero-button.linkedin { color: #0279b8; }
+.hero-button.github { color: black; }
+.hero-button.resume { color: black; }
+
+.hero-profile {
+    width: 140px;
+    height: 140px;
+    border-radius: 70px;
+    margin-right: 12px;
 }
 
 /* From Uiverse.io by kennyotsu */
@@ -191,4 +209,9 @@
       -webkit-transform: translateY(0);
       transform: translateY(0);
     }
+}
+
+.download_icon {
+    width: 21px;
+    height: 21px;
 }
