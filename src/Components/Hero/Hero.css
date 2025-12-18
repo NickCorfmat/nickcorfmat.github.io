@@ -37,7 +37,7 @@
 }
 
 .hero-text h1 {
-    font-size: 5em;
+    font-size: clamp(2rem, 4vw, 5rem);
     font-weight: 700;
     color: white;
     padding: 0;
@@ -63,6 +63,21 @@
     gap: 20px;
 }
 
+.hero-options .linkedin-icon {
+    width: 1.3em;
+    height: 1.3em;
+}
+
+.hero-options .github-icon {
+    width: 1.3em;
+    height: 1.3em;
+}
+
+.hero-options .download-icon {
+    width: 1.3em;
+    height: 1.3em;
+}
+
 /* From Uiverse.io by CYBWEBALI */
 .hero-button {
     display: flex;
@@ -71,12 +86,12 @@
     align-items: center;
     gap: 8px;
     padding: 0 5px 0 5px;
-    font-size: 1.1em;
+    font-size: 0.8em;
     font-weight: 600;
     color: black;
     background: #e3edf7;
-    width: 120px;
-    height: 60px;
+    width: 5.5rem;
+    height: 2.75rem;
     border-radius: 30px;
     border: 1px solid rgba(0, 0, 0, 0);
     cursor: pointer;
@@ -108,9 +123,9 @@
 .hero-button.resume { color: black; }
 
 .hero-profile {
-    width: 140px;
-    height: 140px;
-    border-radius: 70px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
     margin-right: 12px;
 }
 
@@ -125,7 +140,7 @@
 .loader {
     color: rgb(124, 124, 124);
     font-weight: 600;
-    font-size: 2.5rem;
+    font-size: clamp(2rem, 4vw, 5rem);
     -webkit-box-sizing: content-box;
     box-sizing: content-box;
     height: 50px;
@@ -138,6 +153,7 @@
 }
 
 .loader p {
+    font-size: 2.5rem;
     display: block;
     height: 100%;
     color: rgb(217, 217, 217);

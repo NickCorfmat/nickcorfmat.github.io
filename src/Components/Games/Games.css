@@ -15,12 +15,13 @@
     display: flex;
     padding: 30px 0 30px 0;
     background-color: white;
+    box-shadow: 0 0px 25px rgba(0, 0, 0, 0.762);
 }
 
 .games .group {
     display: flex;
     gap: 1.5rem;
-    animation: scroll-left 30s linear infinite;
+    animation: scroll 35s linear infinite;
     padding-right: 1.5rem;
 }
 
@@ -35,7 +36,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    outline: 6px solid rgb(174, 174, 174);
 }
 
 .project-card:hover {
@@ -71,7 +71,7 @@
     margin-bottom: 0.2rem;
 }
 
-@keyframes scroll-left {
+@keyframes scroll {
     from {
         transform: translateX(0);
     }

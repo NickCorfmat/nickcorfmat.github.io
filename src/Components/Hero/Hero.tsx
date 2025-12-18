@@ -46,7 +46,7 @@ const Hero = () => {
                     </a>
                     <a href="Assets/docs/Nicolas_Corfmat_Resume_2025.pdf" className="hero-button download" download="Nick_Corfmat_Resume_2025">
                         Resume
-                        <img src={download_icon} className="download_icon" alt="Download Resume" />
+                        <img src={download_icon} className="download-icon" alt="Download Resume" />
                     </a>
                 </div>
             </>
