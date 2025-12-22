@@ -21,15 +21,15 @@
 .games .group {
     display: flex;
     gap: 1.5rem;
-    animation: scroll 35s linear infinite;
+    animation: scroll 50s linear infinite;
     padding-right: 1.5rem;
 }
 
 .games .project-card {
     position: relative;
-    flex: 0 0 320px;
-    height: 380px;
-    border-radius: 28px;
+    flex: 0 0 500px;
+    height: 300px;
+    border-radius: 26px;
     overflow: hidden;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
     transition: transform 0.3s ease;

@@ -1,12 +1,9 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { legoProjects, Project } from '../../../public/Assets/portfolioData'
 import { isVideo } from '../../utils/mediaUtils'
-import Popup from '../Popup/Popup'
 import './LegoProjects.css'
 
 const LegoProjects: React.FC = () => {
-  const [selectedProject, setSelectedProject] = useState<Project | null>(null)
-
   const renderMedia = (project: Project) => {
     if (isVideo(project.media)) {
       return (
@@ -38,43 +35,40 @@ const LegoProjects: React.FC = () => {
       <div className="carousel">
         <div className="group">
           {legoProjects.map((project, index) => (
-            <div
+            <a
               key={`lego-${index}`}
+              href={project.url}
+              target="_blank"
+              rel="noopener noreferrer"
               className="project-card"
-              onClick={() => setSelectedProject(project)}
             >
               {renderMedia(project)}
 
               <div className="project-overlay">
                 <span className="project-name">{project.name}</span>
               </div>
-            </div>
+            </a>
           ))}
         </div>
 
         <div className="group" aria-hidden>
           {legoProjects.map((project, index) => (
-            <div
+            <a
               key={`lego-dup-${index}`}
+              href={project.url}
+              target="_blank"
+              rel="noopener noreferrer"
               className="project-card"
-              onClick={() => setSelectedProject(project)}
             >
               {renderMedia(project)}
 
               <div className="project-overlay">
                 <span className="project-name">{project.name}</span>
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </div>
-
-      {selectedProject && (
-        <Popup
-          project={selectedProject}
-          onClose={() => setSelectedProject(null)}
-        />
-      )}
     </section>
   )
 }

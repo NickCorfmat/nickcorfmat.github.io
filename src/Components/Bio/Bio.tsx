@@ -11,11 +11,11 @@ const Bio = () => {
         </div>
       </div>
       <div className='bio-right'>
-        <h2>Nick Corfmat</h2>
+        <h2>Hi!</h2>
         <p>
-          Passionate software engineer and game developer with experience in
-          Unity, React, and Phaser. Constantly exploring new technologies and
-          creative ways to build immersive experiences.
+          I'm Nick, a game designer and software developer from the Bay Area, CA.
+          I graduated from the University of California, Santa Cruz with a Bachelor's
+          degree in Computer Science Game Design.
         </p>
       </div>
     </div>

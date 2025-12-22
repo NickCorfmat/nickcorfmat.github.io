@@ -46,6 +46,10 @@
     text-decoration: none;
     position: relative;
     z-index: 1;
+
+    transition: 
+        font-size 0.15s ease-in,
+        color 0.2s ease-in;
 }
 
 .nav-menu .nav-link:before {
@@ -54,8 +58,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: calc(100% + 24px);
-    height: 135%;
+    width: calc(100% + 26px);
+    height: 165%;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 6px;
     z-index: 0;
@@ -68,5 +72,6 @@
 }
 
 .nav-menu .nav-link:hover {
-    color: rgb(225, 239, 255);
+    color: rgb(207, 207, 207);
+    font-size: 1.05em;
 }

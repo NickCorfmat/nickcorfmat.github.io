@@ -1,47 +1,68 @@
 .skills {
-    width: 100%;
-    min-height: 180px;
-    background-color: #ebebeb;
-    margin: 100px 0 50px 0;
-    box-shadow: 0 0px 12px rgba(130, 130, 130, 0.725);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    padding: 40px 0 55px 0;
-    user-select: none;
+  width: 100%;
+  min-height: 180px;
+  background-color: #ebebeb;
+  margin: 100px 0 50px 0;
+  box-shadow: 0 0px 12px rgba(130, 130, 130, 0.725);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0 55px 0;
+  user-select: none;
 }
 
 .skills h2 {
-    color: #374054;
-    font-size: 2.3em;
-    font-weight: 500;
-    margin-top: 0;
+  color: #374054;
+  font-size: 2.3em;
+  font-weight: 500;
+  margin-top: 0;
 }
 
 .skills-list {
-    width: 60%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    overflow: hidden;
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
 }
 
-.skill-tag {
-    background-color: #d6d6db;
-    color: #3b4357;
-    font-size: 1.4em;
-    padding: 4px 12px 4px 12px;
-    white-space: nowrap;
+.skill-flip {
+  perspective: 800px;
 }
 
-.skills-list:after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 0;
+.skill-flip-inner {
+  position: relative;
+  min-width: 120px;
+  height: 36px;
+  transform-style: preserve-3d;
+  transition: transform 0.55s cubic-bezier(0.61, 0.98, 0.48, 1.01);
+}
+
+.skill-flip:hover .skill-flip-inner {
+  transform: rotateY(180deg);
+}
+
+.skill-front,
+.skill-back {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 12px;
+  font-size: 1.4em;
+  white-space: nowrap;
+  backface-visibility: hidden;
+}
+
+.skill-front {
+  background-color: #d6d6db;
+  color: #3b4357;
+}
+
+.skill-back {
+  background-color: #3b4357;
+  color: #ffffff;
+  transform: rotateY(180deg);
 }

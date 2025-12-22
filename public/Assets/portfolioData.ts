@@ -68,7 +68,7 @@ export const legoProjects: Project[] = [
   {
     name: 'Madison Beer "Reckless"',
     media: "/Assets/images/reckless.png",
-    url: "https://ideas.lego.com/projects/dd25b50a-976d-44c3-aeb5-aa96e244b783",
+    url: "https://beta.ideas.lego.com/product-ideas/9b9e3504-07dd-4060-a139-4bf98b07f7a7",
     description: "A task management app to organize daily tasks.",
   },
   {

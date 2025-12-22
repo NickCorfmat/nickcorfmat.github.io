@@ -33,21 +33,22 @@ const Hero = () => {
                             <p>Developer</p>
                         </div>
                     </div>
-                </div>
-                <div className='hero-options'>
-                    <img src={profile} className='hero-profile' alt="Profile" />
-                    <a href="https://www.linkedin.com/in/nicolascorfmat/" className="hero-button linkedin">
-                        LinkedIn
-                        <img src={linkedin_icon} className="linkedin-icon" alt="LinkedIn" />
-                    </a>
-                    <a href="https://github.com/NickCorfmat" className="hero-button github">
-                        GitHub
-                        <img src={github_icon} className="github-icon" alt="LinkedIn" />
-                    </a>
-                    <a href="Assets/docs/Nicolas_Corfmat_Resume_2025.pdf" className="hero-button download" download="Nick_Corfmat_Resume_2025">
-                        Resume
-                        <img src={download_icon} className="download-icon" alt="Download Resume" />
-                    </a>
+                    <div className='hero-options'>
+                        <img src={profile} className='hero-profile' alt="Profile" />
+                        
+                        <a href="https://www.linkedin.com/in/nicolascorfmat/" className="hero-button linkedin">
+                            LinkedIn
+                            <img src={linkedin_icon} className="linkedin-icon" alt="LinkedIn" />
+                        </a>
+                        <a href="https://github.com/NickCorfmat" className="hero-button github">
+                            GitHub
+                            <img src={github_icon} className="github-icon" alt="LinkedIn" />
+                        </a>
+                        <a href="Assets/docs/Nicolas_Corfmat_Resume_2025.pdf" className="hero-button download" download="Nick_Corfmat_Resume_2025">
+                            Resume
+                            <img src={download_icon} className="download-icon" alt="Download Resume" />
+                        </a>
+                    </div>
                 </div>
             </>
         )}
