@@ -8,14 +8,14 @@ const Skills = () => {
       <h2>Skills</h2>
 
       <div className="skills-list">
-        {skills.map((skill, index) => (
+        {skills.map(({name, proficiency }, index) => (
           <div key={index} className="skill-flip">
             <div className="skill-flip-inner">
               <div className="skill-front">
-                {skill}
+                {name}
               </div>
               <div className="skill-back">
-                Experienced
+                {proficiency}
               </div>
             </div>
           </div>
