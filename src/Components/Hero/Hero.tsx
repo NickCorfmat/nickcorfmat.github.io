@@ -1,7 +1,6 @@
 import React from 'react'
 import './Hero.css'
 import { isVideo, getRandomProject } from '../../utils/mediaUtils'
-import profile from '../../../public/Assets/images/profile.jpg'
 import github_icon from '../../../public/Assets/icons/github_black.svg'
 import linkedin_icon from '../../../public/Assets/icons/linkedin_blue.svg'
 import download_icon from '../../../public/Assets/icons/download.svg'
@@ -33,9 +32,8 @@ const Hero = () => {
                             <p>Developer</p>
                         </div>
                     </div>
+                    <h3 className='quick-links'>_ Quick Links _</h3>
                     <div className='hero-options'>
-                        <img src={profile} className='hero-profile' alt="Profile" />
-                        
                         <a href="https://www.linkedin.com/in/nicolascorfmat/" className="hero-button linkedin">
                             LinkedIn
                             <img src={linkedin_icon} className="linkedin-icon" alt="LinkedIn" />

@@ -36,11 +36,11 @@
     z-index: 2;
     display: flex;
     flex-direction: column;
-    top: 36%;
+    top: 40%;
 }
 
 .hero-text h1 {
-    font-size: clamp(2rem, 4vw, 5rem);
+    font-size: clamp(2rem, 5vw, 5rem);
     font-weight: 700;
     color: white;
     padding: 0;
@@ -53,8 +53,11 @@
     color: white;
 }
 
+.quick-links {
+    margin: 50px 0 0 0;
+}
+
 .hero-options {
-    margin-top: 50px;
     z-index: 2;
     width: 100%;
     height: 100px;
@@ -81,6 +84,15 @@
     height: 1.3em;
 }
 
+.hero-options a,
+.hero-options a:visited,
+.hero-options a:hover,
+.hero-options a:active,
+.hero-options a:focus {
+    text-decoration: none;
+}
+
+
 /* From Uiverse.io by CYBWEBALI */
 .hero-button {
     display: flex;
@@ -88,28 +100,23 @@
     justify-content: center;
     align-items: center;
     gap: 8px;
-    padding: 0 5px 0 5px;
+    padding: 0 15px 0 15px;
     font-size: 0.8em;
     font-weight: 600;
     color: black;
     background: #e3edf7;
-    width: 5.5rem;
+    width: auto;
     height: 2.75rem;
-    border-radius: 30px;
+    border-radius: 16px;
     border: 1px solid rgba(0, 0, 0, 0);
     cursor: pointer;
+    opacity: 0.75;
     transition: transform 0.2s ease-in-out;
-    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
-                inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
-                -0.5px -0.5px 0px rgba(255, 255, 255, 1),
-                0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
-                0px 12px 10px -10px rgba(0, 0, 0, 0.05);
 }
 
 .hero-button:hover {
-    border: 1px solid rgba(0, 0, 0, 0.1);
     transform: translateY(0.2em);
-    opacity: 0.8;
+    opacity: 0.6;
 }
 
 .hero-button:active {
@@ -123,7 +130,7 @@
 
 .hero-button.linkedin { color: #0279b8; }
 .hero-button.github { color: black; }
-.hero-button.resume { color: black; }
+.hero-button.download { color: black; }
 
 .hero-profile {
     width: 100px;

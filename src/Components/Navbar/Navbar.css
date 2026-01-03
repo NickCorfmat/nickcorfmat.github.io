@@ -59,9 +59,9 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: calc(100% + 26px);
-    height: 165%;
+    height: 168%;
     background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 6px;
+    border-radius: 16px;
     z-index: 0;
     opacity: 0;
     transition: opacity 0.3s ease;
