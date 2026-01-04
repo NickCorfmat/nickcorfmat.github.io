@@ -1,21 +1,24 @@
 .resume-section {
   width: 100vw;
-  height: 100vh;
-  padding: 105px 0 80px 0;
+  height: auto;
+  padding: 15vh 25vw 10vh 25vw;
   box-sizing: border-box;
 
   display: flex;
   justify-content: center;
-  align-items: stretch;
+  align-items: center;
 }
 
 .resume-frame {
-  width: 60%;
-  height: 100%;
+  aspect-ratio: 0.73;
+  width: 100%;
+  min-width: 300px;
+  max-height: 1155px;
+  height: auto;
+  min-height: 500px;
   border: none;
   border-radius: 20px;
   box-shadow: 0 6px 8px rgba(42, 48, 53, 0.414);
 
   will-change: transform;
-  background-color: #fff;
 }
