@@ -52,4 +52,6 @@
 
 .footer-social-icons img:hover {
     cursor: pointer;
+    opacity: 0.75;
+    transition: 0.2s ease;
 }
