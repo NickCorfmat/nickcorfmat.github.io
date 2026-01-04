@@ -8,15 +8,11 @@ const Skills = () => {
       <h2>Skills</h2>
 
       <div className="skills-list">
-        {skills.map(({name, proficiency }, index) => (
+        {skills.map(({ name, proficiency }, index) => (
           <div key={index} className="skill-flip">
             <div className="skill-flip-inner">
-              <div className="skill-front">
-                {name}
-              </div>
-              <div className="skill-back">
-                {proficiency}
-              </div>
+              <span className="skill-front">{name}</span>
+              <span className="skill-back">{proficiency}</span>
             </div>
           </div>
         ))}

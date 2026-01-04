@@ -1,0 +1,25 @@
+.about-container {
+    margin: 100px 0 0 0;
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    min-height: 600px;
+    /*background-color: #242424;*/
+}
+
+.about-container-left,
+.about-container-right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.full-body-photo {
+    aspect-ratio: 3 / 4;
+    width: auto;
+    height: auto;
+    max-height: 90%;
+    border-radius: 0px;
+}

@@ -4,7 +4,7 @@ import './Navbar.css';
 
 const Navbar: React.FC = () => {
     const [isScrolled, setIsScrolled] = useState(false);
-    const transitionLimit = 50;
+    const transitionLimit = 40;
 
     useEffect(() => {
         const handleScroll = () => {
@@ -28,7 +28,7 @@ const Navbar: React.FC = () => {
                 <li><Link to="/" className="nav-link">HOME</Link></li>
                 <li><Link to="/projects" className="nav-link">PROJECTS</Link></li>
                 <li><Link to="/resume" className="nav-link">RESUME</Link></li>
-                <li><Link to="/about" className="nav-link">ABOUT</Link></li>
+                <li><Link to="/about" className="nav-link">ABOUT ME</Link></li>
             </ul>
         </nav>
     );

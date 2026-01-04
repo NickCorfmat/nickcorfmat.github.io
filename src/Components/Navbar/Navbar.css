@@ -47,9 +47,10 @@
     position: relative;
     z-index: 1;
 
-    transition: 
-        font-size 0.15s ease-in,
-        color 0.2s ease-in;
+    transition:
+        transform 0.2s ease-in-out,
+        opacity 0.35s ease,
+        color 0.2s ease;
 }
 
 .nav-menu .nav-link:before {
@@ -58,10 +59,10 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: calc(100% + 26px);
+    width: calc(100% + 24px);
     height: 168%;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 16px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
     z-index: 0;
     opacity: 0;
     transition: opacity 0.3s ease;
@@ -73,5 +74,10 @@
 
 .nav-menu .nav-link:hover {
     color: rgb(207, 207, 207);
-    font-size: 1.05em;
+    transform: scaleX(1.07) scaleY(1.03);
+    opacity: 0.85;
+}
+
+.nav-menu .nav-link:active {
+    transform: scale(0.95);
 }
