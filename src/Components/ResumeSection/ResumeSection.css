@@ -1,7 +1,7 @@
 .resume-section {
   width: 100vw;
   height: auto;
-  padding: 15vh 25vw 10vh 25vw;
+  padding: 12.5vh 33.5vw 6vh 33.5vw;
   box-sizing: border-box;
 
   display: flex;
@@ -17,8 +17,8 @@
   height: auto;
   min-height: 500px;
   border: none;
-  border-radius: 20px;
-  box-shadow: 0 6px 8px rgba(42, 48, 53, 0.414);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgb(57, 57, 57, 0.8);
 
   will-change: transform;
 }
