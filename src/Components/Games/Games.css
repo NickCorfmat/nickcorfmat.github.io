@@ -14,18 +14,17 @@
 
 .games .game-engines {
     width: 35%;
-    min-width: 300px;
+    min-width: 400px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin: 20px 0 30px 0;
+    margin: 20px 0 25px 0;
     gap: clamp(10px, 3vw, 30px);
-    overflow: visible;
 }
 
 .engine-icon {
-    height: auto;
+    width: 95%;
     user-select: none;
     pointer-events: auto;
     -webkit-user-drag: none;
@@ -34,15 +33,6 @@
 
 .engine-icon:hover {
     cursor: default;
-}
-
-.engine-icon.unreal {
-    width: 85px;
-}
-
-.engine-icon.unity,
-.engine-icon.phaser {
-    width: 170px;
 }
 
 .engine-icon.unreal:hover {
