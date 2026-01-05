@@ -74,13 +74,13 @@ export const legoProjects: Project[] = [
   {
     name: "Polaroid Onestep SX-70",
     media: "/Assets/videos/polaroid.mp4",
-    url: "https://ideas.lego.com/projects/200dd32e-8ec8-44aa-8f7d-e4dcc6f74e5c",
+    url: "https://beta.ideas.lego.com/product-ideas/200dd32e-8ec8-44aa-8f7d-e4dcc6f74e5c",
     description: "A task management app to organize daily tasks.",
   },
   {
     name: "Catty Corner",
     media: "/Assets/images/cattycorner.png",
-    url: "https://ideas.lego.com/projects/200dd32e-8ec8-44aa-8f7d-e4dcc6f74e5c",
+    url: "https://youtu.be/dBilv9B1Tmg?si=rLzIXHxPjl484bRz",
     description: "A task management app to organize daily tasks.",
   },
 ];
