@@ -12,7 +12,7 @@ const Bio = () => {
         </div>
         <Link to="/about" className="profile-overlay-link">
           <div className="profile-overlay">
-            <span>About me</span>
+            <span>Read more</span>
           </div>
           <img src={profile} className='bio-profile-picture' alt="Nick Corfmat" />
         </Link>
