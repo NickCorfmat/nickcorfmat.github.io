@@ -5,7 +5,7 @@
     position: relative;
     width: 100%;
     height: 80vh;
-    min-height: 400px;
+    min-height: 600px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
 }
@@ -69,19 +69,11 @@
     gap: 20px;
 }
 
-.hero-options .linkedin-icon {
-    width: 1.5em;
-    height: 1.5em;
-}
-
-.hero-options .github-icon {
+.hero-button img {
+    display: block;
     width: 1.3em;
     height: 1.3em;
-}
-
-.hero-options .download-icon {
-    width: 1.3em;
-    height: 1.3em;
+    flex-shrink: 0;
 }
 
 .hero-options a,

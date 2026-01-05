@@ -32,7 +32,7 @@ const Hero = () => {
                             <p>Developer</p>
                         </div>
                     </div>
-                    <h3 className='quick-links'>_ Quick Links _</h3>
+                    <h3 className='quick-links'>Quick Links</h3>
                     <div className='hero-options'>
                         <a href="https://www.linkedin.com/in/nicolascorfmat/" className="hero-button linkedin">
                             LinkedIn
