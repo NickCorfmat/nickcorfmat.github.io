@@ -10,28 +10,12 @@ const Games: React.FC = () => {
   return (
     <section className="games">
       
+      {/* Title */}
       <div className="games-header-inner">
         <h2 className="games-title">Some of my games...</h2>
       </div>
-      <h3>built using:</h3>
-      <div className="games-header gradient-outline">
-        <div className="games-header-mask">
-        <div className="game-engines">
-          <a href="https://www.unrealengine.com/" target="_blank" rel="noopener noreferrer">
-            <img src={unreal_engine_icon} className="engine-icon unreal" alt="Unreal Engine" />
-          </a>
 
-          <a href="https://www.unity.com/" target="_blank" rel="noopener noreferrer">
-            <img src={unity_icon} className="engine-icon unity" alt="Unity" />
-          </a>
-
-          <a href="https://phaser.io/" target="_blank" rel="noopener noreferrer">
-            <img src={phaser_icon} className="engine-icon phaser" alt="Phaser" />
-          </a>
-        </div>
-        </div>
-      </div>
-
+      {/* Carousel */}
       <div className="carousel">
         <div className="group">
           {games.map((project) => (
@@ -86,6 +70,40 @@ const Games: React.FC = () => {
           ))}
         </div>
       </div>
+
+      {/* Developed using */}
+      <h3>developed using:</h3>
+
+      <div className="games-header gradient-outline">
+        <div className="games-header-mask">
+          <div className="game-engines">
+            <a href="https://www.unrealengine.com/" target="_blank" rel="noopener noreferrer">
+              <img
+                src={unreal_engine_icon}
+                className="engine-icon unreal"
+                alt="Unreal Engine"
+              />
+            </a>
+
+            <a href="https://www.unity.com/" target="_blank" rel="noopener noreferrer">
+              <img
+                src={unity_icon}
+                className="engine-icon unity"
+                alt="Unity"
+              />
+            </a>
+
+            <a href="https://phaser.io/" target="_blank" rel="noopener noreferrer">
+              <img
+                src={phaser_icon}
+                className="engine-icon phaser"
+                alt="Phaser"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+
     </section>
   )
 }
