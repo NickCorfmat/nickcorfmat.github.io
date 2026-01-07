@@ -161,7 +161,7 @@
     to { transform: translateX(-100%); }
 }
 
-.project-card {
+.carousel .project-card {
     position: relative;
     flex: 0 0 500px;
     height: 300px;
@@ -176,7 +176,7 @@
     justify-content: center;
 }
 
-.project-card:hover {
+.carousel.project-card:hover {
     transform: scale(1.05);
     box-shadow:
         0 10px 15px rgba(0, 0, 0, 0.45),
