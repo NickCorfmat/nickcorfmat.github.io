@@ -18,7 +18,8 @@
   min-height: 500px;
   border: none;
   border-radius: 16px;
-  box-shadow: 0 4px 30px rgb(57, 57, 57, 0.8);
+  box-shadow: 0 6px 20px rgba(118, 118, 118, 0.8);
+  outline: 5px solid rgba(82, 82, 82, 0.453);
 
   will-change: transform;
 }

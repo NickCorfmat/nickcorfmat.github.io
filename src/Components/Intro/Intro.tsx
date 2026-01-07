@@ -7,10 +7,18 @@ const Intro = () => {
     <div>
       <div className='about-container'>
         <div className='about-container-left'>
-            <img src={full_body_photo} className='full-body-photo' alt="Nick Corfmat Photo" />
+          <h3>ABOUT ME</h3>
+          <div className="education-container">
+            <h3>EDUCATION</h3>
+            <div className="education-card">
+              <h2>BS in Computer Science: Game Design</h2>
+              <h3>University of California, Santa Cruz - Santa Cruz, CA</h3>
+              <h4>September 2021 - June 2025</h4>
+            </div>
+          </div>
         </div>
         <div className='about-container-right'>
-            
+            <img src={full_body_photo} className='full-body-photo' alt="Nick Corfmat Photo" />
         </div>
       </div>
     </div>

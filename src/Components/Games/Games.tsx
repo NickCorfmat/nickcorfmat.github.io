@@ -2,20 +2,22 @@ import React from 'react'
 import { games } from '../../../public/Assets/portfolioData'
 import './Games.css'
 
-import unreal_engine_icon from '../../../public/Assets/icons/unreal_engine.png'
-import unity_icon from '../../../public/Assets/icons/unity.png'
-import phaser_icon from '../../../public/Assets/icons/phaser2.png'
+// import unreal_engine_icon from '../../../public/Assets/icons/unreal_engine.png'
+// import unity_icon from '../../../public/Assets/icons/unity.png'
+// import phaser_icon from '../../../public/Assets/icons/phaser2.png'
 
 const Games: React.FC = () => {
   return (
     <section className="games">
       
-      {/* Title */}
-      <div className="games-header-inner">
-        <h2 className="games-title">Some of my games...</h2>
+      <div className="home-project-header">
+        <h2 className="home-project-title">I Develop Games.</h2>
+        <div className='home-project-subheader'>
+          <h3>Real-time gameplay systems, multiplayer mechanics, and performance-focused design —
+          built with production constraints in mind.</h3>
+        </div>
       </div>
 
-      {/* Carousel */}
       <div className="carousel">
         <div className="group">
           {games.map((project) => (
@@ -71,8 +73,7 @@ const Games: React.FC = () => {
         </div>
       </div>
 
-      {/* Developed using */}
-      <h3>developed using:</h3>
+      {/* <h3>using:</h3>
 
       <div className="games-header gradient-outline">
         <div className="games-header-mask">
@@ -102,7 +103,7 @@ const Games: React.FC = () => {
             </a>
           </div>
         </div>
-      </div>
+      </div> */}
 
     </section>
   )

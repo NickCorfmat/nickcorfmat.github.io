@@ -30,7 +30,13 @@ const LegoProjects: React.FC = () => {
 
   return (
     <section className="lego-projects">
-      <h2 className="lego-title">LEGO Ideas</h2>
+      <div className="home-project-header">
+        <h2 className="home-project-title">Design, Build, Pitch.</h2>
+        <div className='home-project-subheader'>
+          <h3>Community-driven product design projects that combine engineering precision, storytelling,
+        and visual communication — reaching millions worldwide.</h3>
+        </div>
+      </div>
 
       <div className="carousel">
         <div className="group">

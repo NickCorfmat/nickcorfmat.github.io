@@ -3,13 +3,6 @@
   overflow: hidden;
 }
 
-.lego-title {
-  text-align: center;
-  margin-bottom: 1em;
-  font-size: 2.5rem;
-  color: white;
-}
-
 .lego-projects .carousel {
   width: 100%;
   overflow: hidden;
