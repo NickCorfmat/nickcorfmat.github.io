@@ -173,6 +173,7 @@
         rgba(0,0,0,0.4) 20%,
         rgba(0,0,0,0) 40%
     );
+    cursor: default;
 }
 
 /* ================================
@@ -180,16 +181,20 @@
 ================================ */
 .projects-content.expanded-content {
     align-items: flex-start;
+    flex-direction: column;
     text-align: left;
     justify-content: flex-end;
     padding: 0 0 5% 5%;
 }
 
-.expanded-bottom-row {
+.projects-content.expanded-content .action-btns {
+    width: 95%;
     display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
     align-items: center;
-    gap: 14px;
-    margin-top: 12px;
+    gap: 12px;
+
 }
 
 /* ================================
@@ -211,7 +216,7 @@
 .projects-content.expanded-content h2 {
     font-size: 2.5rem;
     font-weight: 800;
-    margin-bottom: 0;
+    margin: 0 0 10px 0;
 }
 
 .projects-content.expanded-content p {
@@ -219,6 +224,7 @@
     line-height: 1.45;
     color: rgba(255,255,255,0.9);
     max-width: 520px;
+    margin: 0 0 20px 0;
 }
 
 /* ================================

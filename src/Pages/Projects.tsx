@@ -38,7 +38,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
             {!expanded ? (
               <>
-                <p>{project.description || "View project details"}</p>
+                <p>{project.shortDescription || "View project details"}</p>
                 <button
                   className="projects-learn-more"
                   onClick={(e) => {
@@ -51,15 +51,30 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               </>
             ) : (
               <>
-                <div className="expanded-bottom-row">
-                  <p>{project.description || "View project details"}</p>
+                <p>{project.description || "View project details"}</p>
+                  
+                <div className="action-btns">
+                  {project.github ? (
+                    <>
+                      <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="projects-link-btn"
+                      >
+                        Github ↗
+                      </a>
+                    </>
+                  ) : (
+                  <></>
+                  )}
                   <a
-                    href={project.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="projects-link-btn"
+                  href={project.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="projects-link-btn"
                   >
-                    Open project ↗
+                    Play ↗
                   </a>
                 </div>
 

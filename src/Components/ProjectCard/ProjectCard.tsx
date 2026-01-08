@@ -7,7 +7,7 @@ interface ProjectCardProps extends Project {
     onClick: (project: Project) => void;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ name, media, description, url, onClick }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({ name, media, shortDescription, description, url, onClick }) => {
     const [isHovered, setIsHovered] = useState(false);
 
     return (
@@ -15,7 +15,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ name, media, description, url
             className={`project-card ${isHovered ? 'hovered' : ''}`} 
             onMouseEnter={() => setIsHovered(true)} 
             onMouseLeave={() => setIsHovered(false)} 
-            onClick={() => onClick({ name, media, description, url })}
+            onClick={() => onClick({ name, media, shortDescription, description, url })}
         >
             {isVideo(media) ? (
                 <video className="project-media" autoPlay muted loop>
