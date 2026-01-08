@@ -4,6 +4,8 @@ export interface Project {
   logo?: string;
   url?: string;
   github?: string;
+  trailer?: string;
+  demo?: string;
   shortDescription: string;
   description: string;
 }
@@ -16,7 +18,7 @@ export const games: Project[] = [
     url: "https://nickcorfmat.github.io/FightFighters/",
     github: "https://github.com/NickCorfmat/FightFighters",
     shortDescription: "2-player fighting game created with Phaser 3.",
-    description: "Fight Fighters game created with Phaser 3.",
+    description: "This is an example description. It is merely for testing purposes and is not intended to be used in the final production build of this website. This sentence is meant to add extra length to the description.",
   },
   {
     name: "Rogue Eagle",
@@ -24,13 +26,14 @@ export const games: Project[] = [
     url: "https://nickcorfmat.github.io/EndlessRunner/",
     github: "https://github.com/NickCorfmat/EndlessRunner",
     shortDescription: "Endless runner game created with Phaser 3.",
-    description: "",
+    description: "This is an example description. It is merely for testing purposes and is not intended to be used in the final production build of this website. This sentence is meant to add extra length to the description.",
   },
   {
     name: "Woofmart",
     media: "/Assets/videos/woofmart.mp4",
     url: "https://nickcorf.itch.io/woofmart",
     github: "https://github.com/jchen577/dog_sim_125",
+    trailer: "https://drive.google.com/file/d/1ZzLdmguxykcHSb12pyFnLuZfHL9X8wYJ/view?usp=sharing",
     shortDescription: "Endless runner game created with Unity.",
     description: "This is an example description. It is merely for testing purposes and is not intended to be used in the final production build of this website. This sentence is meant to add extra length to the description.",
   },
@@ -40,7 +43,7 @@ export const games: Project[] = [
     shortDescription: "",
     url: "https://nickcorfmat.github.io/Split-1/",
     github: "https://github.com/NickCorfmat/Split-1",
-    description: "",
+    description: "This is an example description. It is merely for testing purposes and is not intended to be used in the final production build of this website. This sentence is meant to add extra length to the description.",
   },
   {
     name: "Piano Platformer",
@@ -48,7 +51,7 @@ export const games: Project[] = [
     shortDescription: "",
     url: "https://nickcorfmat.github.io/Unconventional-Game/",
     github: "https://github.com/NickCorfmat/Unconventional-Game",
-    description: "",
+    description: "This is an example description. It is merely for testing purposes and is not intended to be used in the final production build of this website. This sentence is meant to add extra length to the description.",
   },
   {
     name: "Wail of the Sirenheads",
@@ -56,7 +59,8 @@ export const games: Project[] = [
     shortDescription: "",
     url: "https://nickcorf.itch.io/through-the-sirenheads",
     github: "https://github.com/JaydenChung/Split2",
-    description: "",
+    demo: "https://drive.google.com/file/d/1T6xnZxpMmf_FUYoe2tHEIMAOfqRn7AB0/view?usp=sharing",
+    description: "This is an example description. It is merely for testing purposes and is not intended to be used in the final production build of this website. This sentence is meant to add extra length to the description.",
   },
   {
     name: "Modernism Simulator",
@@ -64,7 +68,8 @@ export const games: Project[] = [
     media: "/Assets/videos/modernsimulator.mp4",
     url: "https://nickcorf.itch.io/modernism-simulator",
     github: "https://github.com/NickCorfmat/ApartmentSimulator",
-    description: "",
+    demo: "https://drive.google.com/file/d/1dEgNfVd5nOl8TMtaDJuzmRiSJBPYA1W-/view?usp=sharing",
+    description: "This is an example description. It is merely for testing purposes and is not intended to be used in the final production build of this website. This sentence is meant to add extra length to the description.",
   },
 ];
 
