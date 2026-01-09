@@ -5,6 +5,7 @@ import close_icon from "../../public/Assets/icons/close_icon.png";
 import github_icon from "../../public/Assets/icons/github.svg"
 import play_icon from "../../public/Assets/icons/play_icon.png"
 import trailer_icon from "../../public/Assets/icons/trailer_icon.png"
+import person_icon from "../../public/Assets/icons/person_icon.png"
 
 interface ProjectCardProps {
   project: Project;
@@ -54,6 +55,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               </>
             ) : (
               <>
+                <div className="misc-info">
+                  <div className="misc-info-entry">
+                    <img src={person_icon} className="misc-info-icon" alt="Team size: " />
+                    {project.teamSize}
+                  </div>
+                </div>
+                
                 <p>{project.description || "View project details"}</p>
                   
                 <div className="action-btns">
@@ -95,7 +103,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                       className="projects-link-btn"
                       >
                         Trailer
-                        <img src={trailer_icon} className="action-icon trailer-icon" alt="" />
+                        <img src={trailer_icon} className="action-icon" alt="" />
                       </a>
                     </>
                   ) : (
