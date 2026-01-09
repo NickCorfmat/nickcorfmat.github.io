@@ -6,6 +6,7 @@ import github_icon from "../../public/Assets/icons/github.svg"
 import play_icon from "../../public/Assets/icons/play_icon.png"
 import trailer_icon from "../../public/Assets/icons/trailer_icon.png"
 import person_icon from "../../public/Assets/icons/person_icon.png"
+import calendar_icon from "../../public/Assets/icons/calendar_icon.png"
 
 interface ProjectCardProps {
   project: Project;
@@ -57,8 +58,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               <>
                 <div className="misc-info">
                   <div className="misc-info-entry">
-                    <img src={person_icon} className="misc-info-icon" alt="Team size: " />
+                    <img src={person_icon} className="misc-info-icon person-icon" alt="Team size: " />
                     {project.teamSize}
+                  </div>
+                  <div className="misc-info-entry">
+                    <img src={calendar_icon} className="misc-info-icon" alt="Dates: " />
+                    {project.dates}
                   </div>
                 </div>
                 

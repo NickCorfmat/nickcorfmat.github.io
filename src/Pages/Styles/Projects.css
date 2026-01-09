@@ -200,9 +200,11 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    gap: 8px;
-    margin: 0 0 18px 2px;
+    gap: 18px;
+    margin: 0 0 20px 2px;
+    font-size: 0.975rem;
     font-weight: 600;
+    opacity: 0.7;
 }
 
 .misc-info .misc-info-entry {
@@ -216,6 +218,11 @@
 .misc-info .misc-info-icon {
     width: 18px;
     height: 18px;
+}
+
+.misc-info-icon.person-icon {
+    width: 17px;
+    height: 17px;
     border-radius: 50%;
 }
 
@@ -262,7 +269,7 @@
 .projects-content.expanded-content h2 {
     font-size: 2.45rem;
     font-weight: 800;
-    margin: 0 0 6px 0;
+    margin: 0 0 4px 0;
 }
 
 .projects-content.expanded-content p {
