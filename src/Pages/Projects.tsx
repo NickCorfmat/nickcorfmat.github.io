@@ -67,7 +67,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                   </div>
                 </div>
                 
-                <p>{project.description || "View project details"}</p>
+                <p className="description">{project.description || "View project details"}</p>
                   
                 <div className="action-btns">
                   {project.github ? (
