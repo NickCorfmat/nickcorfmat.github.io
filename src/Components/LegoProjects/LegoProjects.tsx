@@ -33,8 +33,7 @@ const LegoProjects: React.FC = () => {
       <div className="home-project-header">
         <h2 className="home-project-title">Design, Build, Pitch.</h2>
         <div className='home-project-subheader'>
-          <h3>Community-driven product design projects that combine engineering precision, storytelling,
-        and visual communication — reaching millions worldwide.</h3>
+          <h3>Sub-header will go here. This sentence is merely intended to add extra length.</h3>
         </div>
       </div>
 

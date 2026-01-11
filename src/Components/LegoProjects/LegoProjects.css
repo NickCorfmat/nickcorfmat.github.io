@@ -8,8 +8,6 @@
   overflow: hidden;
   display: flex;
   padding: 30px 0 30px 0;
-  background-color: white;
-  box-shadow: 0 0px 25px rgba(0, 0, 0, 0.762);
 }
 
 .lego-projects .group {

@@ -13,8 +13,7 @@ const Games: React.FC = () => {
       <div className="home-project-header">
         <h2 className="home-project-title">I Develop Games.</h2>
         <div className='home-project-subheader'>
-          <h3>Real-time gameplay systems, multiplayer mechanics, and performance-focused design —
-          built with production constraints in mind.</h3>
+          <h3>Sub-header will go here. This sentence is merely intended to add extra length.</h3>
         </div>
       </div>
 
