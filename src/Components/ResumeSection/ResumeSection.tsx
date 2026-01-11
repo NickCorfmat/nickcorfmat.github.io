@@ -4,11 +4,13 @@ const ResumeSection = () => {
 
     return (
         <div className='resume-section'>
-            <iframe
+            <div className="resume-frame-wrapper">
+                <iframe
                 src="Assets/docs/Nicolas_Corfmat_Resume_2025.pdf"
-                title="Resume PDF"
                 className="resume-frame"
-            />
+                title="Resume"
+                />
+            </div>
         </div>
     )
 }
