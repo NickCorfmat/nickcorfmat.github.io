@@ -1,19 +1,21 @@
 import React from 'react'
-import { games } from '../../../public/Assets/portfolioData'
+import { projects } from '../../../public/Assets/portfolioData'
 import './Games.css'
 
-// import unreal_engine_icon from '../../../public/Assets/icons/unreal_engine.png'
-// import unity_icon from '../../../public/Assets/icons/unity.png'
-// import phaser_icon from '../../../public/Assets/icons/phaser2.png'
-
 const Games: React.FC = () => {
+  const games = projects.filter(project =>
+    project.category.includes('game')
+  )
+
   return (
     <section className="games">
-      
       <div className="home-project-header">
         <h2 className="home-project-title">I Develop Games.</h2>
-        <div className='home-project-subheader'>
-          <h3>Sub-header will go here. This sentence is merely intended to add extra length.</h3>
+        <div className="home-project-subheader">
+          <h3>
+            Sub-header will go here. This sentence is merely intended to add extra
+            length.
+          </h3>
         </div>
       </div>
 
@@ -45,10 +47,10 @@ const Games: React.FC = () => {
           ))}
         </div>
 
-        <div className="group" aria-hidden>
+        <div className="group" aria-hidden="true">
           {games.map((project) => (
             <a
-              key={`${project.name}-dup`}
+              key={`${project.name}-duplicate`}
               href={project.url}
               target="_blank"
               rel="noopener noreferrer"
@@ -71,39 +73,6 @@ const Games: React.FC = () => {
           ))}
         </div>
       </div>
-
-      {/* <h3>using:</h3>
-
-      <div className="games-header gradient-outline">
-        <div className="games-header-mask">
-          <div className="game-engines">
-            <a href="https://www.unrealengine.com/" target="_blank" rel="noopener noreferrer">
-              <img
-                src={unreal_engine_icon}
-                className="engine-icon unreal"
-                alt="Unreal Engine"
-              />
-            </a>
-
-            <a href="https://www.unity.com/" target="_blank" rel="noopener noreferrer">
-              <img
-                src={unity_icon}
-                className="engine-icon unity"
-                alt="Unity"
-              />
-            </a>
-
-            <a href="https://phaser.io/" target="_blank" rel="noopener noreferrer">
-              <img
-                src={phaser_icon}
-                className="engine-icon phaser"
-                alt="Phaser"
-              />
-            </a>
-          </div>
-        </div>
-      </div> */}
-
     </section>
   )
 }
