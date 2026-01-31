@@ -15,8 +15,8 @@
 
 .bio-profile-container {
     position: relative;
-    width: 170px;
-    height: 170px;
+    width: 165px;
+    height: 165px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -27,8 +27,8 @@
 }
 
 .bio-profile-container:hover {
-    transform: scale(1.07);
-    outline-width: 10px;
+    transform: scale(1.02);
+    outline-width: 8px;
 }
 
 .gradient-container {
@@ -92,27 +92,7 @@
     text-decoration: none;
 }
 
-.profile-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background: radial-gradient(circle, rgba(89, 233, 255, 0) 50%, rgba(118, 136, 255, 0.4) 100%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.4s ease-in-out;
-    color: white;
-    font-weight: 600;
-    font-size: 1.2rem;
-    text-align: center;
-    z-index: 2;
-}
-
-.profile-overlay-link:hover .profile-overlay {
+.profile-overlay-link:hover {
     opacity: 1;
     cursor: pointer;
 }
