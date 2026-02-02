@@ -59,10 +59,10 @@ export const projects: Project[] = [
     name: "will you do it?",
     category: ["game"],
     media: "/Assets/videos/willyoudoit.mp4",
-    shortDescription: "",
     url: "https://nickcorfmat.github.io/Split-1/",
     github: "https://github.com/NickCorfmat/Split-1",
-    description: "This is an example description. It is merely for testing purposes and is not intended to be used in the final production build of this website. This sentence is meant to add extra length to the description.",
+    shortDescription: "Short narrative game prototype built using Phaser 3.",
+    description: "Developed a short narrative game in 2 weeks as part of a rapid prototyping class at UCSC.",
     teamSize: 3,
     dates: "Apr 2024"
   },
@@ -70,120 +70,120 @@ export const projects: Project[] = [
     name: "Piano Platformer",
     category: ["game"],
     media: "/Assets/videos/pianoplatformer.mp4",
-    shortDescription: "",
     url: "https://nickcorfmat.github.io/Unconventional-Game/",
     github: "https://github.com/NickCorfmat/Unconventional-Game",
-    description: "This is an example description. It is merely for testing purposes and is not intended to be used in the final production build of this website. This sentence is meant to add extra length to the description.",
+    shortDescription: "Short game with an unconventional twist.",
+    description: "A short game developed at UCSC in 2 weeks as part of a rapid prototyping class, that takes an unconventional approach to typical platformer inputs.",
     teamSize: 3,
-    dates: "Sept 2021 - Jun 2025"
+    dates: "May 2024"
   },
   {
     name: "Wail of the Sirenheads",
     category: ["game"],
     media: "/Assets/videos/wailofthesirenheads.mp4",
-    shortDescription: "",
     url: "https://nickcorf.itch.io/through-the-sirenheads",
     github: "https://github.com/JaydenChung/Split2",
     demo: "https://drive.google.com/file/d/1T6xnZxpMmf_FUYoe2tHEIMAOfqRn7AB0/view?usp=sharing",
-    description: "This is an example description. It is merely for testing purposes and is not intended to be used in the final production build of this website. This sentence is meant to add extra length to the description.",
+    shortDescription: "Short horror game built in UE5.",
+    description: "A first-person exploration horror game developed by a team of three students at UCSC using Unreal Engine 5. This game plunges players into a chilling, dark forest inhabited by human-like creatures, and sends players through an unsettling journey of constant foreboding and unexpected encounters.",
     teamSize: 3,
-    dates: "Sept 2021 - Jun 2025"
+    dates: "Apr 2024 - May 2024"
   },
   {
     name: "Modernism Simulator",
     category: ["game"],
-    shortDescription: "",
     media: "/Assets/videos/modernsimulator.mp4",
     url: "https://nickcorf.itch.io/modernism-simulator",
     github: "https://github.com/NickCorfmat/ApartmentSimulator",
     demo: "https://drive.google.com/file/d/1dEgNfVd5nOl8TMtaDJuzmRiSJBPYA1W-/view?usp=sharing",
-    description: "This is an example description. It is merely for testing purposes and is not intended to be used in the final production build of this website. This sentence is meant to add extra length to the description.",
+    shortDescription: "Immersive interactive world built using Unity URP.",
+    description: "Built a first-person walking simulator in Unity using the Universal Render Pipeline (URP) for realistic lighting and materials. Programmed interactive objects (doors, faucet, TV) and integrated particle systems (rain, lightning) for immersion. Strategically utilized Unity’s real-time and baked lighting systems to maximize visual quality and performance.",
     teamSize: 1,
-    dates: "Sept 2021 - Jun 2025"
+    dates: "Nov 2024"
   },
   {
     name: "Shape Up",
     category: ["game"],
-    shortDescription: "",
     media: "/Assets/images/shapeup.png",
     url: "https://apps.apple.com/us/app/shape-up-swipe-shake-solve/id6744836423",
     github: "https://github.com/EltZ36/ShapeUp",
     trailer: "https://www.youtube.com/watch?v=hqWtVbuO-iI",
-    description: "This is an example description. It is merely for testing purposes and is not intended to be used in the final production build of this website. This sentence is meant to add extra length to the description.",
+    shortDescription: "Senior capstone mobile puzzle game shipped on iOS and Android.",
+    description: "Shipped a mobile iOS/Android puzzle game in Unity and C# with a 5-person team, implementing levels and UI. Integrated Analytics SDK to track player and device metrics for analysis, syncing data with Unity Cloud services. Conducted playtests, iterating on gameplay and UI through player feedback across three development sprints. Profiled builds and optimized performance using object pooling, simple colliders, singletons, and asset compression. Led iOS release pipeline, securing next-day App Store approval, and managed internal/public builds via TestFlight.",
     teamSize: 5,
-    dates: "Sept 2021 - Jun 2025"
+    dates: "Apr 2025 - Jun 2025"
   },
   {
     name: "Crucible of Elements",
     category: ["game"],
-    shortDescription: "",
     media: "/Assets/images/crucibleofelements.png",
     url: "https://apps.apple.com/us/app/shape-up-swipe-shake-solve/id6744836423",
     github: "https://github.com/SRparadox/KorraProject",
     trailer: "https://drive.google.com/file/d/1kA9OzkjJGnMaN6Q36k4gKBbE_ELbLyos/view?usp=sharing",
-    description: "This is an example description. It is merely for testing purposes and is not intended to be used in the final production build of this website. This sentence is meant to add extra length to the description.",
+    shortDescription: "2v2 online arena battler developed in Unity.",
+    description: "Built a competitive 2v2 online arena battler in Unity3D with an 8-member team during a 10-week capstone project. Engineered a modular player class with combat, abilities, health, and team mechanics for scalable gameplay. Implemented real-time networking with Unity Netcode, syncing player actions and game state across clients. Optimized runtime performance and build size via GPU instancing, asset compression, and draw call reduction.",
     teamSize: 8,
-    dates: "Sept 2021 - Jun 2025"
+    dates: "Jan 2025 - Mar 2025"
   },
   {
     name: "Space-Mine",
     category: ["game"],
-    shortDescription: "",
     media: "/Assets/images/crucibleofelements.png",
     github: "https://github.com/NickCorfmat/Space-Mine",
-    description: "This is an example description. It is merely for testing purposes and is not intended to be used in the final production build of this website. This sentence is meant to add extra length to the description.",
+    shortDescription: "Moddable 2D mining simulator built with Phaser and TypeScript.",
+    description: "Spearheaded development of a 2D mining simulator using TypeScript and Phaser, with Vite for rapid deployment. Serialized game state into a single contiguous byte array, allowing for efficient save/load and undo/redo operations. Incorporated modding capabilities via external DSL and offered game as installable offline desktop and mobile PWA. Localized the game to three languages, dynamically loading in-game text from a JSON file at runtime.",
     teamSize: 3,
-    dates: "Sept 2021 - Jun 2025"
+    dates: "Nov 2024 - Dec 2024"
   },
   {
     name: "Chess vs. AI",
-    category: ["game", "featured"],
-    shortDescription: "",
+    category: ["game"],
     media: "/Assets/images/chessvsai.png",
     github: "https://github.com/NickCorfmat/ChessAI",
-    description: "This is an example description. It is merely for testing purposes and is not intended to be used in the final production build of this website. This sentence is meant to add extra length to the description.",
+    shortDescription: "Chess but with a smart opponent...",
+    description: "Built a Chess AI in C++ to compare thousands of possible moves and strategically execute the optimal move. Utilized minimax algorithm, alpha-beta pruning, and transposition tables to significantly reduce AI search complexity. Developed an intuitive graphical interface using the IMGUI library, enhancing the user experience. Incorporated the Universal Chess Interface (UCI) to enable the AI to play against other chess engines.",
     teamSize: 1,
-    dates: "Sept 2021 - Jun 2025"
-  },
-  {
-    name: "Jewel Heist",
-    category: ["game"],
-    shortDescription: "",
-    media: "/Assets/images/jewelheist.png",
-    github: "https://github.com/NickCorfmat/JewelHeist",
-    description: "This is an example description. It is merely for testing purposes and is not intended to be used in the final production build of this website. This sentence is meant to add extra length to the description.",
-    teamSize: 1,
-    dates: "Sept 2021 - Jun 2025"
+    dates: "Nov 2023 - Dec 2023"
   },
   {
     name: "Public Key Cryptography",
     category: ["program"],
     media: "/Assets/images/publickeycryptography.png",
     github: "https://github.com/NickCorfmat/Public-Key-Cryptography",
-    shortDescription: "",
-    description: "",
+    shortDescription: "Public-key encryption tool in C using GMP.",
+    description: "Implemented a public-key encryption program in C on an Ubuntu VM to securely encrypt and decrypt text files. Utilized GNU Multiple Precision Arithmetic Library (GMP) for the generation of long, secure private keys.",
     teamSize: 1,
-    dates: "Sept 2021 - Jun 2025"
+    dates: "Mar 2023"
   },
   {
     name: "LZ Compression",
     category: ["program"],
     media: "/Assets/images/lzcompression.png",
     github: "https://github.com/NickCorfmat/LZ-Compression",
-    shortDescription: "",
-    description: "",
+    shortDescription: "Lossless text compressor implemented in C.",
+    description: "Implemented a lossless text compression program in C using the LZ78 algorithm, preserving all original data. Developed and tested on Ubuntu VM, utilizing vi editor and command-line tooling for efficient workflow.",
     teamSize: 1,
-    dates: "Sept 2021 - Jun 2025"
+    dates: "Mar 2023"
   },
   {
     name: "Recipes App",
     category: ["program"],
     media: "/Assets/images/recipeapp.png",
     github: "https://github.com/ucsc2025-cse183/project-18",
-    shortDescription: "",
-    description: "",
+    shortDescription: "Full-stack recipe sharing app with Py4Web and Vue.",
+    description: "Developed a full-stack recipe sharing app with Py4Web and Vue.js, focusing on Python backend development. Designed and implemented RESTful APIs to perform CRUD operations on recipe and ingredient data. Connected frontend with backend APIs, enabling multi-field recipe search by name, type, and ingredients. Enforced author-only recipe editing on the server side to prevent unauthorized changes to other users’ content.",
     teamSize: 6,
-    dates: "Sept 2021 - Jun 2025"
+    dates: "May 2025 - Jun 2025"
+  },
+  {
+    name: "WebGL Mario World",
+    category: ["program"],
+    media: "/Assets/images/webgldemo.png",
+    github: "https://nickcorfmat.github.io/Asg4/src/World.html",
+    shortDescription: "Interactive WebGl demo.",
+    description: "Developed an interactive 3D demo using WebGL and GLSL shaders for diffuse, specular, and spotlight lighting. Created dynamic lighting controls (position, color, enable/disable) using HTML and CSS with live scene updates. Built a camera system with full 3D navigation (forward/back, strafe, pan, tilt) using vector math and rotation matrices. Optimized texture loading, UV mapping, and materials through efficient GLSL uniform and buffer handling.",
+    teamSize: 1,
+    dates: "May 2025 - Jun 2025"
   },
   {
     name: 'Blackpink "Lovesick Girls"',
@@ -211,7 +211,7 @@ export const projects: Project[] = [
   },
   {
     name: "Polaroid Onestep SX-70",
-    category: ["lego_ideas"],
+    category: ["lego_ideas", "featured"],
     media: "/Assets/videos/polaroid.mp4",
     url: "https://beta.ideas.lego.com/product-ideas/200dd32e-8ec8-44aa-8f7d-e4dcc6f74e5c",
     teamSize: 2,
