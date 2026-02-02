@@ -104,7 +104,7 @@ export const projects: Project[] = [
   {
     name: "Shape Up",
     category: ["game"],
-    media: "/Assets/images/shapeup.png",
+    media: "/Assets/videos/shapeup.mp4",
     url: "https://apps.apple.com/us/app/shape-up-swipe-shake-solve/id6744836423",
     github: "https://github.com/EltZ36/ShapeUp",
     trailer: "https://www.youtube.com/watch?v=hqWtVbuO-iI",
@@ -116,7 +116,7 @@ export const projects: Project[] = [
   {
     name: "Crucible of Elements",
     category: ["game"],
-    media: "/Assets/images/crucibleofelements.png",
+    media: "/Assets/videos/crucibleofelements.mp4",
     url: "https://apps.apple.com/us/app/shape-up-swipe-shake-solve/id6744836423",
     github: "https://github.com/SRparadox/KorraProject",
     trailer: "https://drive.google.com/file/d/1kA9OzkjJGnMaN6Q36k4gKBbE_ELbLyos/view?usp=sharing",
@@ -138,7 +138,7 @@ export const projects: Project[] = [
   {
     name: "Chess vs. AI",
     category: ["game"],
-    media: "/Assets/images/chessvsai.png",
+    media: "/Assets/videos/chessvsai.mp4",
     github: "https://github.com/NickCorfmat/ChessAI",
     shortDescription: "Chess but with a smart opponent...",
     description: "Built a Chess AI in C++ to compare thousands of possible moves and strategically execute the optimal move. Utilized minimax algorithm, alpha-beta pruning, and transposition tables to significantly reduce AI search complexity. Developed an intuitive graphical interface using the IMGUI library, enhancing the user experience. Incorporated the Universal Chess Interface (UCI) to enable the AI to play against other chess engines.",
@@ -166,10 +166,10 @@ export const projects: Project[] = [
     dates: "Mar 2023"
   },
   {
-    name: "Recipes App",
+    name: "Recipe Manager",
     category: ["program"],
-    media: "/Assets/images/recipeapp.png",
-    github: "https://github.com/ucsc2025-cse183/project-18",
+    media: "/Assets/videos/recipemanager.mp4",
+    github: "https://github.com/NickCorfmat/RecipeManager",
     shortDescription: "Full-stack recipe sharing app with Py4Web and Vue.",
     description: "Developed a full-stack recipe sharing app with Py4Web and Vue.js, focusing on Python backend development. Designed and implemented RESTful APIs to perform CRUD operations on recipe and ingredient data. Connected frontend with backend APIs, enabling multi-field recipe search by name, type, and ingredients. Enforced author-only recipe editing on the server side to prevent unauthorized changes to other users’ content.",
     teamSize: 6,
@@ -178,9 +178,9 @@ export const projects: Project[] = [
   {
     name: "WebGL Mario World",
     category: ["program"],
-    media: "/Assets/images/webgldemo.png",
-    url: "https://nickcorfmat.github.io/Asg4/src/World.html",
+    media: "/Assets/videos/webgldemo.mp4",
     github: "https://github.com/NickCorfmat/Asg4",
+    url: "https://nickcorfmat.github.io/Asg4/src/World.html",
     shortDescription: "Interactive WebGl demo.",
     description: "Developed an interactive 3D demo using WebGL and GLSL shaders for diffuse, specular, and spotlight lighting. Created dynamic lighting controls (position, color, enable/disable) using HTML and CSS with live scene updates. Built a camera system with full 3D navigation (forward/back, strafe, pan, tilt) using vector math and rotation matrices. Optimized texture loading, UV mapping, and materials through efficient GLSL uniform and buffer handling.",
     teamSize: 1,
