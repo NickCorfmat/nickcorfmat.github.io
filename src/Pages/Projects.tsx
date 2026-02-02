@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { projects, Project } from "../../public/Assets/portfolioData"
+import { Project } from "../../public/Assets/portfolioData"
 import { getProjectsByCategory } from "../utils/portfolioSelectors"
 import { isVideo } from "../utils/mediaUtils"
 import "./Styles/Projects.css"
@@ -153,14 +153,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 const Projects: React.FC = () => {
   const [activeProject, setActiveProject] = useState<string | null>(null)
 
-  const gameProjects = getProjectsByCategory(projects, "game")
+  const allProjects = getProjectsByCategory(["game", "program"])
 
   return (
     <section className="projects">
       <h1>My Projects</h1>
 
       <div className="projects-grid">
-        {gameProjects.map((project) => (
+        {allProjects.map((project) => (
           <ProjectCard
             key={project.name}
             project={project}

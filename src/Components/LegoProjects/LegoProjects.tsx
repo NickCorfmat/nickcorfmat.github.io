@@ -1,11 +1,11 @@
 import React from 'react'
-import { projects, Project } from '../../../public/Assets/portfolioData'
+import { Project } from '../../../public/Assets/portfolioData'
 import { isVideo } from '../../utils/mediaUtils'
 import { getProjectsByCategory } from '../../utils/portfolioSelectors'
 import './LegoProjects.css'
 
 const LegoProjects: React.FC = () => {
-  const legoProjects = getProjectsByCategory(projects, "lego_ideas")
+  const legoProjects = getProjectsByCategory(["lego_ideas"])
 
   const renderMedia = (project: Project) => {
     if (isVideo(project.media)) {

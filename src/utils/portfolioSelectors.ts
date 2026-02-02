@@ -1,11 +1,10 @@
-import { Project, ProjectCategory } from "../../public/Assets/portfolioData";
+import { projects, Project, ProjectCategory } from "../../public/Assets/portfolioData";
 
 export const getProjectsByCategory = (
-  projects: Project[],
-  category: ProjectCategory
+  categories: ProjectCategory[]
 ) => {
   return projects.filter(project =>
-    project.category.includes(category)
+    project.category.some(cat => categories.includes(cat))
   );
 };
 

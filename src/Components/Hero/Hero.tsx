@@ -1,7 +1,5 @@
 import React from 'react'
 import './Hero.css'
-
-import { projects } from '../../../public/Assets/portfolioData'
 import { isVideo } from '../../utils/mediaUtils'
 import {
   getProjectsByCategory,
@@ -13,10 +11,7 @@ import linkedin_icon from '../../../public/Assets/icons/linkedin_blue.svg'
 import download_icon from '../../../public/Assets/icons/download.svg'
 
 const Hero: React.FC = () => {
-  const featuredProjects = getProjectsByCategory(
-    projects,
-    "featured"
-  )
+  const featuredProjects = getProjectsByCategory(["featured"])
 
   const randomProject = getRandomProject(featuredProjects)
 

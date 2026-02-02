@@ -1,11 +1,9 @@
 import React from 'react'
-import { projects } from '../../../public/Assets/portfolioData'
 import './Games.css'
+import { getProjectsByCategory } from '../../utils/portfolioSelectors'
 
 const Games: React.FC = () => {
-  const games = projects.filter(project =>
-    project.category.includes('game')
-  )
+  const gameProjects = getProjectsByCategory(["game"])
 
   return (
     <section className="games">
@@ -21,7 +19,7 @@ const Games: React.FC = () => {
 
       <div className="carousel">
         <div className="group">
-          {games.map((project) => (
+          {gameProjects.map((project) => (
             <a
               key={project.name}
               href={project.url}
@@ -48,7 +46,7 @@ const Games: React.FC = () => {
         </div>
 
         <div className="group" aria-hidden="true">
-          {games.map((project) => (
+          {gameProjects.map((project) => (
             <a
               key={`${project.name}-duplicate`}
               href={project.url}
