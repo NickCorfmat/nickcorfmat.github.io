@@ -179,11 +179,12 @@ export const projects: Project[] = [
     name: "WebGL Mario World",
     category: ["program"],
     media: "/Assets/images/webgldemo.png",
-    github: "https://nickcorfmat.github.io/Asg4/src/World.html",
+    url: "https://nickcorfmat.github.io/Asg4/src/World.html",
+    github: "https://github.com/NickCorfmat/Asg4",
     shortDescription: "Interactive WebGl demo.",
     description: "Developed an interactive 3D demo using WebGL and GLSL shaders for diffuse, specular, and spotlight lighting. Created dynamic lighting controls (position, color, enable/disable) using HTML and CSS with live scene updates. Built a camera system with full 3D navigation (forward/back, strafe, pan, tilt) using vector math and rotation matrices. Optimized texture loading, UV mapping, and materials through efficient GLSL uniform and buffer handling.",
     teamSize: 1,
-    dates: "May 2025 - Jun 2025"
+    dates: "Feb 2025 - Mar 2025"
   },
   {
     name: 'Blackpink "Lovesick Girls"',
