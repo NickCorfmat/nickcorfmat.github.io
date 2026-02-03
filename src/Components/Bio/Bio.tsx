@@ -1,4 +1,3 @@
-import React from 'react'
 import { Link } from 'react-router-dom';
 import './Bio.css'
 import profile from '../../../public/Assets/images/profile.jpg'

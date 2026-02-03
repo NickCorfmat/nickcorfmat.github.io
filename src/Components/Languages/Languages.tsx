@@ -1,4 +1,3 @@
-import React from 'react'
 import './Languages.css'
 import { languages } from '../../../public/Assets/personalData'
 

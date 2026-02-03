@@ -1,4 +1,3 @@
-import React from 'react'
 import './Styles/About.css'
 import Intro from '../Components/Intro/Intro'
 import Skills from '../Components/Skills/Skills'
