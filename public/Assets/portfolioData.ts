@@ -141,7 +141,7 @@ export const projects: Project[] = [
     media: "/Assets/videos/chessvsai.mp4",
     github: "https://github.com/NickCorfmat/ChessAI",
     shortDescription: "Chess but with a smart opponent...",
-    description: "Built a Chess AI in C++ to compare thousands of possible moves and strategically execute the optimal move. Utilized minimax algorithm, alpha-beta pruning, and transposition tables to significantly reduce AI search complexity. Developed an intuitive graphical interface using the IMGUI library, enhancing the user experience. Incorporated the Universal Chess Interface (UCI) to enable the AI to play against other chess engines.",
+    description: "Built a Chess AI in C++ to compare thousands of possible moves and strategically execute the optimal move. Utilized minimax algorithm, alpha-beta pruning, and transposition tables to significantly reduce AI search complexity. Incorporated the Universal Chess Interface (UCI) to enable the AI to play against other chess engines.",
     teamSize: 1,
     dates: "Nov 2023 - Dec 2023"
   },
@@ -187,10 +187,18 @@ export const projects: Project[] = [
     dates: "Feb 2025 - Mar 2025"
   },
   {
+    name: "Polaroid Onestep SX-70",
+    category: ["lego_ideas", "featured"],
+    media: "/Assets/videos/polaroid.mp4",
+    url: "https://beta.ideas.lego.com/product-ideas/200dd32e-8ec8-44aa-8f7d-e4dcc6f74e5c",
+    teamSize: 2,
+    dates: "Sept 2021 - Jun 2025"
+  },
+  {
     name: 'Blackpink "Lovesick Girls"',
     category: ["lego_ideas"],
     media: "/Assets/images/lovesickgirls.png",
-    url: "https://ideas.lego.com/projects/53056645-ba8d-4a35-a219-77d30aa6f733",
+    url: "https://beta.ideas.lego.com/product-ideas/2094aa81-6b2a-41e9-ac2c-ebb9969285cf",
     teamSize: 1,
     dates: "Sept 2021 - Jun 2025"
   },
@@ -211,21 +219,29 @@ export const projects: Project[] = [
     dates: "Sept 2021 - Jun 2025"
   },
   {
-    name: "Polaroid Onestep SX-70",
-    category: ["lego_ideas", "featured"],
-    media: "/Assets/videos/polaroid.mp4",
-    url: "https://beta.ideas.lego.com/product-ideas/200dd32e-8ec8-44aa-8f7d-e4dcc6f74e5c",
+    name: "The Polar Express",
+    category: ["lego_ideas"],
+    media: "/Assets/images/polarexpress.png",
+    url: "https://beta.ideas.lego.com/product-ideas/d589b6af-92c0-44ef-90c7-38dc4a8a9b2d",
     teamSize: 2,
     dates: "Sept 2021 - Jun 2025"
   },
   {
-    name: "Catty Corner",
+    name: "Interstellar",
     category: ["lego_ideas"],
-    media: "/Assets/images/cattycorner.png",
-    url: "https://youtu.be/dBilv9B1Tmg?si=rLzIXHxPjl484bRz",
+    media: "/Assets/images/endurance.png",
+    url: "https://beta.ideas.lego.com/product-ideas/b0c8ccf3-8d15-4d13-b69a-c836daeee9c3",
     teamSize: 2,
     dates: "Sept 2021 - Jun 2025"
   },
+  // {
+  //   name: "Catty Corner",
+  //   category: ["lego_ideas"],
+  //   media: "/Assets/images/cattycorner.png",
+  //   url: "https://youtu.be/dBilv9B1Tmg?si=rLzIXHxPjl484bRz",
+  //   teamSize: 2,
+  //   dates: "Sept 2021 - Jun 2025"
+  // },
   {
     name: "Miffy",
     category: ["lego_ideas"],
