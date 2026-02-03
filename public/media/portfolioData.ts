@@ -23,8 +23,8 @@ export const projects: Project[] = [
   {
     name: "Fight Fighters",
     category: ["game", "featured"],
-    media: "/Assets/videos/fightfighters.mp4",
-    logo: "/Assets/logos/fightfighters_logo.png",
+    media: "/media/videos/fightfighters.mp4",
+    logo: "/media/logos/fightfighters_logo.png",
     url: "https://nickcorfmat.github.io/FightFighters/",
     github: "https://github.com/NickCorfmat/FightFighters",
     shortDescription: "2P fighting game created with Phaser 3.",
@@ -35,7 +35,7 @@ export const projects: Project[] = [
   {
     name: "Rogue Eagle",
     category: ["game"],
-    media: "/Assets/videos/rogueeagle.mp4",
+    media: "/media/videos/rogueeagle.mp4",
     url: "https://nickcorfmat.github.io/EndlessRunner/",
     github: "https://github.com/NickCorfmat/EndlessRunner",
     shortDescription: "Endless runner game created with Phaser 3.",
@@ -46,7 +46,7 @@ export const projects: Project[] = [
   {
     name: "Woofmart",
     category: ["game", "featured"],
-    media: "/Assets/videos/woofmart.mp4",
+    media: "/media/videos/woofmart.mp4",
     url: "https://nickcorf.itch.io/woofmart",
     github: "https://github.com/jchen577/dog_sim_125",
     trailer: "https://drive.google.com/file/d/1ZzLdmguxykcHSb12pyFnLuZfHL9X8wYJ/view?usp=sharing",
@@ -58,7 +58,7 @@ export const projects: Project[] = [
   {
     name: "will you do it?",
     category: ["game"],
-    media: "/Assets/videos/willyoudoit.mp4",
+    media: "/media/videos/willyoudoit.mp4",
     url: "https://nickcorfmat.github.io/Split-1/",
     github: "https://github.com/NickCorfmat/Split-1",
     shortDescription: "Short narrative game prototype built using Phaser 3.",
@@ -69,7 +69,7 @@ export const projects: Project[] = [
   {
     name: "Piano Platformer",
     category: ["game"],
-    media: "/Assets/videos/pianoplatformer.mp4",
+    media: "/media/videos/pianoplatformer.mp4",
     url: "https://nickcorfmat.github.io/Unconventional-Game/",
     github: "https://github.com/NickCorfmat/Unconventional-Game",
     shortDescription: "Short game with an unconventional twist.",
@@ -80,7 +80,7 @@ export const projects: Project[] = [
   {
     name: "Wail of the Sirenheads",
     category: ["game"],
-    media: "/Assets/videos/wailofthesirenheads.mp4",
+    media: "/media/videos/wailofthesirenheads.mp4",
     url: "https://nickcorf.itch.io/through-the-sirenheads",
     github: "https://github.com/JaydenChung/Split2",
     demo: "https://drive.google.com/file/d/1T6xnZxpMmf_FUYoe2tHEIMAOfqRn7AB0/view?usp=sharing",
@@ -92,7 +92,7 @@ export const projects: Project[] = [
   {
     name: "Modernism Simulator",
     category: ["game"],
-    media: "/Assets/videos/modernsimulator.mp4",
+    media: "/media/videos/modernsimulator.mp4",
     url: "https://nickcorf.itch.io/modernism-simulator",
     github: "https://github.com/NickCorfmat/ApartmentSimulator",
     demo: "https://drive.google.com/file/d/1dEgNfVd5nOl8TMtaDJuzmRiSJBPYA1W-/view?usp=sharing",
@@ -104,7 +104,7 @@ export const projects: Project[] = [
   {
     name: "Shape Up",
     category: ["game"],
-    media: "/Assets/videos/shapeup.mp4",
+    media: "/media/videos/shapeup.mp4",
     url: "https://apps.apple.com/us/app/shape-up-swipe-shake-solve/id6744836423",
     github: "https://github.com/EltZ36/ShapeUp",
     trailer: "https://www.youtube.com/watch?v=hqWtVbuO-iI",
@@ -116,7 +116,7 @@ export const projects: Project[] = [
   {
     name: "Crucible of Elements",
     category: ["game"],
-    media: "/Assets/videos/crucibleofelements.mp4",
+    media: "/media/videos/crucibleofelements.mp4",
     url: "https://apps.apple.com/us/app/shape-up-swipe-shake-solve/id6744836423",
     github: "https://github.com/SRparadox/KorraProject",
     trailer: "https://drive.google.com/file/d/1kA9OzkjJGnMaN6Q36k4gKBbE_ELbLyos/view?usp=sharing",
@@ -128,7 +128,7 @@ export const projects: Project[] = [
   {
     name: "Space-Mine",
     category: ["game"],
-    media: "/Assets/videos/spacemine.mp4",
+    media: "/media/videos/spacemine.mp4",
     github: "https://github.com/NickCorfmat/Space-Mine",
     shortDescription: "Moddable 2D mining simulator built with Phaser and TypeScript.",
     description: "Spearheaded development of a 2D mining simulator using TypeScript and Phaser, with Vite for rapid deployment. Serialized game state into a single contiguous byte array, allowing for efficient save/load and undo/redo operations. Incorporated modding capabilities via external DSL and offered game as installable offline desktop and mobile PWA. Localized the game to three languages, dynamically loading in-game text from a JSON file at runtime.",
@@ -138,7 +138,7 @@ export const projects: Project[] = [
   {
     name: "Chess vs. AI",
     category: ["game"],
-    media: "/Assets/videos/chessvsai.mp4",
+    media: "/media/videos/chessvsai.mp4",
     github: "https://github.com/NickCorfmat/ChessAI",
     shortDescription: "Chess but with a smart opponent...",
     description: "Built a Chess AI in C++ to compare thousands of possible moves and strategically execute the optimal move. Utilized minimax algorithm, alpha-beta pruning, and transposition tables to significantly reduce AI search complexity. Incorporated the Universal Chess Interface (UCI) to enable the AI to play against other chess engines.",
@@ -148,7 +148,7 @@ export const projects: Project[] = [
   // {
   //   name: "Public Key Cryptography",
   //   category: ["program"],
-  //   media: "/Assets/images/publickeycryptography.png",
+  //   media: "/media/images/publickeycryptography.png",
   //   github: "https://github.com/NickCorfmat/Public-Key-Cryptography",
   //   shortDescription: "Public-key encryption tool in C using GMP.",
   //   description: "Implemented a public-key encryption program in C on an Ubuntu VM to securely encrypt and decrypt text files. Utilized GNU Multiple Precision Arithmetic Library (GMP) for the generation of long, secure private keys.",
@@ -158,7 +158,7 @@ export const projects: Project[] = [
   // {
   //   name: "LZ Compression",
   //   category: ["program"],
-  //   media: "/Assets/images/lzcompression.png",
+  //   media: "/media/images/lzcompression.png",
   //   github: "https://github.com/NickCorfmat/LZ-Compression",
   //   shortDescription: "Lossless text compressor implemented in C.",
   //   description: "Implemented a lossless text compression program in C using the LZ78 algorithm, preserving all original data. Developed and tested on Ubuntu VM, utilizing vi editor and command-line tooling for efficient workflow.",
@@ -168,7 +168,7 @@ export const projects: Project[] = [
   {
     name: "Recipe Manager",
     category: ["program"],
-    media: "/Assets/videos/recipemanager.mp4",
+    media: "/media/videos/recipemanager.mp4",
     github: "https://github.com/NickCorfmat/RecipeManager",
     shortDescription: "Full-stack recipe sharing app with Py4Web and Vue.",
     description: "Developed a full-stack recipe sharing app with Py4Web and Vue.js, focusing on Python backend development. Designed and implemented RESTful APIs to perform CRUD operations on recipe and ingredient data. Connected frontend with backend APIs, enabling multi-field recipe search by name, type, and ingredients. Enforced author-only recipe editing on the server side to prevent unauthorized changes to other users’ content.",
@@ -178,7 +178,7 @@ export const projects: Project[] = [
   {
     name: "WebGL Mario World",
     category: ["program"],
-    media: "/Assets/videos/webgldemo.mp4",
+    media: "/media/videos/webgldemo.mp4",
     github: "https://github.com/NickCorfmat/Asg4",
     url: "https://nickcorfmat.github.io/Asg4/src/World.html",
     shortDescription: "Interactive WebGl demo.",
@@ -189,7 +189,7 @@ export const projects: Project[] = [
   {
     name: "Polaroid Onestep SX-70",
     category: ["lego_ideas", "featured"],
-    media: "/Assets/videos/polaroid.mp4",
+    media: "/media/videos/polaroid.mp4",
     url: "https://beta.ideas.lego.com/product-ideas/200dd32e-8ec8-44aa-8f7d-e4dcc6f74e5c",
     teamSize: 2,
     dates: "Sept 2021 - Jun 2025"
@@ -197,7 +197,7 @@ export const projects: Project[] = [
   {
     name: 'Blackpink "Lovesick Girls"',
     category: ["lego_ideas"],
-    media: "/Assets/images/lovesickgirls.png",
+    media: "/media/images/lovesickgirls.png",
     url: "https://beta.ideas.lego.com/product-ideas/2094aa81-6b2a-41e9-ac2c-ebb9969285cf",
     teamSize: 1,
     dates: "Sept 2021 - Jun 2025"
@@ -205,7 +205,7 @@ export const projects: Project[] = [
   {
     name: 'Blackpink "As If It\'s Your Last"',
     category: ["lego_ideas"],
-    media: "/Assets/images/asifitsyourlast.jpg",
+    media: "/media/images/asifitsyourlast.jpg",
     url: "https://ideas.lego.com/projects/cab13581-6986-41b5-bf93-907a474a07df",
     teamSize: 1,
     dates: "Sept 2021 - Jun 2025"
@@ -213,7 +213,7 @@ export const projects: Project[] = [
   {
     name: 'Madison Beer "Reckless"',
     category: ["lego_ideas"],
-    media: "/Assets/images/reckless.png",
+    media: "/media/images/reckless.png",
     url: "https://beta.ideas.lego.com/product-ideas/9b9e3504-07dd-4060-a139-4bf98b07f7a7",
     teamSize: 1,
     dates: "Sept 2021 - Jun 2025"
@@ -221,7 +221,7 @@ export const projects: Project[] = [
   {
     name: "The Polar Express",
     category: ["lego_ideas"],
-    media: "/Assets/images/polarexpress.png",
+    media: "/media/images/polarexpress.png",
     url: "https://beta.ideas.lego.com/product-ideas/d589b6af-92c0-44ef-90c7-38dc4a8a9b2d",
     teamSize: 2,
     dates: "Sept 2021 - Jun 2025"
@@ -229,7 +229,7 @@ export const projects: Project[] = [
   {
     name: "Interstellar",
     category: ["lego_ideas"],
-    media: "/Assets/images/endurance.png",
+    media: "/media/images/endurance.png",
     url: "https://beta.ideas.lego.com/product-ideas/b0c8ccf3-8d15-4d13-b69a-c836daeee9c3",
     teamSize: 2,
     dates: "Sept 2021 - Jun 2025"
@@ -237,7 +237,7 @@ export const projects: Project[] = [
   // {
   //   name: "Catty Corner",
   //   category: ["lego_ideas"],
-  //   media: "/Assets/images/cattycorner.png",
+  //   media: "/media/images/cattycorner.png",
   //   url: "https://youtu.be/dBilv9B1Tmg?si=rLzIXHxPjl484bRz",
   //   teamSize: 2,
   //   dates: "Sept 2021 - Jun 2025"
@@ -245,7 +245,7 @@ export const projects: Project[] = [
   {
     name: "Miffy",
     category: ["lego_ideas"],
-    media: "/Assets/images/miffy.png",
+    media: "/media/images/miffy.png",
     url: "https://beta.ideas.lego.com/product-ideas/2329f799-f3bd-4c1e-83fd-49443332ae96",
     teamSize: 1,
     dates: "Sept 2021 - Jun 2025"

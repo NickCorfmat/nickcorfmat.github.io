@@ -1,15 +1,15 @@
 import React, { useState } from "react"
-import { Project } from "../../public/Assets/portfolioData"
+import { Project } from "../../public/media/portfolioData"
 import { getProjectsByCategory } from "../utils/portfolioSelectors"
 import { isVideo } from "../utils/mediaUtils"
 import "./Styles/Projects.css"
 
-import close_icon from "../../public/Assets/icons/close_icon.png"
-import github_icon from "../../public/Assets/icons/github.svg"
-import play_icon from "../../public/Assets/icons/play_icon.png"
-import trailer_icon from "../../public/Assets/icons/trailer_icon.png"
-import person_icon from "../../public/Assets/icons/person_icon.png"
-import calendar_icon from "../../public/Assets/icons/calendar_icon.png"
+import close_icon from "../../public/media/icons/close_icon.png"
+import github_icon from "../../public/media/icons/github.svg"
+import play_icon from "../../public/media/icons/play_icon.png"
+import trailer_icon from "../../public/media/icons/trailer_icon.png"
+import person_icon from "../../public/media/icons/person_icon.png"
+import calendar_icon from "../../public/media/icons/calendar_icon.png"
 
 interface ProjectCardProps {
   project: Project

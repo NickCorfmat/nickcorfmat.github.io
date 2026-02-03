@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import './Bio.css'
-import profile from '../../../public/Assets/images/profile.jpg'
+import profile from '../../../public/media/images/profile.jpg'
 
 const Bio = () => {
   return (

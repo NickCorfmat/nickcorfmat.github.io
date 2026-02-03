@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Project } from '../../../public/Assets/portfolioData';
+import { Project } from '../../../public/media/portfolioData';
 import { isVideo } from '../../utils/mediaUtils';
 import './Popup.css';
 

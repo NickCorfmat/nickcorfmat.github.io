@@ -1,5 +1,5 @@
 import "./Intro.css"
-import full_body_photo from "../../../public/Assets/images/photo1.jpg"
+import full_body_photo from "../../../public/media/images/photo1.jpg"
 
 const Intro = () => {
   return (

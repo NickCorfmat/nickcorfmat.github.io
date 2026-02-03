@@ -1,4 +1,4 @@
-import { projects, Project, ProjectCategory } from "../../public/Assets/portfolioData";
+import { projects, Project, ProjectCategory } from "../../public/media/portfolioData";
 
 export const getProjectsByCategory = (
   categories: ProjectCategory[]

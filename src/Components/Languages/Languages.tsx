@@ -1,5 +1,5 @@
 import './Languages.css'
-import { languages } from '../../../public/Assets/personalData'
+import { languages } from '../../../public/media/personalData'
 
 const Languages = () => {
   return (

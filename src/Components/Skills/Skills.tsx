@@ -1,5 +1,5 @@
 import './Skills.css'
-import { skills } from '../../../public/Assets/personalData'
+import { skills } from '../../../public/media/personalData'
 
 const Skills = () => {
   return (

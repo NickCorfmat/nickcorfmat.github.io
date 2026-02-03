@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './ProjectCard.css';
 import { isVideo } from '../../utils/mediaUtils';
-import { Project } from '../../../public/Assets/portfolioData';
+import { Project } from '../../../public/media/portfolioData';
 
 interface ProjectCardProps extends Project {
     onClick: (project: Project) => void;

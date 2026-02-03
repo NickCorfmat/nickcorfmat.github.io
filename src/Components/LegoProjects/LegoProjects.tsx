@@ -1,5 +1,5 @@
 import React from 'react'
-import { Project } from '../../../public/Assets/portfolioData'
+import { Project } from '../../../public/media/portfolioData'
 import { isVideo } from '../../utils/mediaUtils'
 import { getProjectsByCategory } from '../../utils/portfolioSelectors'
 import './LegoProjects.css'

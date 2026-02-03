@@ -6,9 +6,9 @@ import {
   getRandomProject
 } from '../../utils/portfolioSelectors'
 
-import github_icon from '../../../public/Assets/icons/github_black.svg'
-import linkedin_icon from '../../../public/Assets/icons/linkedin_blue.svg'
-import download_icon from '../../../public/Assets/icons/download.svg'
+import github_icon from '../../../public/media/icons/github_black.svg'
+import linkedin_icon from '../../../public/media/icons/linkedin_blue.svg'
+import download_icon from '../../../public/media/icons/download.svg'
 
 const Hero: React.FC = () => {
   const featuredProjects = getProjectsByCategory(["featured"])

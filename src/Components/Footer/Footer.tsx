@@ -1,7 +1,7 @@
 import './Footer.css'
 import { Link } from 'react-router-dom';
-import github_icon from '../../../public/Assets/icons/github.svg'
-import linkedin_icon from '../../../public/Assets/icons/linkedin.svg'
+import github_icon from '../../../public/media/icons/github.svg'
+import linkedin_icon from '../../../public/media/icons/linkedin.svg'
 
 const Footer = () => {
   return (
