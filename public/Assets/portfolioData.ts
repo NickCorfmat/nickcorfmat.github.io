@@ -128,7 +128,7 @@ export const projects: Project[] = [
   {
     name: "Space-Mine",
     category: ["game"],
-    media: "/Assets/images/crucibleofelements.png",
+    media: "/Assets/videos/spacemine.mp4",
     github: "https://github.com/NickCorfmat/Space-Mine",
     shortDescription: "Moddable 2D mining simulator built with Phaser and TypeScript.",
     description: "Spearheaded development of a 2D mining simulator using TypeScript and Phaser, with Vite for rapid deployment. Serialized game state into a single contiguous byte array, allowing for efficient save/load and undo/redo operations. Incorporated modding capabilities via external DSL and offered game as installable offline desktop and mobile PWA. Localized the game to three languages, dynamically loading in-game text from a JSON file at runtime.",
@@ -145,26 +145,26 @@ export const projects: Project[] = [
     teamSize: 1,
     dates: "Nov 2023 - Dec 2023"
   },
-  {
-    name: "Public Key Cryptography",
-    category: ["program"],
-    media: "/Assets/images/publickeycryptography.png",
-    github: "https://github.com/NickCorfmat/Public-Key-Cryptography",
-    shortDescription: "Public-key encryption tool in C using GMP.",
-    description: "Implemented a public-key encryption program in C on an Ubuntu VM to securely encrypt and decrypt text files. Utilized GNU Multiple Precision Arithmetic Library (GMP) for the generation of long, secure private keys.",
-    teamSize: 1,
-    dates: "Mar 2023"
-  },
-  {
-    name: "LZ Compression",
-    category: ["program"],
-    media: "/Assets/images/lzcompression.png",
-    github: "https://github.com/NickCorfmat/LZ-Compression",
-    shortDescription: "Lossless text compressor implemented in C.",
-    description: "Implemented a lossless text compression program in C using the LZ78 algorithm, preserving all original data. Developed and tested on Ubuntu VM, utilizing vi editor and command-line tooling for efficient workflow.",
-    teamSize: 1,
-    dates: "Mar 2023"
-  },
+  // {
+  //   name: "Public Key Cryptography",
+  //   category: ["program"],
+  //   media: "/Assets/images/publickeycryptography.png",
+  //   github: "https://github.com/NickCorfmat/Public-Key-Cryptography",
+  //   shortDescription: "Public-key encryption tool in C using GMP.",
+  //   description: "Implemented a public-key encryption program in C on an Ubuntu VM to securely encrypt and decrypt text files. Utilized GNU Multiple Precision Arithmetic Library (GMP) for the generation of long, secure private keys.",
+  //   teamSize: 1,
+  //   dates: "Mar 2023"
+  // },
+  // {
+  //   name: "LZ Compression",
+  //   category: ["program"],
+  //   media: "/Assets/images/lzcompression.png",
+  //   github: "https://github.com/NickCorfmat/LZ-Compression",
+  //   shortDescription: "Lossless text compressor implemented in C.",
+  //   description: "Implemented a lossless text compression program in C using the LZ78 algorithm, preserving all original data. Developed and tested on Ubuntu VM, utilizing vi editor and command-line tooling for efficient workflow.",
+  //   teamSize: 1,
+  //   dates: "Mar 2023"
+  // },
   {
     name: "Recipe Manager",
     category: ["program"],
