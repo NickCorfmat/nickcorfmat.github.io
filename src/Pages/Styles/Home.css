@@ -1,0 +1,38 @@
+.homepage-project-header-container {
+    width: 100%;
+    margin: 0 0 15px 0;
+    padding: 20px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.homepage-project-title {
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin: 0 0 1rem 0;
+  background: linear-gradient(
+    90deg,
+    #ffffff,
+    #cfcfcf
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.homepage-project-subheader {
+    width: 70%;
+    text-align: center;
+    color: rgb(200, 200, 200);
+    font-size: 1rem;
+}
+
+.homepage-project-subheader h3 {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7);
+}

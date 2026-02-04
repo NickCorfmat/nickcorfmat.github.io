@@ -1,0 +1,95 @@
+/* =========================
+   Carousel Layout
+   ========================= */
+
+.carousel {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  padding: 30px 0;
+}
+
+.group {
+  display: flex;
+  gap: 1.5rem;
+  padding-right: 1.5rem;
+  animation: scroll 60s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .group {
+    animation: none;
+  }
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* =========================
+   Project Card
+   ========================= */
+
+.project-card {
+  position: relative;
+  flex: 0 0 480px;
+  height: 300px;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  outline: 1px solid rgba(235, 246, 255, 0.174);
+
+  background: #111;
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px) scale(1.04);
+}
+
+/* =========================
+   Media
+   ========================= */
+
+.project-media {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease-in-out;
+}
+
+.project-card:hover .project-media {
+  transform: scale(1.03);
+}
+
+/* =========================
+   Overlay & Title
+   ========================= */
+
+.project-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  padding: 1.2rem;
+}
+
+.project-name {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.3rem;
+  letter-spacing: 0.2px;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+}

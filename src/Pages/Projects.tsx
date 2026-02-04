@@ -26,7 +26,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 }) => {
   const renderMedia = () => {
     if (isVideo(project.media)) {
-      return <video src={project.media} muted loop autoPlay playsInline preload="metadata" />
+      return <video src={project.media} muted loop autoPlay playsInline />
     }
     return <img src={project.media} alt={project.name} />
   }

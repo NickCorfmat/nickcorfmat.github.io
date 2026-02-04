@@ -18,7 +18,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ name, category, media, url, t
             onClick={() => onClick({ name, category, media, url, teamSize, dates })}
         >
             {isVideo(media) ? (
-                <video className="project-media" autoPlay muted loop preload="metadata">
+                <video className="project-media" autoPlay muted loop>
                     <source src={media} type="video/mp4" />
                 </video>
             ) : (

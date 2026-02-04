@@ -20,7 +20,7 @@ const Hero: React.FC = () => {
       {randomProject && (
         <>
           {isVideo(randomProject.media) ? (
-            <video className="hero-media" autoPlay muted loop playsInline preload="metadata">
+            <video className="hero-media" autoPlay muted loop playsInline>
               <source src={randomProject.media} type="video/mp4" />
             </video>
           ) : (

@@ -81,7 +81,7 @@
 }
 
 .projects-card:hover .projects-card-inner {
-    transform: translateY(-3px) scaleX(1.025) scaleY(1.02);
+    transform: translateY(-5px);
 }
 
 .projects-card.expanded .projects-card-inner {

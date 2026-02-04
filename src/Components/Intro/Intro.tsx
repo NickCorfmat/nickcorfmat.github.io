@@ -19,19 +19,16 @@ const Intro = () => {
             <h3 className="about-label">About Me</h3>
             <h1 className="about-name">Nick Corfmat</h1>
             <p className="about-role">
-              Computer Science • Game Design • Frontend & Software Engineer
+              Computer Science • Game Design • Software Engineer
             </p>
           </div>
 
           <p className="about-bio">
-            I’m a computer science student with a passion for building interactive,
-            polished digital experiences. My background in game development gives me a
-            strong eye for UI, motion, and user feedback, while my software engineering
-            work focuses on scalable systems, clean architecture, and modern web tech.
-            <br /><br />
-            I’m looking for roles in <b>software engineering, frontend, or game
-            development</b> where I can blend technical depth with creative problem
-            solving.
+            <h2><i>Bringing creativity to technology.</i></h2>
+            Working in a startup requires a combination of quick-thinking, decisive action and a willingness to take calculated risks. The chance to meaningfully contribute, while learning from this kind of accelerated environment, is what excites me. Pressure and uncertainty are inevitable, but it is how I learn to navigate and overcome these challenges that will forge me not only into a more resilient programmer, but also a more adaptable person. I’m excited by the opportunity to experiment with new technologies, and directly see the impact of my work, all while collaborating closely with a small, passionate team.
+            <br />
+            <h2><i>Bringing creativity to technology.</i></h2>
+            Outside of formal coursework, I co-founded Minibrick Productions, a YouTube channel where I combined creative design and technical skills to produce LEGO-focused content. Under this brand, I designed and built 27+ LEGO concept sets using LEGO CAD software, Blender for 3D visualization, and social media platforms for driving public engagement. Through this experience, I developed a wide range of technical design skills, strengthened my project management abilities, and cultivated a data-driven approach to decision-making. culminating in one of our projects, the LEGO Polaroid set, which successfully passed the LEGO Ideas review stage and is now available in retail stores such as Amazon, Target, and Walmart worldwide. 
           </p>
 
           <div className="about-stats">

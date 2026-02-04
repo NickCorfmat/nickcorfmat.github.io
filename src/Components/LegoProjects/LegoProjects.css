@@ -1,70 +1,16 @@
 .lego-projects {
-  width: 100%;
-  overflow: hidden;
-  margin-bottom: 30px;
-}
-
-.lego-projects .carousel {
-  width: 100%;
-  overflow: hidden;
-  display: flex;
-  padding: 30px 0 30px 0;
-}
-
-.lego-projects .group {
-  display: flex;
-  gap: 1.5rem;
-  animation: scroll 40s linear infinite;
-  animation-direction: reverse;
-  padding-right: 1.5rem;
-}
-
-.lego-projects .project-card {
   position: relative;
-  flex: 0 0 450px;
-  height: 300px;
+  width: 100%;
   overflow: hidden;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
-  transition: transform 0.3s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  outline: none;
-  border-radius: 24px;
-}
-
-.project-card:hover {
-  transform: scale(1.05);
-}
-
-.project-media {
-  width: auto;
-  height: 100%;
-  object-fit: cover;
-}
-
-.group img {
-  border-radius: 15px;
-}
-
-.project-overlay {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: flex-end;
-  padding: 1rem;
-  background: linear-gradient(
-    to top,
-    rgba(0,0,0,0.75),
-    rgba(0,0,0,0)
-  );
-}
-
-.project-name {
-  color: white;
-  font-weight: 700;
-  font-size: 1.4rem;
-  margin-left: 0.6rem;
-  margin-bottom: 0.2rem;
+  padding: 55px 0 100px 0;
+  background: radial-gradient(
+      1200px 400px at 50% -100px,
+      rgba(255, 255, 255, 0.06),
+      transparent
+    ),
+    linear-gradient(
+      to bottom,
+      #0f0f10,
+      #0b0b0c
+    );
 }
