@@ -16,6 +16,7 @@ const LegoProjects: React.FC = () => {
           muted
           loop
           playsInline
+          preload="metadata"
         >
           <source src={project.media} type="video/mp4" />
         </video>
