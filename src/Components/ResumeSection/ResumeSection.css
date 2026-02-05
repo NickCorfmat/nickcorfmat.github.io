@@ -1,7 +1,7 @@
 .resume-section {
     width: 100%;
     min-height: 450px;
-    padding: clamp(60px, 10vh, 120px) 5vw 8vh;
+    padding: clamp(100px, 10vh, 120px) 5vw 8vh;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
@@ -12,7 +12,7 @@
 
 .resume-frame-wrapper {
     position: relative;
-    width: min(90vw, 820px);
+    width: min(50vw, 820px);
     max-height: 85vh;
     aspect-ratio: 8.5 / 11;
     border-radius: 20px;
