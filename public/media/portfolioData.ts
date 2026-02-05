@@ -24,7 +24,7 @@ export const projects: Project[] = [
     name: "Fight Fighters",
     category: ["game", "featured"],
     media: "/media/videos/fightfighters.mp4",
-    logo: "/media/logos/fightfighters_logo.png",
+    logo: "/media/logos/fightfighters_logo.jpg",
     url: "https://nickcorfmat.github.io/FightFighters/",
     github: "https://github.com/NickCorfmat/FightFighters",
     shortDescription: "2P fighting game created with Phaser 3.",
@@ -148,7 +148,7 @@ export const projects: Project[] = [
   // {
   //   name: "Public Key Cryptography",
   //   category: ["program"],
-  //   media: "/media/images/publickeycryptography.png",
+  //   media: "/media/images/publickeycryptography.jpg",
   //   github: "https://github.com/NickCorfmat/Public-Key-Cryptography",
   //   shortDescription: "Public-key encryption tool in C using GMP.",
   //   description: "Implemented a public-key encryption program in C on an Ubuntu VM to securely encrypt and decrypt text files. Utilized GNU Multiple Precision Arithmetic Library (GMP) for the generation of long, secure private keys.",
@@ -158,7 +158,7 @@ export const projects: Project[] = [
   // {
   //   name: "LZ Compression",
   //   category: ["program"],
-  //   media: "/media/images/lzcompression.png",
+  //   media: "/media/images/lzcompression.jpg",
   //   github: "https://github.com/NickCorfmat/LZ-Compression",
   //   shortDescription: "Lossless text compressor implemented in C.",
   //   description: "Implemented a lossless text compression program in C using the LZ78 algorithm, preserving all original data. Developed and tested on Ubuntu VM, utilizing vi editor and command-line tooling for efficient workflow.",
@@ -197,7 +197,7 @@ export const projects: Project[] = [
   {
     name: 'Blackpink "Lovesick Girls"',
     category: ["lego_ideas"],
-    media: "/media/images/lovesickgirls.png",
+    media: "/media/images/lovesickgirls.jpg",
     url: "https://beta.ideas.lego.com/product-ideas/2094aa81-6b2a-41e9-ac2c-ebb9969285cf",
     teamSize: 1,
     dates: "Sept 2021 - Jun 2025"
@@ -213,7 +213,7 @@ export const projects: Project[] = [
   {
     name: 'Madison Beer "Reckless"',
     category: ["lego_ideas"],
-    media: "/media/images/reckless.png",
+    media: "/media/images/reckless.jpg",
     url: "https://beta.ideas.lego.com/product-ideas/9b9e3504-07dd-4060-a139-4bf98b07f7a7",
     teamSize: 1,
     dates: "Sept 2021 - Jun 2025"
@@ -221,7 +221,7 @@ export const projects: Project[] = [
   {
     name: "The Polar Express",
     category: ["lego_ideas"],
-    media: "/media/images/polarexpress.png",
+    media: "/media/images/polarexpress.jpg",
     url: "https://beta.ideas.lego.com/product-ideas/d589b6af-92c0-44ef-90c7-38dc4a8a9b2d",
     teamSize: 2,
     dates: "Sept 2021 - Jun 2025"
@@ -229,7 +229,7 @@ export const projects: Project[] = [
   {
     name: "Interstellar",
     category: ["lego_ideas"],
-    media: "/media/images/endurance.png",
+    media: "/media/images/endurance.jpg",
     url: "https://beta.ideas.lego.com/product-ideas/b0c8ccf3-8d15-4d13-b69a-c836daeee9c3",
     teamSize: 2,
     dates: "Sept 2021 - Jun 2025"
@@ -237,7 +237,7 @@ export const projects: Project[] = [
   // {
   //   name: "Catty Corner",
   //   category: ["lego_ideas"],
-  //   media: "/media/images/cattycorner.png",
+  //   media: "/media/images/cattycorner.jpg",
   //   url: "https://youtu.be/dBilv9B1Tmg?si=rLzIXHxPjl484bRz",
   //   teamSize: 2,
   //   dates: "Sept 2021 - Jun 2025"
@@ -245,7 +245,7 @@ export const projects: Project[] = [
   {
     name: "Miffy",
     category: ["lego_ideas"],
-    media: "/media/images/miffy.png",
+    media: "/media/images/miffy.jpg",
     url: "https://beta.ideas.lego.com/product-ideas/2329f799-f3bd-4c1e-83fd-49443332ae96",
     teamSize: 1,
     dates: "Sept 2021 - Jun 2025"
