@@ -157,8 +157,6 @@ const Projects: React.FC = () => {
 
   return (
     <section className="projects">
-      <h1>Some of my work...</h1>
-
       <div className="projects-grid">
         {allProjects.map((project) => (
           <ProjectCard

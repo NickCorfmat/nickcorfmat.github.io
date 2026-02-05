@@ -234,14 +234,6 @@ export const projects: Project[] = [
     teamSize: 2,
     dates: "Sept 2021 - Jun 2025"
   },
-  // {
-  //   name: "Catty Corner",
-  //   category: ["lego_ideas"],
-  //   media: "/media/images/cattycorner.jpg",
-  //   url: "https://youtu.be/dBilv9B1Tmg?si=rLzIXHxPjl484bRz",
-  //   teamSize: 2,
-  //   dates: "Sept 2021 - Jun 2025"
-  // },
   {
     name: "Miffy",
     category: ["lego_ideas"],

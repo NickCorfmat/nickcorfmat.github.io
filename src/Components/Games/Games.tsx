@@ -10,11 +10,11 @@ const Games: React.FC = () => {
   return (
     <section className="game-projects">
       <div className="homepage-project-header-container">
-        <h2 className="homepage-project-title">I Develop Games.</h2>
+        <h2 className="homepage-project-title"></h2>
         <div className="homepage-project-subheader">
           <h3>
-            Sub-header will go here. This sentence is merely intended to add extra
-            length.
+            I develop gameplay systems, tools, and performance-optimized features across Unity, Unreal, and browser-based frameworks. My experience spans multiplayer networking, AI, graphics programming, combat systems, save architectures, and mobile deployment. I focus on scalable code design, real-time performance, and translating design goals into polished, shippable gameplay experiences.
+
           </h3>
         </div>
       </div>

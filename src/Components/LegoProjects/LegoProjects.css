@@ -3,11 +3,25 @@
   width: 100%;
   overflow: hidden;
   padding: 45px 0 95px 0;
-  background: radial-gradient(
+
+  background:
+    /* Light pink inner underglow */
+    radial-gradient(
+      900px 320px at 50% 0%,
+      rgba(255, 255, 255, 0.22) 0%,
+      rgba(197, 197, 197, 0.14) 25%,
+      rgba(129, 129, 129, 0.06) 45%,
+      transparent 70%
+    ),
+
+    /* Existing top light */
+    radial-gradient(
       1200px 400px at 50% -100px,
       rgba(255, 255, 255, 0.06),
       transparent
     ),
+
+    /* Base background */
     linear-gradient(
       to bottom,
       #0f0f10,

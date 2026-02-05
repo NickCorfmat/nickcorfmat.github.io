@@ -13,12 +13,8 @@ const LegoProjects: React.FC = () => {
         <h2 className="homepage-project-title">Design → Render → Pitch.</h2>
         <div className="homepage-project-subheader">
           <h3>
-            Beyond coding, I like to merge my computer skills with my love for LEGO.
-            With the help of my brother, we design and pitch LEGO sets from the
-            ground up and publish them on LEGO Ideas where fans can vote for them.
-            At 10,000 supporters, our projects get officially reviewed by LEGO for
-            production. Below are some of the 29+ projects we designed for LEGO
-            Ideas.
+            Outside of traditional software projects, I enjoy applying my technical and creative skills with my love for LEGO. Alongside my brother, I build custom LEGO models from the ground up and publish them to LEGO Ideas, where fans around the world can vote on them becoming real sets.
+  
           </h3>
         </div>
       </div>
