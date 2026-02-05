@@ -1,44 +1,34 @@
-/* =========================
-   Header Container
-   ========================= */
-
 .homepage-project-header-container {
     width: 100%;
     margin: 0 0 15px 0;
     padding: 20px 0 0 0;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: left;
+    text-align: center;
 
     position: relative;
 }
 
-/* =========================
-   Title
-   ========================= */
-
 .homepage-project-title {
   position: relative;
 
-  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-size: clamp(2.2rem, 4vw, 2.75rem);
   font-weight: 800;
   letter-spacing: -0.02em;
-  margin: 0 0 1rem 0;
+  margin: 0;
 
   background: linear-gradient(
     90deg,
     #ffffff,
     #cfcfcf
   );
+
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
-/* =========================
-   Subheader Container
-   ========================= */
 
 .homepage-project-subheader {
     position: relative;
@@ -47,13 +37,26 @@
     font-size: 1rem;
 }
 
-/* Description text */
 .homepage-project-subheader h3 {
     position: relative;
 
     font-size: 1.25rem;
     line-height: 1.7;
     font-weight: 500;
-    color: rgb(225, 225, 225);
+    color: rgb(202, 202, 202);
 }
 
+.lego-projects {
+  background: #f7f7f7;
+  padding-bottom: 40px;
+}
+
+.lego-projects .homepage-project-title {
+  background: none;
+  -webkit-text-fill-color: rgb(37, 37, 37);
+  color: rgb(36, 36, 36);
+}
+
+.lego-projects .homepage-project-subheader h3 {
+  color: rgb(68, 68, 68);
+}

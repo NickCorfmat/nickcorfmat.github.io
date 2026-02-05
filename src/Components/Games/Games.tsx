@@ -10,12 +10,9 @@ const Games: React.FC = () => {
   return (
     <section className="game-projects">
       <div className="homepage-project-header-container">
-        <h2 className="homepage-project-title"></h2>
+        <h2 className="homepage-project-title">Experiences I've worked on</h2>
         <div className="homepage-project-subheader">
-          <h3>
-            I develop gameplay systems, tools, and performance-optimized features across Unity, Unreal, and browser-based frameworks. My experience spans multiplayer networking, AI, graphics programming, combat systems, save architectures, and mobile deployment. I focus on scalable code design, real-time performance, and translating design goals into polished, shippable gameplay experiences.
-
-          </h3>
+          <h3>using tools such as Unity, Unreal Engine, Phaser</h3>
         </div>
       </div>
 

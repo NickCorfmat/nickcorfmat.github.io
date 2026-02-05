@@ -13,8 +13,21 @@ const LegoProjects: React.FC = () => {
         <h2 className="homepage-project-title">Design → Render → Pitch.</h2>
         <div className="homepage-project-subheader">
           <h3>
-            Outside of traditional software projects, I enjoy applying my technical and creative skills with my love for LEGO. Alongside my brother, I build custom LEGO models from the ground up and publish them to LEGO Ideas, where fans around the world can vote on them becoming real sets.
-  
+            Beyond software projects, I enjoy applying my
+            technical and creative skills with my love for LEGO. Alongside my
+            brother, we build custom LEGO models from the ground up and publish
+            them to{" "}
+            
+            <a
+              href="https://beta.ideas.lego.com/profile/cb41754b-5ba3-425f-8051-5bb0be7b5c19"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="lego-link"
+            >
+              LEGO Ideas ↗
+            </a>
+            
+            , where fans around the world can vote on them becoming real sets.
           </h3>
         </div>
       </div>
