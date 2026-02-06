@@ -48,9 +48,7 @@
 
 .lego-projects .homepage-project-header-container {
   padding-top: 30px;
-  padding-bottom: 40px;
-  background: rgb(255, 255, 255);
-  box-shadow: 0 0px 25px rgb(41, 41, 41);
+  padding-bottom: 10px;
   gap: 10px;
 }
 
@@ -63,6 +61,6 @@
 .lego-projects .homepage-project-subheader h3 {
   line-height: 1.6;
   font-weight: 400;
-  color: #444;
+  color: #d7d7d7;
   margin: 0;
 }

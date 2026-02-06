@@ -3,7 +3,6 @@
   width: 100%;
   overflow: hidden;
   padding: 0;
-  background-color: #1e1d1d;
 }
 
 .lego-link {
@@ -29,10 +28,10 @@
   margin-top: 0px;
   width: 100%;
   min-width: 800px;
-  height: 520px;
+  height: 400px;
   display: flex;
   flex-direction: row;
-  background: #e6e6e6;
+  background: #fff;
   overflow: hidden;
   box-shadow: 0 0px 25px rgb(41, 41, 41);
 }
@@ -45,7 +44,6 @@
   width: 45%;
   display: flex;
   flex-direction: row;
-  background: #f4f4f4;
 }
 
 .polaroid-middle {

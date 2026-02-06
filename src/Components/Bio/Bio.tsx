@@ -33,7 +33,7 @@ const Bio = () => {
           I’m a Computer Science: Game Design graduate from UC Santa Cruz who enjoys building performance-efficient games, real-time graphics experiences, and software applications. I specialize in Unity/C#, frontend + UI/UX development, and designing modular, maintainable code.
         </p>
 
-        <div className="bio-actions">
+        {/* <div className="bio-actions">
           <Link to="/projects" className="bio-btn primary">
             View Projects ↗
           </Link>
@@ -41,7 +41,7 @@ const Bio = () => {
           <Link to="/resume" className="bio-btn secondary">
             Resume ↗
           </Link>
-        </div>
+        </div> */}
       </div>
     </section>
   )

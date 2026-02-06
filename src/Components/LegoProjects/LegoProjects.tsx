@@ -45,7 +45,7 @@ const LegoProjects: React.FC = () => {
         </div>
       </div>
 
-      <div style={{background: "transparent", padding: "4px 0px 5px 0"}}>
+      <div style={{background: "transparent", padding: "4px 0px 35px 0"}}>
         <ProjectCarousel projects={legoProjects} />
       </div>
 
