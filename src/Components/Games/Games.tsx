@@ -8,15 +8,28 @@ const Games: React.FC = () => {
   const gameProjects = getProjectsByCategory(['game'])
 
   return (
-    <section className="game-projects">
+    <section className="games-projects">
+
+      {/* ================= HEADER ================= */}
+
       <div className="homepage-project-header-container">
-        <h2 className="homepage-project-title">Games I've Worked On</h2>
+        <h2 className="homepage-project-title">
+          Systems → Gameplay → Performance.
+        </h2>
+
         <div className="homepage-project-subheader">
-          <h3>using tools such as Unity, Unreal Engine, Phaser</h3>
+          <h3>
+            I design and engineer gameplay systems, rendering pipelines,
+            and modular tooling across real-time engines — focusing on
+            performance, scalability, and player feel.
+          </h3>
         </div>
       </div>
 
+      {/* ================= CAROUSEL ================= */}
+
       <ProjectCarousel projects={gameProjects} />
+
     </section>
   )
 }

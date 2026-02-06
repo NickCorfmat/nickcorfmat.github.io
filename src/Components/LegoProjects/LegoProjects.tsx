@@ -25,7 +25,7 @@ const LegoProjects: React.FC = () => {
           <span style={{ color: '#ffca3a' }}>Render</span>
           <span style={{ margin: '0 10px', color: '#8ac926' }}>→</span>
           <span style={{ color: '#1982c4' }}>Pitch</span>
-          <span style={{ color: '#444' }}>.</span>
+          <span style={{ color: '#d2d2d2' }}>.</span>
         </h2>
         <div className="homepage-project-subheader">
           <h3>

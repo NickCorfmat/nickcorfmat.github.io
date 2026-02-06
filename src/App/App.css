@@ -3,7 +3,14 @@
   margin: 0;
   padding: 0;
   text-align: center;
-  background-color: rgb(31, 31, 31);
+
+  background: linear-gradient(
+    135deg,
+    #161616 0%,
+    #222222 45%,
+    #2e2e2e 100%
+  );
+
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;

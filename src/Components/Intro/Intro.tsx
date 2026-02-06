@@ -1,60 +1,133 @@
 import "./Intro.css"
-import full_body_photo from "../../../public/media/images/photo1.jpg"
+
+import github_icon from "../../../public/media/icons/github_black.svg"
+import linkedin_icon from "../../../public/media/icons/linkedin_blue.svg"
+import { Link } from "react-router-dom"
+
+import { isVideo } from "../../utils/mediaUtils"
+import {
+  getProjectsByCategory,
+  getRandomProject
+} from "../../utils/portfolioSelectors"
 
 const Intro = () => {
+
+  const featuredProjects = getProjectsByCategory(["about"])
+  const randomProject = getRandomProject(featuredProjects)
+
   return (
-    <section className="about-container">
-
-      <div className="about-container-left">
-        <img
-          src={full_body_photo}
-          className="full-body-photo"
-          alt="Nick Corfmat"
-        />
+    <section className="intro">
+      {randomProject && (
+        <>
+          {isVideo(randomProject.media) ? (
+            <video
+              className="intro-bg"
+              autoPlay
+              muted
+              loop
+              playsInline
+            >
+              <source src={randomProject.media} type="video/mp4" />
+            </video>
+          ) : (
+            <img
+              className="intro-bg"
+              src={randomProject.media}
+              alt={randomProject.name}
+            />
+          )}
+        </>
+      )}
+      <div className="intro-overlay" />
+      <div className="intro-main">
+        <p className="intro-eyebrow">About</p>
+        <h1 className="intro-title">
+          Nick Corfmat
+        </h1>
+        <p className="intro-role">
+          Software Engineer • Game Developer • Creative Technologist
+        </p>
+        <div className="intro-divider" />
+        <p className="intro-blurb">
+          I build interactive experiences where design and engineering meet —
+          from gameplay systems to real-time visuals and creative tools.
+        </p>
+        <div className="intro-actions">
+          <Link to="/projects" className="btn primary">
+            View Projects
+          </Link>
+          <a
+            href="mailto:nicolasfcorfmat@gmail.com?subject=Portfolio Inquiry&body=Hi Nick,"
+            className="btn secondary"
+          >
+            Contact
+          </a>
+        </div>
+        <div className="intro-socials">
+          <a
+            href="https://github.com/[username]"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="social-icon"
+          >
+            <img src={github_icon} alt="GitHub" />
+          </a>
+          <a
+            href="https://linkedin.com/in/[username]"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="social-icon"
+          >
+            <img src={linkedin_icon} alt="LinkedIn" />
+          </a>
+          <a
+            href="/media/docs/Nicolas_Corfmat_Resume_2025.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="resume-btn"
+          >
+            Resume
+          </a>
+        </div>
       </div>
-      <div className="about-container-right">
-        <div className="about-content">
-
-          <div className="about-header">
-            <h3 className="about-label">About Me</h3>
-            <h1 className="about-name">Nick Corfmat</h1>
-            <p className="about-role">
-              Computer Science • Game Design • Software Engineer
+      <div className="intro-side">
+        <div className="side-panel">
+          <div className="side-item">
+            <span className="side-label">Currently</span>
+            <p>
+              Building <span>[Project / Studio Placeholder]</span>
             </p>
           </div>
-
-          <p className="about-bio">
-            <h2><i>Bringing creativity to technology.</i></h2>
-            Working in a startup requires a combination of quick-thinking, decisive action and a willingness to take calculated risks. The chance to meaningfully contribute, while learning from this kind of accelerated environment, is what excites me. Pressure and uncertainty are inevitable, but it is how I learn to navigate and overcome these challenges that will forge me not only into a more resilient programmer, but also a more adaptable person. I’m excited by the opportunity to experiment with new technologies, and directly see the impact of my work, all while collaborating closely with a small, passionate team.
-            <br />
-            <h2><i>Bringing creativity to technology.</i></h2>
-            Outside of formal coursework, I co-founded Minibrick Productions, a YouTube channel where I combined creative design and technical skills to produce LEGO-focused content. Under this brand, I designed and built 27+ LEGO concept sets using LEGO CAD software, Blender for 3D visualization, and social media platforms for driving public engagement. Through this experience, I developed a wide range of technical design skills, strengthened my project management abilities, and cultivated a data-driven approach to decision-making. culminating in one of our projects, the LEGO Polaroid set, which successfully passed the LEGO Ideas review stage and is now available in retail stores such as Amazon, Target, and Walmart worldwide. 
-          </p>
-
-          <div className="about-stats">
-            <div className="stat-card">
-              <span>8+</span>
-              <p>Games & Apps</p>
-            </div>
-            <div className="stat-card">
-              <span>4+</span>
-              <p>Years Coding</p>
-            </div>
-            <div className="stat-card">
-              <span>3</span>
-              <p>Engines</p>
-            </div>
+          <div className="side-item">
+            <span className="side-label">Focus</span>
+            <p>Game Programming • Frontend • UI/UX</p>
           </div>
-
-          <div className="education-container">
-            <h3>Education</h3>
-            <div className="education-card">
-              <h2>BS in Computer Science: Game Design</h2>
-              <h3>University of California, Santa Cruz</h3>
-              <h4>Sep 2021 – Jun 2025</h4>
-            </div>
+          <div className="side-item">
+            <span className="side-label">Based In</span>
+            <p>Bay Area, CA</p>
           </div>
-
+        </div>
+        <div className="metrics">
+          <div className="metric">
+            <h3>8+</h3>
+            <span>Projects</span>
+          </div>
+          <div className="metric">
+            <h3>4+</h3>
+            <span>Years Coding</span>
+          </div>
+          <div className="metric">
+            <h3>3</h3>
+            <span>Engines</span>
+          </div>
+        </div>
+        <div className="education">
+          <span className="side-label">Education</span>
+          <div className="edu-card">
+            <h4>BS Computer Science — Game Design</h4>
+            <p>University of California, Santa Cruz</p>
+            <span>2021 — 2025</span>
+          </div>
         </div>
       </div>
     </section>

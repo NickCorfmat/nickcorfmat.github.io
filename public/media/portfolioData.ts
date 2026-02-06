@@ -2,7 +2,8 @@ export type ProjectCategory =
   | "game"
   | "lego_ideas"
   | "program"
-  | "featured";
+  | "featured"
+  | "about";
 
 export interface Project {
   name: string;
@@ -34,7 +35,7 @@ export const projects: Project[] = [
   },
   {
     name: "Rogue Eagle",
-    category: ["game"],
+    category: ["game", "about"],
     media: "/media/videos/rogueeagle.mp4",
     url: "https://nickcorfmat.github.io/EndlessRunner/",
     github: "https://github.com/NickCorfmat/EndlessRunner",
@@ -45,7 +46,7 @@ export const projects: Project[] = [
   },
   {
     name: "Woofmart",
-    category: ["game", "featured"],
+    category: ["game", "featured", "about"],
     media: "/media/videos/woofmart.mp4",
     url: "https://nickcorf.itch.io/woofmart",
     github: "https://github.com/jchen577/dog_sim_125",
@@ -79,7 +80,7 @@ export const projects: Project[] = [
   },
   {
     name: "Wail of the Sirenheads",
-    category: ["game"],
+    category: ["game", "about"],
     media: "/media/videos/wailofthesirenheads.mp4",
     url: "https://nickcorf.itch.io/through-the-sirenheads",
     github: "https://github.com/JaydenChung/Split2",
@@ -91,7 +92,7 @@ export const projects: Project[] = [
   },
   {
     name: "Modernism Simulator",
-    category: ["game"],
+    category: ["game", "about"],
     media: "/media/videos/modernsimulator.mp4",
     url: "https://nickcorf.itch.io/modernism-simulator",
     github: "https://github.com/NickCorfmat/ApartmentSimulator",
@@ -103,7 +104,7 @@ export const projects: Project[] = [
   },
   {
     name: "Shape Up",
-    category: ["game"],
+    category: ["game", "about"],
     media: "/media/videos/shapeup.mp4",
     url: "https://apps.apple.com/us/app/shape-up-swipe-shake-solve/id6744836423",
     github: "https://github.com/EltZ36/ShapeUp",
@@ -115,7 +116,7 @@ export const projects: Project[] = [
   },
   {
     name: "Crucible of Elements",
-    category: ["game"],
+    category: ["game", "about"],
     media: "/media/videos/crucibleofelements.mp4",
     url: "https://apps.apple.com/us/app/shape-up-swipe-shake-solve/id6744836423",
     github: "https://github.com/SRparadox/KorraProject",

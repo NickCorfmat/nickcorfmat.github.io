@@ -1,10 +1,10 @@
-.game-projects {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    overflow: hidden;
-    padding: 45px 0 95px 0;
+/* =========================
+   Section Base
+   ========================= */
+
+.games-projects {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 45px 0 50px 0;
 }

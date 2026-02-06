@@ -1,15 +1,13 @@
 .homepage-project-header-container {
     width: 100%;
-    margin: 0;
-    padding: 8px 0;
-
+    margin: 10px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-
     position: relative;
+    gap: 10px;
 }
 
 .homepage-project-title {
@@ -44,6 +42,8 @@
     line-height: 1.7;
     font-weight: 500;
     color: rgb(202, 202, 202);
+
+    margin: 0;
 }
 
 .lego-projects .homepage-project-header-container {

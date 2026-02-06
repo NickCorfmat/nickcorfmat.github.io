@@ -1,68 +1,174 @@
-.skills {
+/* =========================
+   Section Base
+   ========================= */
+
+.skills-section {
   width: 100%;
-  min-height: 180px;
-  background-color: #ebebeb;
-  box-shadow: 0 0px 12px rgba(130, 130, 130, 0.725);
+  padding: 60px 0 70px 0;
+}
+
+/* =========================
+   Header
+   ========================= */
+
+.skills-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.skills-header h2 {
+  font-size: clamp(1.6rem, 2.6vw, 2.2rem);
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.skills-header p {
+  font-size: 1rem;
+}
+
+/* =========================
+   Container
+   ========================= */
+
+.skills-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  gap: 40px;
   align-items: center;
-  padding: 40px 0 55px 0;
-  user-select: none;
 }
 
-.skills h2 {
-  color: #374054;
-  font-size: 2.3em;
-  font-weight: 500;
-  margin-top: 0;
+/* =========================
+   LEFT SIDE
+   ========================= */
+
+.skills-left {
+  width: 40%;
+  padding: 10px 30px;
 }
 
-.skills-list {
-  width: 60%;
+.skills-title {
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.skills-left p {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 18px;
+}
+
+/* =========================
+   RIGHT SIDE
+   ========================= */
+
+.skills-right {
+  width: 55%;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 12px;
 }
 
-.skill-flip {
-  perspective: 800px;
-  cursor: pointer;
-  display: inline-block;
+/* Icon Grid */
+
+.skills-icons {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 28px;
 }
 
-/* Flip innerwrapper */
-.skill-flip-inner {
-  display: flex;                /* keep card in flow */
-  align-items: center;
-  justify-content: center;
-  transition: transform 0.55s cubic-bezier(0.61, 0.98, 0.48, 1.01);
-  transform-style: preserve-3d;
-  height: 36px;
-  border-radius: 12px;
-  padding: 0 12px;
-  box-sizing: border-box;
-  background-color: #d6d6db;   /* default front color */
+/* Icons */
+
+.skills-icons i {
+  font-size: 2.8rem;
+  transition:
+    transform 0.25s ease,
+    filter 0.25s ease,
+    opacity 0.25s ease;
 }
 
-/* Flip on hover */
-.skill-flip:hover .skill-flip-inner {
-  transform: rotateY(180deg);
-  background-color: #3b4357;   /* change bg to back color dynamically */
+/* Hover polish */
+
+.skills-icons i:hover {
+  transform: translateY(-4px) scale(1.08);
+  filter: brightness(1.15);
 }
 
-/* Front and back content */
-.skill-front,
-.skill-back {
-  backface-visibility: hidden;
-  font-size: 1.4em;
-  white-space: nowrap;
+.gradient-outline {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 25px;
+    margin-top: 0;
+    height: 100%;
+    z-index: 0;
 }
 
-/* Back side rotates 180deg */
-.skill-back {
-  transform: rotateY(180deg);
-  color: #fff;
-  position: absolute;
+.gradient-outline::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: linear-gradient(
+        315deg,
+        #03a9f4,
+        #ff0058,
+        #7c4dff
+    );
+    z-index: 0;
+
+    background-size: 300% 300%;
+    animation: gradientShift 10s ease infinite;
+}
+
+.gradient-outline::after {
+    content: none;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .gradient-outline::before {
+        animation: none;
+    }
+}
+
+.game-engines {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.game-engines a,
+.game-engines a * {
+    cursor: default;
+}
+
+.engine-icon {
+    width: 100%;
+    user-select: none;
+    -webkit-user-drag: none;
+    transition: filter 0.5s ease, transform 0.5s ease;
+}
+
+.engine-icon.unreal:hover,
+.engine-icon.unity:hover {
+    filter: brightness(0);
+}
+
+.engine-icon.phaser:hover {
+    transform: scale(1.02);
+    filter: brightness(1.3) saturate(1.5);
 }
