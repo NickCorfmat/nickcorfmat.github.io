@@ -1,7 +1,7 @@
 .homepage-project-header-container {
     width: 100%;
-    margin: 0 0 15px 0;
-    padding: 20px 0 0 0;
+    margin: 0;
+    padding: 8px 0;
 
     display: flex;
     flex-direction: column;
@@ -46,9 +46,12 @@
     color: rgb(202, 202, 202);
 }
 
-.lego-projects {
-  background: #f7f7f7;
+.lego-projects .homepage-project-header-container {
+  padding-top: 30px;
   padding-bottom: 40px;
+  background: rgb(255, 255, 255);
+  box-shadow: 0 0px 25px rgb(41, 41, 41);
+  gap: 10px;
 }
 
 .lego-projects .homepage-project-title {
@@ -58,5 +61,8 @@
 }
 
 .lego-projects .homepage-project-subheader h3 {
-  color: rgb(68, 68, 68);
+  line-height: 1.6;
+  font-weight: 400;
+  color: #444;
+  margin: 0;
 }

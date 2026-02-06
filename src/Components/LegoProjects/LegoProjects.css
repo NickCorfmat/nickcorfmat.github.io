@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   overflow: hidden;
-  padding: 45px 0 95px 0;
+  padding: 0;
   background-color: white;
 }
 
@@ -19,4 +19,167 @@
 .lego-link:hover {
   color: rgb(59, 209, 59);
   text-decoration: none;
+}
+
+/* =========================
+   Container
+   ========================= */
+
+.polaroid-container {
+  margin-top: 0px;
+  width: 100%;
+  min-width: 800px;
+  height: 520px;
+  display: flex;
+  flex-direction: row;
+  background: #e6e6e6;
+  overflow: hidden;
+  box-shadow: 0 0px 25px rgb(41, 41, 41);
+}
+
+/* =========================
+   LEFT SIDE
+   ========================= */
+
+.polaroid-left {
+  width: 45%;
+  display: flex;
+  flex-direction: row;
+  background: #f4f4f4;
+}
+
+.polaroid-middle {
+  width: 8%;
+}
+
+/* Vertical color strip */
+.polaroid-color-strip {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.polaroid-color-strip span {
+  flex: 1;
+}
+
+/* Content area */
+.polaroid-left-content {
+  padding: 0px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+/* Title */
+.polaroid-section-title {
+  font-size: clamp(1.2rem, 4vw, 2.5rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: rgb(36, 36, 36);
+  margin-bottom: 5px;
+  line-height: 3rem;
+  margin-top: 0;
+}
+
+/* Text */
+.polaroid-left-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 50px;
+}
+
+/* Read more image */
+.read-more-link img {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 4px;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.read-more-link img:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.18);
+}
+
+/* =========================
+   RIGHT SIDE
+   ========================= */
+
+.polaroid-right {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  background: #dcdcdc;
+}
+
+/* Wrap video for overlay positioning */
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Caption text */
+.video-caption {
+  position: absolute;
+  bottom: 14px;
+  left: 17px;
+
+  color: white;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(4px);
+
+  padding: 6px 10px;
+  border-radius: 4px;
+
+  pointer-events: none;
+}
+
+
+/* Video */
+.video-link {
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+}
+
+.polaroid-trailer {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* =========================
+   Buttons
+   ========================= */
+
+.polaroid-buttons {
+  width: 100%;
+  height: 70px;
+  display: flex;
+}
+
+.polaroid-buttons button {
+  flex: 1;
+  border: none;
+  border-radius: 0px;
+  margin: 0;
+  cursor: pointer;
+  transition: filter 0.25s ease, transform 0.15s ease;
+}
+
+/* Hover effect */
+.polaroid-buttons button:hover {
+  filter: brightness(1.15);
+  transform: translateY(-2px);
 }
