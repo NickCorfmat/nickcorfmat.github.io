@@ -10,7 +10,7 @@ const Games: React.FC = () => {
   return (
     <section className="game-projects">
       <div className="homepage-project-header-container">
-        <h2 className="homepage-project-title">Experiences I've worked on</h2>
+        <h2 className="homepage-project-title">Games I've Worked On</h2>
         <div className="homepage-project-subheader">
           <h3>using tools such as Unity, Unreal Engine, Phaser</h3>
         </div>

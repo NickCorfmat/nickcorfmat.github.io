@@ -30,7 +30,7 @@ const Bio = () => {
         </h3>
 
         <p className="bio-description">
-          I’m a Computer Science: Game Design graduate from UC Santa Cruz who enjoys building performant gameplay systems, real-time graphics experiences, and software applications. I specialize in Unity/C#, frontend + UI/UX development, and designing modular, maintainable code.
+          I’m a Computer Science: Game Design graduate from UC Santa Cruz who enjoys building performance-efficient games, real-time graphics experiences, and software applications. I specialize in Unity/C#, frontend + UI/UX development, and designing modular, maintainable code.
         </p>
 
         <div className="bio-actions">

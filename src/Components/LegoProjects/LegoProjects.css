@@ -3,7 +3,7 @@
   width: 100%;
   overflow: hidden;
   padding: 0;
-  background-color: white;
+  background-color: #1e1d1d;
 }
 
 .lego-link {
@@ -174,8 +174,10 @@
   border: none;
   border-radius: 0px;
   margin: 0;
+  padding: 0;
   cursor: pointer;
   transition: filter 0.25s ease, transform 0.15s ease;
+  font-size: 1.1rem;
 }
 
 /* Hover effect */

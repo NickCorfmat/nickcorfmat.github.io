@@ -45,7 +45,7 @@ const LegoProjects: React.FC = () => {
         </div>
       </div>
 
-      <div style={{background: "#1e1d1d", padding: "5px 0px"}}>
+      <div style={{background: "transparent", padding: "4px 0px 5px 0"}}>
         <ProjectCarousel projects={legoProjects} />
       </div>
 
@@ -60,15 +60,15 @@ const LegoProjects: React.FC = () => {
               <span style={{ color: '#1982c4' }}>Store Shelves</span>.
             </h3>
             <p>
-              Our Polaroid OneStep project began as a passion concept —
+              Our Polaroid OneStep Camera project began as a passion concept —
               combining product design, LEGO system accuracy, and display
               engineering. After reaching 10K supporters, it moved into review, where LEGO approved it for offical production.
             </p>
             <div className="polaroid-buttons">
-              <button style={{ background: '#ff595e' }} />
-              <button style={{ background: '#ffca3a' }} />
-              <button style={{ background: '#8ac926' }} />
-              <button style={{ background: '#1982c4' }} />
+              <button style={{ background: '#ff595e' }}>Prototype</button>
+              <button style={{ background: '#ffca3a' }}>Announcement</button>
+              <button style={{ background: '#8ac926' }}>Read More</button>
+              <button style={{ background: '#1982c4' }}>Shop</button>
             </div>
           </div>
         </div>
