@@ -120,6 +120,7 @@ export const projects: Project[] = [
     url: "https://apps.apple.com/us/app/shape-up-swipe-shake-solve/id6744836423",
     github: "https://github.com/SRparadox/KorraProject",
     trailer: "https://drive.google.com/file/d/1kA9OzkjJGnMaN6Q36k4gKBbE_ELbLyos/view?usp=sharing",
+    demo: "https://drive.google.com/file/d/1wDQkhkBwe9Gr_cLaPXaxYC5p41Rfo4Df/view?usp=sharing",
     shortDescription: "2v2 online arena battler developed in Unity.",
     description: "Built a competitive 2v2 online arena battler in Unity3D with an 8-member team during a 10-week capstone project. Engineered a modular player class with combat, abilities, health, and team mechanics for scalable gameplay. Implemented real-time networking with Unity Netcode, syncing player actions and game state across clients. Optimized runtime performance and build size via GPU instancing, asset compression, and draw call reduction.",
     teamSize: 8,
@@ -234,14 +235,6 @@ export const projects: Project[] = [
     teamSize: 2,
     dates: "Sept 2021 - Jun 2025"
   },
-  // {
-  //   name: "Catty Corner",
-  //   category: ["lego_ideas"],
-  //   media: "/media/images/cattycorner.jpg",
-  //   url: "https://youtu.be/dBilv9B1Tmg?si=rLzIXHxPjl484bRz",
-  //   teamSize: 2,
-  //   dates: "Sept 2021 - Jun 2025"
-  // },
   {
     name: "Miffy",
     category: ["lego_ideas"],
