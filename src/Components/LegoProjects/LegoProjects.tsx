@@ -65,10 +65,8 @@ const LegoProjects: React.FC = () => {
               engineering. After reaching 10K supporters, it moved into review, where LEGO approved it for offical production.
             </p>
             <div className="polaroid-buttons">
-              <button style={{ background: '#ff595e' }}>Prototype</button>
-              <button style={{ background: '#ffca3a' }}>Announcement</button>
-              <button style={{ background: '#8ac926' }}>Read More</button>
-              <button style={{ background: '#1982c4' }}>Shop</button>
+              <button>Read More ↗</button>
+              <button>Lego.com ↗</button>
             </div>
           </div>
         </div>

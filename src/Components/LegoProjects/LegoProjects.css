@@ -1,3 +1,7 @@
+/* ============================= */
+/* LEGO PROJECTS SECTION */
+/* ============================= */
+
 .lego-projects {
   position: relative;
   width: 100%;
@@ -5,6 +9,8 @@
   padding: 0 0 80px 0;
   margin-top: 0;
 }
+
+/* LINKS */
 
 .lego-link {
   color: rgb(50, 155, 225);
@@ -21,11 +27,18 @@
   text-decoration: none;
 }
 
+/* ============================= */
+/* POLAROID CONTAINER */
+/* ============================= */
+
 .polaroid-container {
   margin-top: 0px;
   width: 100%;
   min-width: 800px;
-  height: 400px;
+
+  /* KEY FIX */
+  height: clamp(360px, 40vw, 420px);
+
   display: flex;
   flex-direction: row;
   background: #fff;
@@ -33,11 +46,63 @@
   box-shadow: 0 0px 25px rgb(41, 41, 41);
 }
 
+/* ============================= */
+/* LEFT SIDE */
+/* ============================= */
+
 .polaroid-left {
   width: 45%;
   display: flex;
   flex-direction: row;
+  padding: 35px 10px;
+  justify-content: center;
+  align-items: center;
 }
+
+.polaroid-left-content {
+  padding: 0px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  text-align: center;
+}
+
+.polaroid-section-title {
+  font-size: clamp(1.3rem, 3vw, 1.8rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: rgb(36, 36, 36);
+  margin-bottom: 5px;
+  line-height: 2.2rem;
+  margin-top: 0;
+}
+
+.polaroid-left-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 30px;
+  max-width: 520px;
+}
+
+/* IMAGE */
+
+.read-more-link img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 4px;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.read-more-link img:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.18);
+}
+
+/* ============================= */
+/* COLOR STRIP */
+/* ============================= */
 
 .polaroid-middle {
   width: 8%;
@@ -54,55 +119,50 @@
   flex: 1;
 }
 
-.polaroid-left-content {
-  padding: 0px 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  z-index: 100;
-}
-
-.polaroid-section-title {
-  font-size: clamp(1.2rem, 4vw, 2.5rem);
-  font-weight: 800;
-  letter-spacing: -0.02em;
-  color: rgb(36, 36, 36);
-  margin-bottom: 5px;
-  line-height: 3rem;
-  margin-top: 0;
-}
-
-.polaroid-left-content p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #444;
-  margin-bottom: 50px;
-}
-
-.read-more-link img {
-  width: 100%;
-  max-width: 320px;
-  border-radius: 4px;
-  transition: transform 0.35s ease, box-shadow 0.35s ease;
-}
-
-.read-more-link img:hover {
-  box-shadow: 0 4px 12px rgba(0,0,0,0.18);
-}
+/* ============================= */
+/* RIGHT SIDE */
+/* ============================= */
 
 .polaroid-right {
   width: 55%;
   display: flex;
   flex-direction: column;
   background: #dcdcdc;
+
+  /* KEY FIX */
+  height: 100%;
 }
+
+/* VIDEO WRAPPER */
 
 .video-wrapper {
   position: relative;
   width: 100%;
+
+  /* KEY FIX — fill available height */
+  flex: 1;
   height: 100%;
 }
+
+/* VIDEO LINK */
+
+.video-link {
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+}
+
+/* ACTUAL VIDEO */
+
+.polaroid-trailer {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* CAPTION */
 
 .video-caption {
   position: absolute;
@@ -119,42 +179,99 @@
 
   padding: 6px 10px;
   border-radius: 4px;
-
   pointer-events: none;
 }
 
-.video-link {
-  width: 100%;
-  height: 100%;
-  display: block;
-  overflow: hidden;
-}
-
-.polaroid-trailer {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
+/* ============================= */
+/* BUTTONS */
+/* ============================= */
 
 .polaroid-buttons {
-  width: 100%;
-  height: 70px;
   display: flex;
+  gap: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .polaroid-buttons button {
-  flex: 1;
+  background-color: rgb(75, 75, 75);
+  outline: 1px solid gray;
+  height: 50px;
+  white-space: nowrap;
+  padding: 0 18px;
+  flex: 0 0 auto;
   border: none;
-  border-radius: 0px;
+  border-radius: 16px;
   margin: 0;
-  padding: 0;
   cursor: pointer;
-  transition: filter 0.25s ease, transform 0.15s ease;
-  font-size: 1.1rem;
+  transition: filter 0.25s ease, transform 0.2s ease;
+  font-size: 0.9rem;
 }
 
 .polaroid-buttons button:hover {
   filter: brightness(1.15);
-  transform: translateY(-2px);
+  transform: scaleX(1.06);
+}
+
+/* ============================= */
+/* ULTRA-WIDE SCREENS FIX */
+/* ============================= */
+
+@media (min-width: 1600px) {
+
+  .polaroid-container {
+    height: 420px;
+  }
+
+  .polaroid-left-content {
+    padding: 0 70px;
+  }
+
+  .polaroid-left-content p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .polaroid-container {
+    height: 450px;
+  }
+}
+
+/* ============================= */
+/* MOBILE */
+/* ============================= */
+
+@media (max-width: 750px) {
+
+  .polaroid-container {
+    flex-direction: column;
+    min-width: 0;
+    height: auto;
+  }
+
+  .polaroid-left {
+    width: 100%;
+    padding: 30px 0px;
+  }
+
+  .polaroid-middle {
+    width: 100%;
+    height: 55px;
+  }
+
+  .polaroid-color-strip {
+    flex-direction: column;
+  }
+
+  .polaroid-right {
+    width: 100%;
+    height: 320px;
+  }
+
+  .video-wrapper {
+    height: 100%;
+  }
 }
