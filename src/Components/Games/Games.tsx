@@ -9,14 +9,10 @@ const Games: React.FC = () => {
 
   return (
     <section className="games-projects">
-
-      {/* ================= HEADER ================= */}
-
       <div className="homepage-project-header-container">
         <h2 className="homepage-project-title">
           Systems → Gameplay → Performance.
         </h2>
-
         <div className="homepage-project-subheader">
           <h3>
             I design and engineer gameplay systems, rendering pipelines,
@@ -25,9 +21,6 @@ const Games: React.FC = () => {
           </h3>
         </div>
       </div>
-
-      {/* ================= CAROUSEL ================= */}
-
       <ProjectCarousel projects={gameProjects} />
 
     </section>

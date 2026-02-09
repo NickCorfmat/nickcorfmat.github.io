@@ -13,7 +13,7 @@
 .homepage-project-title {
   position: relative;
 
-  font-size: clamp(2.2rem, 4vw, 2.75rem);
+  font-size: clamp(1.2rem, 4vw, 2rem);
   font-weight: 800;
   letter-spacing: -0.02em;
   margin: 0;
@@ -32,13 +32,12 @@
     position: relative;
     width: 70%;
     color: rgb(200, 200, 200);
-    font-size: 1rem;
 }
 
 .homepage-project-subheader h3 {
     position: relative;
 
-    font-size: 1.25rem;
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
     line-height: 1.7;
     font-weight: 500;
     color: rgb(202, 202, 202);

@@ -1,187 +1,182 @@
 .bio {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 250px;
-    background: white;
-    
-    gap: 60px;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  max-width: 100%;
+  min-height: 250px;
+  padding: 28px 24px;
+
+  background: white;
+  gap: 50px;
+
+  box-shadow: 0 8px 24px rgba(0,0,0,0.18);
 }
 
 .bio-profile-container {
-    position: relative;
-    width: 155px;
-    height: 155px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-    outline: 6px solid rgba(223, 223, 223, 0.4);
-    transition: 0.4s ease-in-out, outline-width 0.3s ease-in-out;
+  position: relative;
+  width: 155px;
+  height: 155px;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+
+  outline: 6px solid rgba(223, 223, 223, 0.4);
+  transition: 0.4s ease-in-out, outline-width 0.3s ease-in-out;
 }
 
 .bio-profile-container:hover {
-    transform: scale(1.02);
-    outline-width: 8px;
+  transform: scale(1.02);
+  outline-width: 8px;
 }
 
 .gradient-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    height: 100%;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    overflow: visible;
-    z-index: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 0;
 }
 
 .gradient {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 45%;
-    background: conic-gradient(
-        hsl(226, 81%, 64%),
-        hsl(271, 81%, 64%),
-        hsl(316, 81%, 64%),
-        hsl(1, 81%, 64%),
-        hsl(46, 81%, 64%),
-        hsl(91, 81%, 64%),
-        hsl(136, 81%, 64%),
-        hsl(181, 81%, 64%),
-        hsl(226, 81%, 64%)
-    );
-    filter: blur(10px);
-    animation: rotate 6s ease-in-out infinite;
-    z-index: 0;
+  position: absolute;
+  inset: 0;
+  border-radius: 45%;
+
+  background: conic-gradient(
+    hsl(226, 81%, 64%),
+    hsl(271, 81%, 64%),
+    hsl(316, 81%, 64%),
+    hsl(1, 81%, 64%),
+    hsl(46, 81%, 64%),
+    hsl(91, 81%, 64%),
+    hsl(136, 81%, 64%),
+    hsl(181, 81%, 64%),
+    hsl(226, 81%, 64%)
+  );
+
+  filter: blur(10px);
+  animation: rotate 6s linear infinite;
 }
 
 .bio-profile-picture {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-    position: relative;
-    z-index: 1;
-    user-select: none;
-    pointer-events: auto;
-    -webkit-user-drag: none;
-}
-
-@keyframes rotate {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-
-.profile-overlay-link {
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    text-decoration: none;
-}
-
-.profile-overlay-link:hover {
-    opacity: 1;
-    cursor: pointer;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 
 .bio-text-container {
-    width: 45%;
-    text-align: left;
+  flex: 1;
+  max-width: 600px;
+  text-align: left;
 }
 
 .bio h2 {
-    font-size: 0.95rem;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    color: #888;
+  font-size: 0.85rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #888;
 }
 
 .bio h3 {
-    font-size: clamp(1.4rem, 2.4vw, 1.6rem);
-    font-weight: 700;
-    margin: 15px 0 0px 0;
-    color: #222;
+  font-size: clamp(1.3rem, 2.4vw, 1.6rem);
+  font-weight: 700;
+  margin: 10px 0 4px 0;
+  color: #222;
 }
 
 .highlight-name {
-    color: rgb(52, 146, 208);
+  color: rgb(52, 146, 208);
 }
 
 .bio-description {
-    font-size: clamp(0.8rem, 2vw, 1rem);
-    line-height: 1.6;
-    color: #555;
-    margin-bottom: 24px;
-    margin-top: 4px;
+  font-size: clamp(0.85rem, 2vw, 1rem);
+  line-height: 1.6;
+  color: #555;
+  margin-top: 4px;
+  font-weight: 500;
 }
 
-.bio-skills {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 18px;
+@media (max-width: 900px) {
+  .bio {
+    gap: 32px;
+    padding: 24px;
+  }
+
+  .bio-text-container {
+    max-width: 500px;
+  }
+
+  .bio-profile-container {
+    width: 130px;
+    height: 130px;
+  }
 }
 
-.bio-skills span {
-    background: #f2f5f8;
-    padding: 6px 12px;
-    border-radius: 999px;
-    font-size: 0.8rem;
-    color: #333;
-    border: 1px solid #e3e6ea;
-    transition: 0.2s ease;
+@media (max-width: 740px) {
+  .bio {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+    padding: 40px 0 20px 0;
+  }
+
+  .bio-text-container {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+  }
+
+  .bio-profile-container {
+    width: 115px;
+    height: 115px;
+  }
+
+  .bio h3 {
+    margin-top: 6px;
+  }
 }
 
-.bio-skills span:hover {
-    background: #e8f2ff;
-    border-color: #b9d7ff;
+@media (max-width: 575px) {
+    .bio-text-container {
+        max-width: 400px;
+    }
 }
 
-.bio-actions {
-    display: flex;
-    gap: 12px;
-    margin-bottom: 10px;
+@media (max-width: 450px) {
+  .bio {
+    padding: 40px 0 20px 0;
+  }
+
+  .bio-text-container {
+    max-width: 300px;
+  }
+
+  .bio-profile-container {
+    width: 95px;
+    height: 95px;
+  }
+
+  .bio-description {
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
 }
 
-.bio-btn {
-    padding: 10px 14px;
-    border-radius: 16px;
-    font-size: 0.9rem;
-    text-decoration: none;
-    font-weight: 500;
-    transition: 0.2s ease;
-}
-
-.bio-btn:hover {
-    transform: scaleX(1.03) scaleY(1.01);
-}
-
-.bio-btn.primary {
-    background: rgb(52,146,208);
-    color: white;
-}
-
-.bio-btn.primary:hover {
-    background: rgb(36, 118, 173);
-}
-
-.bio-btn.secondary {
-    background: transparent;
-    border: 1px solid #ccc;
-    color: #333;
-}
-
-.bio-btn.secondary:hover {
-    background: #f3f3f3;
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
 }
