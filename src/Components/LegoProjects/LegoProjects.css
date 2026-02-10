@@ -1,7 +1,3 @@
-/* ============================= */
-/* LEGO PROJECTS SECTION */
-/* ============================= */
-
 .lego-projects {
   position: relative;
   width: 100%;
@@ -9,8 +5,6 @@
   padding: 0 0 80px 0;
   margin-top: 0;
 }
-
-/* LINKS */
 
 .lego-link {
   color: rgb(50, 155, 225);
@@ -27,28 +21,17 @@
   text-decoration: none;
 }
 
-/* ============================= */
-/* POLAROID CONTAINER */
-/* ============================= */
-
 .polaroid-container {
   margin-top: 0px;
   width: 100%;
   min-width: 800px;
-
-  /* KEY FIX */
   height: clamp(360px, 40vw, 420px);
-
   display: flex;
   flex-direction: row;
   background: #fff;
   overflow: hidden;
   box-shadow: 0 0px 25px rgb(41, 41, 41);
 }
-
-/* ============================= */
-/* LEFT SIDE */
-/* ============================= */
 
 .polaroid-left {
   width: 45%;
@@ -87,8 +70,6 @@
   max-width: 520px;
 }
 
-/* IMAGE */
-
 .read-more-link img {
   width: 100%;
   max-width: 300px;
@@ -99,10 +80,6 @@
 .read-more-link img:hover {
   box-shadow: 0 4px 12px rgba(0,0,0,0.18);
 }
-
-/* ============================= */
-/* COLOR STRIP */
-/* ============================= */
 
 .polaroid-middle {
   width: 8%;
@@ -119,32 +96,20 @@
   flex: 1;
 }
 
-/* ============================= */
-/* RIGHT SIDE */
-/* ============================= */
-
 .polaroid-right {
   width: 55%;
   display: flex;
   flex-direction: column;
   background: #dcdcdc;
-
-  /* KEY FIX */
   height: 100%;
 }
-
-/* VIDEO WRAPPER */
 
 .video-wrapper {
   position: relative;
   width: 100%;
-
-  /* KEY FIX — fill available height */
   flex: 1;
   height: 100%;
 }
-
-/* VIDEO LINK */
 
 .video-link {
   width: 100%;
@@ -153,8 +118,6 @@
   overflow: hidden;
 }
 
-/* ACTUAL VIDEO */
-
 .polaroid-trailer {
   width: 100%;
   height: 100%;
@@ -162,29 +125,20 @@
   display: block;
 }
 
-/* CAPTION */
-
 .video-caption {
   position: absolute;
   bottom: 14px;
   left: 17px;
-
   color: white;
   font-size: 0.95rem;
   font-weight: 600;
   letter-spacing: 0.02em;
-
   background: rgba(0, 0, 0, 0.45);
   backdrop-filter: blur(4px);
-
   padding: 6px 10px;
   border-radius: 4px;
   pointer-events: none;
 }
-
-/* ============================= */
-/* BUTTONS */
-/* ============================= */
 
 .polaroid-buttons {
   display: flex;
@@ -215,10 +169,6 @@
   transform: scaleX(1.06);
 }
 
-/* ============================= */
-/* ULTRA-WIDE SCREENS FIX */
-/* ============================= */
-
 @media (min-width: 1600px) {
 
   .polaroid-container {
@@ -235,14 +185,11 @@
 }
 
 @media (max-width: 1000px) {
+
   .polaroid-container {
     height: 450px;
   }
 }
-
-/* ============================= */
-/* MOBILE */
-/* ============================= */
 
 @media (max-width: 750px) {
 
