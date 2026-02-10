@@ -60,8 +60,12 @@ const LegoProjects: React.FC = () => {
               What started as a passion project, the Polaroid OneStep Camera quickly earned 10,000 supporters, advancing to LEGO Review Stage and ultimately securing approval for commerical production. Released in January 2024, the LEGO Polaroid set has been enjoyed by tens of thousands of fans around the world.
             </p>
             <div className="polaroid-buttons">
-              <button>Read More ↗</button>
-              <button>Lego.com ↗</button>
+              <a href="https://www.theverge.com/c/23991049/lego-ideas-polaroid-onestep-behind-the-scenes-price">
+              Read More ↗
+              </a>
+              <a href="https://www.lego.com/en-us/product/polaroid-onestep-sx-70-camera-21345">
+              Visit Store ↗
+              </a>
             </div>
           </div>
         </div>

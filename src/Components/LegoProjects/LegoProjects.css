@@ -152,8 +152,9 @@
   justify-content: center;
 }
 
-.polaroid-buttons button {
+.polaroid-buttons a {
   background-color: rgb(75, 75, 75);
+  color: white;
   outline: 1px solid gray;
   height: 50px;
   white-space: nowrap;
@@ -165,9 +166,13 @@
   cursor: pointer;
   transition: filter 0.25s ease, transform 0.2s ease;
   font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.polaroid-buttons button:hover {
+.polaroid-buttons a:hover {
   filter: brightness(1.15);
   transform: scaleX(1.06);
 }
