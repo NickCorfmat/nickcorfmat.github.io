@@ -7,13 +7,9 @@
 }
 
 .lego-link {
-  color: rgb(50, 155, 225);
+  color: #ffca3a;
   text-decoration: none;
   transition: color 0.4s ease;
-}
-
-.lego-link:visited {
-  color: rgb(50, 155, 225);
 }
 
 .lego-link:hover {
@@ -25,7 +21,8 @@
   margin-top: 0px;
   width: 100%;
   min-width: 800px;
-  height: clamp(360px, 40vw, 420px);
+  height: 360px;
+  border-radius: 20px;
   display: flex;
   flex-direction: row;
   background: #fff;
@@ -53,19 +50,20 @@
 }
 
 .polaroid-section-title {
-  font-size: clamp(1.3rem, 3vw, 1.8rem);
+  font-size: clamp(1.5rem, 2vw, 1.8rem);
   font-weight: 800;
   letter-spacing: -0.02em;
   color: rgb(36, 36, 36);
   margin-bottom: 5px;
   line-height: 2.2rem;
   margin-top: 0;
+  min-width: 300px;
 }
 
 .polaroid-left-content p {
   font-size: 1rem;
   line-height: 1.6;
-  color: #444;
+  color: #414141;;
   margin-bottom: 30px;
   max-width: 520px;
 }

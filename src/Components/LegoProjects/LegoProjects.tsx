@@ -20,12 +20,7 @@ const LegoProjects: React.FC = () => {
           color: 'inherit'
         }}
         >
-          <span style={{ color: '#ff595e' }}>Design</span>
-          <span style={{ margin: '0 10px', color: '#ff924c' }}>→</span>
-          <span style={{ color: '#ffca3a' }}>Render</span>
-          <span style={{ margin: '0 10px', color: '#8ac926' }}>→</span>
-          <span style={{ color: '#1982c4' }}>Pitch</span>
-          <span style={{ color: '#d2d2d2' }}>.</span>
+          <span>Design → Render → Pitch.</span>
         </h2>
         <div className="homepage-project-subheader">
           <h3>
@@ -54,10 +49,10 @@ const LegoProjects: React.FC = () => {
           <div className="polaroid-left-content">
             <h3 className="polaroid-section-title">
               From{" "}
-              <span style={{ color: '#8ac926' }}>Concept</span>
+              <span style={{ color: '#8ac926' }}>Hobby</span>
               <br />
               to{" "}
-              <span style={{ color: '#1982c4' }}>Store Shelves</span>.
+              <span style={{ color: '#1982c4' }}>Worldwide LEGO Set</span>.
             </h3>
             <p>
               Our Polaroid OneStep Camera project began as a passion concept —

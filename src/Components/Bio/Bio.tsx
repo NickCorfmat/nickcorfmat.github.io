@@ -20,13 +20,8 @@ const Bio = () => {
       </div>
 
       <div className='bio-text-container'>
-
-        <h2>
-          Software Engineer & Game Programmer
-        </h2>
-
         <h3>
-          Hi, I’m <span className="highlight-name">Nick Corfmat</span>
+          Hi, I’m <span className="highlight-name">Nick Corfmat</span>!
         </h3>
 
         <p className="bio-description">

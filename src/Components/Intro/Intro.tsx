@@ -17,7 +17,7 @@ const Intro = () => {
           <div className="hero-top">
             <div>
               <h1>Nick Corfmat</h1>
-              <p className="role">
+              <p className="info-label">
                 Software Engineer • Game Developer
               </p>
             </div>
@@ -34,7 +34,7 @@ const Intro = () => {
               <img src={mail_icon} alt="Mail" />
             </a>
             <a
-              href="/media/docs/Nicolas_Corfmat_Resume_2025.pdf"
+              href="/media/docs/Nicolas_Corfmat_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="social-pill"
@@ -108,8 +108,8 @@ const Intro = () => {
               <i className="devicon-unix-original colored" title='Unix'></i>
               <i className="devicon-git-plain colored" title="Git"></i>
               <i className="devicon-latex-original" title="LaTeX"></i>
+              <i className="devicon-inkscape-plain colored" title="Inkscape"></i>
               <i className="devicon-blender-original colored" title="Blender"></i>
-              <i className="devicon-inkscape-plain colored"></i>
             </div>
           </div>
         </div>

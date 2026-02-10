@@ -38,7 +38,7 @@
 .project-card {
   position: relative;
   flex: 0 0 480px;
-  height: 255px;
+  height: 275px;
   border-radius: 20px;
   overflow: hidden;
   display: flex;

@@ -11,7 +11,7 @@ const Games: React.FC = () => {
     <section className="games-projects">
       <div className="homepage-project-header-container">
         <h2 className="homepage-project-title">
-          Systems → Gameplay → Performance.
+          Ideate → Prototype → Implement.
         </h2>
         <div className="homepage-project-subheader">
           <h3>

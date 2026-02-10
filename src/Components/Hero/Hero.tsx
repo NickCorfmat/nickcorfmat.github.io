@@ -73,7 +73,7 @@ const Hero: React.FC = () => {
               </a>
 
               <a
-                href="/media/docs/Nicolas_Corfmat_Resume_2025.pdf"
+                href="/media/docs/Nicolas_Corfmat_Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hero-button download"
