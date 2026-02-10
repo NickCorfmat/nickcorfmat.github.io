@@ -2,131 +2,115 @@ import "./Intro.css"
 
 import github_icon from "../../../public/media/icons/github_black.svg"
 import linkedin_icon from "../../../public/media/icons/linkedin_blue.svg"
-import { Link } from "react-router-dom"
 
-import { isVideo } from "../../utils/mediaUtils"
-import {
-  getProjectsByCategory,
-  getRandomProject
-} from "../../utils/portfolioSelectors"
+import phaser_icon from "../../../public/media/icons/phaser.png"
+import download_icon from "../../../public/media/icons/download.svg"
+import mail_icon from "../../../public/media/icons/mail_icon.png"
+import animation from "../../../public/media/videos/fightfightersanimation.gif";
 
 const Intro = () => {
-
-  const featuredProjects = getProjectsByCategory(["about"])
-  const randomProject = getRandomProject(featuredProjects)
-
   return (
-    <section className="intro">
-      {randomProject && (
-        <>
-          {isVideo(randomProject.media) ? (
-            <video
-              className="intro-bg"
-              autoPlay
-              muted
-              loop
-              playsInline
-            >
-              <source src={randomProject.media} type="video/mp4" />
-            </video>
-          ) : (
-            <img
-              className="intro-bg"
-              src={randomProject.media}
-              alt={randomProject.name}
-            />
-          )}
-        </>
-      )}
-      <div className="intro-overlay" />
-      <div className="intro-main">
-        <p className="intro-eyebrow">About</p>
-        <h1 className="intro-title">
-          Nick Corfmat
-        </h1>
-        <p className="intro-role">
-          Software Engineer • Game Developer • Creative Technologist
-        </p>
-        <div className="intro-divider" />
-        <p className="intro-blurb">
-          I build interactive experiences where design and engineering meet —
-          from gameplay systems to real-time visuals and creative tools.
-        </p>
-        <div className="intro-actions">
-          <Link to="/projects" className="btn primary">
-            View Projects
-          </Link>
-          <a
-            href="mailto:nicolasfcorfmat@gmail.com?subject=Portfolio Inquiry&body=Hi Nick,"
-            className="btn secondary"
-          >
-            Contact
-          </a>
-        </div>
-        <div className="intro-socials">
-          <a
-            href="https://github.com/[username]"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="social-icon"
-          >
-            <img src={github_icon} alt="GitHub" />
-          </a>
-          <a
-            href="https://linkedin.com/in/[username]"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="social-icon"
-          >
-            <img src={linkedin_icon} alt="LinkedIn" />
-          </a>
-          <a
-            href="/media/docs/Nicolas_Corfmat_Resume_2025.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="resume-btn"
-          >
-            Resume
-          </a>
-        </div>
-      </div>
-      <div className="intro-side">
-        <div className="side-panel">
-          <div className="side-item">
-            <span className="side-label">Currently</span>
-            <p>
-              Building <span>[Project / Studio Placeholder]</span>
-            </p>
+    <section className="about">
+      <div className="about-container">
+        <div className="about-left-stack">
+        <div className="about-hero-card">
+          <div className="hero-top">
+            <div>
+              <h1>Nick Corfmat</h1>
+              <p className="role">
+                Software Engineer • Game Developer
+              </p>
+            </div>
           </div>
-          <div className="side-item">
-            <span className="side-label">Focus</span>
+          <p className="blurb">
+            I build interactive experiences where design and engineering meet.
+          </p>
+          <div className="hero-socials">
+            <a
+              href="mailto:nicolasfcorfmat@gmail.com"
+              className="social-pill"
+            >
+              Contact
+              <img src={mail_icon} alt="Mail" />
+            </a>
+            <a
+              href="/media/docs/Nicolas_Corfmat_Resume_2025.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-pill"
+            >
+              Resume
+              <img src={download_icon} style={{filter: "invert(1)"}} alt="Download" />
+            </a>
+            <a
+              href="https://github.com/NickCorfmat"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-pill"
+            >
+              GitHub
+              <img src={github_icon} alt="GitHub" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/nicolascorfmat/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-pill"
+            >
+              LinkedIn
+              <img src={linkedin_icon} alt="LinkedIn" />
+            </a>
+          </div>
+        </div>
+        <div className="animation">
+            <img 
+              src={animation}
+              alt="Animated GIF" 
+              className="hero-gif"
+              title="Pixel art animation I hand recreated for the game, 'Fight Fighters'"
+            />
+          </div>
+        </div>
+        
+        <div className="about-info-stack">
+          <div className="info-card">
+            <span className="info-label">Education</span>
+            <h3>BS Computer Science — Game Design</h3>
+            <p>University of California, Santa Cruz</p>
+            <span className="info-sub">2021 — 2025</span>
+          </div>
+          <div className="info-card">
+            <span className="info-label">Focus</span>
             <p>Game Programming • Frontend • UI/UX</p>
           </div>
-          <div className="side-item">
-            <span className="side-label">Based In</span>
-            <p>Bay Area, CA</p>
+          <div className="info-card">
+            <span className="info-label">Based In</span>
+            <p>Bay Area, California</p>
           </div>
-        </div>
-        <div className="metrics">
-          <div className="metric">
-            <h3>8+</h3>
-            <span>Projects</span>
-          </div>
-          <div className="metric">
-            <h3>4+</h3>
-            <span>Years Coding</span>
-          </div>
-          <div className="metric">
-            <h3>3</h3>
-            <span>Engines</span>
-          </div>
-        </div>
-        <div className="education">
-          <span className="side-label">Education</span>
-          <div className="edu-card">
-            <h4>BS Computer Science — Game Design</h4>
-            <p>University of California, Santa Cruz</p>
-            <span>2021 — 2025</span>
+          <div className="info-card">
+            <span className="info-label">Technical Skills</span>
+            <div className="skills-grid">
+              <i className="devicon-unity-plain" title="Unity"></i>
+              <i className="devicon-unrealengine-original" title="Unreal Engine"></i>
+              <img src={phaser_icon} className="phaser-icon" title="Phaser" />
+              <i className="devicon-csharp-plain colored" title="C#"></i>
+              <i className="devicon-cplusplus-plain colored" title="C++"></i>
+              <i className="devicon-c-original" title="C"></i>
+              <i className="devicon-python-plain colored" title="Python"></i>
+              <i className="devicon-javascript-plain colored" title="JavaScript"></i>
+              <i className="devicon-typescript-plain colored" title="TypeScript"></i>
+              <i className="devicon-java-plain colored" title="Java"></i>
+              <i className="devicon-html5-plain colored" title="HTML5"></i>
+              <i className="devicon-css3-plain colored" title="CSS3"></i>
+              <i className="devicon-vuejs-plain colored" title="Vue.js"></i>
+              <i className="devicon-react-original colored" title="React"></i>
+              <i className="devicon-vite-original colored" title="Vite"></i>
+              <i className="devicon-unix-original colored" title='Unix'></i>
+              <i className="devicon-git-plain colored" title="Git"></i>
+              <i className="devicon-latex-original" title="LaTeX"></i>
+              <i className="devicon-blender-original colored" title="Blender"></i>
+              <i className="devicon-inkscape-plain colored"></i>
+            </div>
           </div>
         </div>
       </div>
