@@ -23,7 +23,7 @@ const Intro = () => {
             </div>
           </div>
           <p className="blurb">
-            I build interactive experiences where design and engineering meet.
+            I build interactive experiences where design and engineering meet {"<3"}
           </p>
           <div className="hero-socials">
             <a
@@ -67,7 +67,7 @@ const Intro = () => {
               src={animation}
               alt="Animated GIF" 
               className="hero-gif"
-              title="Pixel art animation I hand recreated for the game, 'Fight Fighters'"
+              title="Animation I made for 'Fight Fighters'"
             />
           </div>
         </div>

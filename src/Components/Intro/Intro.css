@@ -22,7 +22,7 @@
 }
 
 .about-hero-card {
-  background: rgb(48, 48, 48);
+  background: rgb(45, 45, 45);
   outline: 1px solid gray;
   border-radius: 28px;
   padding: 80px 40px;
@@ -61,11 +61,35 @@
 
 .blurb {
   width: 80%;
-  color: #d6d6e2;
   line-height: 1.7;
   margin-top: 0;
   margin-bottom: 40px;
+
+  background: linear-gradient(
+    90deg,
+    #ff595e,
+    #ff924c,
+    #ffca3a,
+    #8ac926,
+    #1982c4,
+    #6a4c93,
+    #ff595e
+  );
+
+  background-size: 300% 100%;
+  animation: rainbow-flow 18s linear infinite;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+
+/* Animation */
+
+@keyframes rainbow-flow {
+  0%   { background-position: 0% 50%; }
+  100% { background-position: 300% 50%; }
+}
+
 
 .hero-socials {
   display: flex;

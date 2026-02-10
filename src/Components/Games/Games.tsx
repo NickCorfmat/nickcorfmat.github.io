@@ -11,13 +11,11 @@ const Games: React.FC = () => {
     <section className="games-projects">
       <div className="homepage-project-header-container">
         <h2 className="homepage-project-title">
-          Ideate → Prototype → Implement.
+          Blending Code & Creativity.
         </h2>
         <div className="homepage-project-subheader">
           <h3>
-            I design and engineer gameplay systems, rendering pipelines,
-            and modular tooling across real-time engines — focusing on
-            performance, scalability, and player feel.
+            From Gameplay Scripting and Performance Optimization to Procedural Generation and Level Design, I build systems across multiple facets of game development to deliver polished, cohesive experiences.
           </h3>
         </div>
       </div>

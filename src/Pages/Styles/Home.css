@@ -6,7 +6,6 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    position: relative;
     gap: 10px;
 }
 
@@ -33,17 +32,23 @@
     width: 70%;
     max-width: 780px;
     color: rgb(200, 200, 200);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .homepage-project-subheader h3 {
     position: relative;
-
     font-size: clamp(0.9rem, 2vw, 1.1rem);
     line-height: 1.7;
     font-weight: 500;
     color: rgb(202, 202, 202);
-
     margin: 0;
+}
+
+.games-projects .homepage-project-subheader h3 {
+  width: 820px;
 }
 
 .lego-projects .homepage-project-header-container {

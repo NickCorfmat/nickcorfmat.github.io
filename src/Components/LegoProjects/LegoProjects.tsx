@@ -52,12 +52,12 @@ const LegoProjects: React.FC = () => {
               <span style={{ color: '#8ac926' }}>Hobby</span>
               <br />
               to{" "}
-              <span style={{ color: '#1982c4' }}>Worldwide LEGO Set</span>.
+              <span style={{ color: '#1982c4' }}>Official LEGO Set</span>.
+              <br />
+              <h2 className='polaroid-subheader'>- Story of the LEGO Polaroid OneStep -</h2>
             </h3>
             <p>
-              Our Polaroid OneStep Camera project began as a passion concept —
-              combining product design, LEGO system accuracy, and display
-              engineering. After reaching 10K supporters, it moved into review, where LEGO approved it for offical production.
+              What started as a passion project, the Polaroid OneStep Camera quickly earned 10,000 supporters, advancing to LEGO Review Stage and ultimately securing approval for commerical production. Released in January 2024, the LEGO Polaroid set has been enjoyed by tens of thousands of fans around the world.
             </p>
             <div className="polaroid-buttons">
               <button>Read More ↗</button>
