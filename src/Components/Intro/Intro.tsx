@@ -27,7 +27,7 @@ const Intro = () => {
           </p>
           <div className="hero-socials">
             <a
-              href="mailto:nicolasfcorfmat@gmail.com"
+              href="mailto:nfcorfmat@gmail.com"
               className="social-pill"
             >
               Contact
