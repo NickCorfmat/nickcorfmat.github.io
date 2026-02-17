@@ -29,7 +29,7 @@ export const projects: Project[] = [
     url: "https://nickcorfmat.github.io/FightFighters/",
     github: "https://github.com/NickCorfmat/FightFighters",
     shortDescription: "2P fighting game created with Phaser 3.",
-    description: "Brought the game 'Fight Fighters' into life as a two-player browser game using JavaScript and the Phaser 3 HTML5 framework. The game is directly inspired from S1 Episode 10 of the Disney television series, 'Gravity Falls.'",
+    description: "Adapted the fictionalized game 'Fight Fighters' into a two-player fighting game using JavaScript and Phaser for a class project. The game is directly inspired from S1 E10 of the Disney Channel television series, 'Gravity Falls.'",
     teamSize: 2,
     dates: "Feb 2024 - Mar 2024"
   },
@@ -40,7 +40,7 @@ export const projects: Project[] = [
     url: "https://nickcorfmat.github.io/EndlessRunner/",
     github: "https://github.com/NickCorfmat/EndlessRunner",
     shortDescription: "Endless runner game created with Phaser 3.",
-    description: "Endless runner built using Phaser 3, Javascript, and HTML. Employed one-dimension perlin noise to generate unique terrain for every run.",
+    description: "Made an endless runner game using Javascript, Phaser, and HTML for a class project. Employed one-dimensional Perlin noise to generate infinitely varying and unique terrain on every run.",
     teamSize: 1,
     dates: "Feb 2024"
   },
@@ -52,7 +52,7 @@ export const projects: Project[] = [
     github: "https://github.com/jchen577/dog_sim_125",
     trailer: "https://drive.google.com/file/d/1ZzLdmguxykcHSb12pyFnLuZfHL9X8wYJ/view?usp=sharing",
     shortDescription: "Endless runner game created in Unity.",
-    description: "Worked with a team of 5 students in creating this exciting endless runner in Unity, where players take on the role of a loose dog striving to unleash as much chaos in a supermarket while trying to dodge AI enemy employees.",
+    description: "Worked with a team of 5 students to create a cartoon-like endless runner in Unity, where players take on the role of a loose dog with the goal of unleashing chaos in a supermarket, while fleeing AI employee enemies.",
     teamSize: 5,
     dates: "Nov 2024 - Dec 2024"
   },
@@ -63,7 +63,7 @@ export const projects: Project[] = [
     url: "https://nickcorfmat.github.io/Split-1/",
     github: "https://github.com/NickCorfmat/Split-1",
     shortDescription: "Short narrative game prototype built using Phaser 3.",
-    description: "Developed a short narrative game in 2 weeks as part of a rapid prototyping class at UCSC.",
+    description: "Developed a short narrative game with two other students in 2 weeks, as part of a rapid prototyping class at UCSC.",
     teamSize: 3,
     dates: "Apr 2024"
   },
@@ -74,7 +74,7 @@ export const projects: Project[] = [
     url: "https://nickcorfmat.github.io/Unconventional-Game/",
     github: "https://github.com/NickCorfmat/Unconventional-Game",
     shortDescription: "Short game with an unconventional twist.",
-    description: "A short game developed at UCSC in 2 weeks as part of a rapid prototyping class, that takes an unconventional approach to typical platformer inputs.",
+    description: "A short game developed at UCSC in 2 weeks as part of a rapid prototyping class that adopts an unconventional approach to typical platformer controller inputs.",
     teamSize: 3,
     dates: "May 2024"
   },
@@ -86,7 +86,7 @@ export const projects: Project[] = [
     github: "https://github.com/JaydenChung/Split2",
     demo: "https://drive.google.com/file/d/1T6xnZxpMmf_FUYoe2tHEIMAOfqRn7AB0/view?usp=sharing",
     shortDescription: "Short horror game built in UE5.",
-    description: "A first-person exploration horror game developed by a team of three students at UCSC using Unreal Engine 5. This game plunges players into a chilling, dark forest inhabited by human-like creatures, and sends players through an unsettling journey of constant foreboding and unexpected encounters.",
+    description: "Rapidly prototyped a first-person horror game in Unreal Engine 5 with a team of three students at UCSC over two weeks. This experience drops players into a dark, eerie forest, designed to evoke deep foreboding through the threat of unexpected creature encounters.",
     teamSize: 3,
     dates: "Apr 2024 - May 2024"
   },
@@ -98,7 +98,7 @@ export const projects: Project[] = [
     github: "https://github.com/NickCorfmat/ApartmentSimulator",
     demo: "https://drive.google.com/file/d/1dEgNfVd5nOl8TMtaDJuzmRiSJBPYA1W-/view?usp=sharing",
     shortDescription: "Immersive interactive world built using Unity URP.",
-    description: "Built a first-person walking simulator in Unity using the Universal Render Pipeline (URP) for realistic lighting and materials. Programmed interactive objects (doors, faucet, TV) and integrated particle systems (rain, lightning) for immersion. Strategically utilized Unity’s real-time and baked lighting systems to maximize visual quality and performance.",
+    description: "Developed a short, first-person walking simulator in Unity that immerses players in the scene of a cold and monotonous, yet tranquil environment of a modernist world.",
     teamSize: 1,
     dates: "Nov 2024"
   },
@@ -110,7 +110,7 @@ export const projects: Project[] = [
     github: "https://github.com/EltZ36/ShapeUp",
     trailer: "https://www.youtube.com/watch?v=hqWtVbuO-iI",
     shortDescription: "Senior capstone mobile puzzle game shipped on iOS and Android.",
-    description: "Shipped a mobile iOS/Android puzzle game in Unity and C# with a 5-person team, implementing levels and UI. Integrated Analytics SDK to track player and device metrics for analysis, syncing data with Unity Cloud services. Conducted playtests, iterating on gameplay and UI through player feedback across three development sprints. Profiled builds and optimized performance using object pooling, simple colliders, singletons, and asset compression. Led iOS release pipeline, securing next-day App Store approval, and managed internal/public builds via TestFlight.",
+    description: "Developed and shipped a mobile puzzle game on iOS/Android as part of a 5-student capstone project. Aided in level design, UI/UX, player and device metrics tracking, localization, persistent data, and iOS deployment pipeline.",
     teamSize: 5,
     dates: "Apr 2025 - Jun 2025"
   },
@@ -123,7 +123,7 @@ export const projects: Project[] = [
     trailer: "https://drive.google.com/file/d/1kA9OzkjJGnMaN6Q36k4gKBbE_ELbLyos/view?usp=sharing",
     demo: "https://drive.google.com/file/d/1wDQkhkBwe9Gr_cLaPXaxYC5p41Rfo4Df/view?usp=sharing",
     shortDescription: "2v2 online arena battler developed in Unity.",
-    description: "Built a competitive 2v2 online arena battler in Unity3D with an 8-member team during a 10-week capstone project. Engineered a modular player class with combat, abilities, health, and team mechanics for scalable gameplay. Implemented real-time networking with Unity Netcode, syncing player actions and game state across clients. Optimized runtime performance and build size via GPU instancing, asset compression, and draw call reduction.",
+    description: "Developed a 2v2 online arena battler in Unity over 10 weeks as part of an 8-student cross-disciplinary capstone team. Implemented character mechanics, integrated multiplayer NetCode, designed the map from scratch, and optimized GPU and storage performance.",
     teamSize: 8,
     dates: "Jan 2025 - Mar 2025"
   },
@@ -133,7 +133,7 @@ export const projects: Project[] = [
     media: "/media/videos/spacemine.mp4",
     github: "https://github.com/NickCorfmat/Space-Mine",
     shortDescription: "Moddable 2D mining simulator built with Phaser and TypeScript.",
-    description: "Spearheaded development of a 2D mining simulator using TypeScript and Phaser, with Vite for rapid deployment. Serialized game state into a single contiguous byte array, allowing for efficient save/load and undo/redo operations. Incorporated modding capabilities via external DSL and offered game as installable offline desktop and mobile PWA. Localized the game to three languages, dynamically loading in-game text from a JSON file at runtime.",
+    description: "Led the development of a web-based 2D farming simulator built using Javascript, Phaser, and Vite, featuring automatic and manual saving/loading, undo action systems, multilingual support, and modding capabilities via external DSL. Additionally, the game is fully installable as a progressive web application (PWA) on both desktop and mobile, for offline play.",
     teamSize: 3,
     dates: "Nov 2024 - Dec 2024"
   },
@@ -173,7 +173,7 @@ export const projects: Project[] = [
     media: "/media/videos/recipemanager.mp4",
     github: "https://github.com/NickCorfmat/RecipeManager",
     shortDescription: "Full-stack recipe sharing app with Py4Web and Vue.",
-    description: "Developed a full-stack recipe sharing app with Py4Web and Vue.js, focusing on Python backend development. Designed and implemented RESTful APIs to perform CRUD operations on recipe and ingredient data. Connected frontend with backend APIs, enabling multi-field recipe search by name, type, and ingredients. Enforced author-only recipe editing on the server side to prevent unauthorized changes to other users’ content.",
+    description: "Developed a full-stack recipe sharing app using py4web with a team of 6 students. Built RESTful APIs for CRUD operations, integrated multi-field search, connected frontend to backend services, and enforced author-only editing on the server side.",
     teamSize: 6,
     dates: "May 2025 - Jun 2025"
   },
