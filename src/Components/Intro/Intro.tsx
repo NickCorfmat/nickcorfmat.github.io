@@ -1,8 +1,6 @@
 import "./Intro.css"
-
 import github_icon from "../../../public/media/icons/github_black.svg"
 import linkedin_icon from "../../../public/media/icons/linkedin_blue.svg"
-
 import phaser_icon from "../../../public/media/icons/phaser.png"
 import download_icon from "../../../public/media/icons/download.svg"
 import mail_icon from "../../../public/media/icons/mail_icon.png"

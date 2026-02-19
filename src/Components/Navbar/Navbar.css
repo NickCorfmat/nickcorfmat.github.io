@@ -6,7 +6,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
     height: 95px;
     padding: 0;
     background-color: transparent;
@@ -34,7 +33,6 @@
 
 .nav-menu li {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     cursor: pointer;

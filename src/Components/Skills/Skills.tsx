@@ -4,9 +4,6 @@ import './Skills.css'
 const Skills: React.FC = () => {
   return (
     <section className="skills-section">
-
-      {/* ================= HEADER ================= */}
-
       <div className="skills-header">
         <h2>Technologies & Tools</h2>
         <p>
@@ -14,31 +11,19 @@ const Skills: React.FC = () => {
           real-time experiences, and scalable software.
         </p>
       </div>
-
-      {/* ================= CONTENT ================= */}
-
       <div className="skills-container">
-
-        {/* ---------- LEFT ---------- */}
-
         <div className="skills-left">
-
           <h3 className="skills-title">
             Built with Production-Ready Tech.
           </h3>
-
           <p>
             My work spans gameplay programming, engine systems,
             rendering experimentation, and UI frameworks — using
             both commercial engines and custom WebGL pipelines.
           </p>
         </div>
-
-        {/* ---------- RIGHT ---------- */}
-
         <div className="skills-right">
           <div className="skills-icons">
-
             <i className="devicon-unity-plain" title="Unity"></i>
             <i className="devicon-unrealengine-original" title="Unreal Engine"></i>
             <i className="devicon-csharp-plain colored" title="C#"></i>
@@ -55,11 +40,8 @@ const Skills: React.FC = () => {
             <i className="devicon-unix-original colored" title='Unix'></i>
             <i className="devicon-git-plain colored" title="Git"></i>
           </div>
-
         </div>
-
       </div>
-
     </section>
   )
 }

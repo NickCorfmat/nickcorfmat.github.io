@@ -1,7 +1,6 @@
 import './ResumeSection.css'
 
 const ResumeSection = () => {
-
     return (
         <div className='resume-section'>
             <div className="resume-frame-wrapper">

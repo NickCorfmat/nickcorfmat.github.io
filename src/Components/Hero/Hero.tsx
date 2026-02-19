@@ -1,11 +1,7 @@
 import React from 'react'
 import './Hero.css'
 import { isVideo } from '../../utils/mediaUtils'
-import {
-  getProjectsByCategory,
-  getRandomProject
-} from '../../utils/portfolioSelectors'
-
+import { getProjectsByCategory, getRandomProject } from '../../utils/portfolioSelectors'
 import github_icon from '../../../public/media/icons/github_black.svg'
 import linkedin_icon from '../../../public/media/icons/linkedin_blue.svg'
 import download_icon from '../../../public/media/icons/download.svg'
