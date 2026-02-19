@@ -21,7 +21,8 @@ const Hero: React.FC = () => {
         <>
           {isVideo(randomProject.media) ? (
             <video className="hero-media" autoPlay muted loop playsInline>
-              <source src={randomProject.media} type="video/mp4" />
+              <source src={randomProject.media} type="video/webm" />
+              <source src={randomProject.media.replace(".webm", ".mp4")} type="video/mp4" />
             </video>
           ) : (
             <img

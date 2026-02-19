@@ -24,7 +24,7 @@ export const projects: Project[] = [
   {
     name: "Fight Fighters",
     category: ["game", "featured"],
-    media: "/media/videos/fightfighters.mp4",
+    media: "/media/videos/fightfighters.webm",
     logo: "/media/logos/fightfighters_logo.jpg",
     url: "https://nickcorfmat.github.io/FightFighters/",
     github: "https://github.com/NickCorfmat/FightFighters",
@@ -36,7 +36,7 @@ export const projects: Project[] = [
   {
     name: "Rogue Eagle",
     category: ["game", "about"],
-    media: "/media/videos/rogueeagle.mp4",
+    media: "/media/videos/rogueeagle.webm",
     url: "https://nickcorfmat.github.io/EndlessRunner/",
     github: "https://github.com/NickCorfmat/EndlessRunner",
     shortDescription: "Endless runner game created with Phaser 3.",
@@ -47,7 +47,7 @@ export const projects: Project[] = [
   {
     name: "Woofmart",
     category: ["game", "featured", "about"],
-    media: "/media/videos/woofmart.mp4",
+    media: "/media/videos/woofmart.webm",
     url: "https://nickcorf.itch.io/woofmart",
     github: "https://github.com/jchen577/dog_sim_125",
     trailer: "https://drive.google.com/file/d/1ZzLdmguxykcHSb12pyFnLuZfHL9X8wYJ/view?usp=sharing",
@@ -59,7 +59,7 @@ export const projects: Project[] = [
   {
     name: "will you do it?",
     category: ["game"],
-    media: "/media/videos/willyoudoit.mp4",
+    media: "/media/videos/willyoudoit.webm",
     url: "https://nickcorfmat.github.io/Split-1/",
     github: "https://github.com/NickCorfmat/Split-1",
     shortDescription: "Short narrative game prototype built using Phaser 3.",
@@ -70,7 +70,7 @@ export const projects: Project[] = [
   {
     name: "Piano Platformer",
     category: ["game"],
-    media: "/media/videos/pianoplatformer.mp4",
+    media: "/media/videos/pianoplatformer.webm",
     url: "https://nickcorfmat.github.io/Unconventional-Game/",
     github: "https://github.com/NickCorfmat/Unconventional-Game",
     shortDescription: "Short game with an unconventional twist.",
@@ -81,7 +81,7 @@ export const projects: Project[] = [
   {
     name: "Wail of the Sirenheads",
     category: ["game", "about"],
-    media: "/media/videos/wailofthesirenheads.mp4",
+    media: "/media/videos/wailofthesirenheads.webm",
     url: "https://nickcorf.itch.io/through-the-sirenheads",
     github: "https://github.com/JaydenChung/Split2",
     demo: "https://drive.google.com/file/d/1T6xnZxpMmf_FUYoe2tHEIMAOfqRn7AB0/view?usp=sharing",
@@ -93,7 +93,7 @@ export const projects: Project[] = [
   {
     name: "Modernism Simulator",
     category: ["game", "about"],
-    media: "/media/videos/modernsimulator.mp4",
+    media: "/media/videos/modernsimulator.webm",
     url: "https://nickcorf.itch.io/modernism-simulator",
     github: "https://github.com/NickCorfmat/ApartmentSimulator",
     demo: "https://drive.google.com/file/d/1dEgNfVd5nOl8TMtaDJuzmRiSJBPYA1W-/view?usp=sharing",
@@ -105,7 +105,7 @@ export const projects: Project[] = [
   {
     name: "Shape Up",
     category: ["game", "about"],
-    media: "/media/videos/shapeup.mp4",
+    media: "/media/videos/shapeup.webm",
     url: "https://apps.apple.com/us/app/shape-up-swipe-shake-solve/id6744836423",
     github: "https://github.com/EltZ36/ShapeUp",
     trailer: "https://www.youtube.com/watch?v=hqWtVbuO-iI",
@@ -117,7 +117,7 @@ export const projects: Project[] = [
   {
     name: "Crucible of Elements",
     category: ["game", "about"],
-    media: "/media/videos/crucibleofelements.mp4",
+    media: "/media/videos/crucibleofelements.webm",
     url: "https://apps.apple.com/us/app/shape-up-swipe-shake-solve/id6744836423",
     github: "https://github.com/SRparadox/KorraProject",
     trailer: "https://drive.google.com/file/d/1kA9OzkjJGnMaN6Q36k4gKBbE_ELbLyos/view?usp=sharing",
@@ -130,7 +130,7 @@ export const projects: Project[] = [
   {
     name: "Space-Mine",
     category: ["game"],
-    media: "/media/videos/spacemine.mp4",
+    media: "/media/videos/spacemine.webm",
     github: "https://github.com/NickCorfmat/Space-Mine",
     shortDescription: "Moddable 2D mining simulator built with Phaser and TypeScript.",
     description: "Led the development of a web-based 2D farming simulator built using Javascript, Phaser, and Vite, featuring automatic and manual saving/loading, undo action systems, multilingual support, and modding capabilities via external DSL. Additionally, the game is fully installable as a progressive web application (PWA) on both desktop and mobile, for offline play.",
@@ -140,7 +140,7 @@ export const projects: Project[] = [
   {
     name: "Chess vs. AI",
     category: ["game"],
-    media: "/media/videos/chessvsai.mp4",
+    media: "/media/videos/chessvsai.webm",
     github: "https://github.com/NickCorfmat/ChessAI",
     shortDescription: "Chess but with a smart opponent...",
     description: "Built a Chess AI in C++ to compare thousands of possible moves and strategically execute the optimal move. Utilized minimax algorithm, alpha-beta pruning, and transposition tables to significantly reduce AI search complexity. Incorporated the Universal Chess Interface (UCI) to enable the AI to play against other chess engines.",
@@ -170,7 +170,7 @@ export const projects: Project[] = [
   {
     name: "Recipe Manager",
     category: ["program"],
-    media: "/media/videos/recipemanager.mp4",
+    media: "/media/videos/recipemanager.webm",
     github: "https://github.com/NickCorfmat/RecipeManager",
     shortDescription: "Full-stack recipe sharing app with Py4Web and Vue.",
     description: "Developed a full-stack recipe sharing app using py4web with a team of 6 students. Built RESTful APIs for CRUD operations, integrated multi-field search, connected frontend to backend services, and enforced author-only editing on the server side.",
@@ -180,7 +180,7 @@ export const projects: Project[] = [
   {
     name: "WebGL Mario World",
     category: ["program"],
-    media: "/media/videos/webgldemo.mp4",
+    media: "/media/videos/webgldemo.webm",
     github: "https://github.com/NickCorfmat/Asg4",
     url: "https://nickcorfmat.github.io/Asg4/src/World.html",
     shortDescription: "Interactive WebGl demo.",
@@ -191,7 +191,7 @@ export const projects: Project[] = [
   {
     name: "Polaroid Onestep SX-70",
     category: ["lego_ideas", "featured"],
-    media: "/media/videos/polaroid.mp4",
+    media: "/media/videos/polaroid.webm",
     url: "https://beta.ideas.lego.com/product-ideas/200dd32e-8ec8-44aa-8f7d-e4dcc6f74e5c",
     teamSize: 2,
     dates: "Sept 2021 - Jun 2025"

@@ -3,7 +3,6 @@ import './LegoProjects.css'
 import '../../Pages/Styles/Home.css'
 import { getProjectsByCategory } from '../../utils/portfolioSelectors'
 import ProjectCarousel from '../ProjectCarousel/ProjectCarousel'
-import polaroid_trailer from '../../../public/media/videos/polaroidtrailer.mp4'
 
 const LegoProjects: React.FC = () => {
   const legoProjects = getProjectsByCategory(['lego_ideas'])
@@ -87,13 +86,16 @@ const LegoProjects: React.FC = () => {
               className="video-link"
             >
               <video
-              className="polaroid-trailer"
-              src={polaroid_trailer}
-              autoPlay
-              muted
-              loop
-              playsInline
-            />
+                className="polaroid-trailer"
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="metadata"
+              >
+                <source src="/media/videos/polaroidtrailer.webm" type="video/webm" />
+                <source src="/media/videos/polaroidtrailer.mp4" type="video/mp4" />
+              </video>
             </a>
             <div className="video-caption">
               Official LEGO® Polaroid Commercial ↗
