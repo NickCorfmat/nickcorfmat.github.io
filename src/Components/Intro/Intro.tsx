@@ -6,7 +6,6 @@ import linkedin_icon from "../../../public/media/icons/linkedin_blue.svg"
 import phaser_icon from "../../../public/media/icons/phaser.png"
 import download_icon from "../../../public/media/icons/download.svg"
 import mail_icon from "../../../public/media/icons/mail_icon.png"
-import animation from "../../../public/media/videos/fightfightersanimation.gif";
 
 const Intro = () => {
   return (
@@ -64,13 +63,13 @@ const Intro = () => {
         </div>
         <div className="animation">
             <img 
-              src={animation}
+              src="/media/videos/fightfightersanimation.gif"
               alt="Animated GIF" 
               className="hero-gif"
               title="Animation I made for 'Fight Fighters'"
             />
-          </div>
         </div>
+      </div>
         
         <div className="about-info-stack">
           <div className="info-card">

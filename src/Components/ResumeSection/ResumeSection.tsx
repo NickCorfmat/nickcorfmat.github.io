@@ -6,7 +6,7 @@ const ResumeSection = () => {
         <div className='resume-section'>
             <div className="resume-frame-wrapper">
                 <iframe
-                src="media/docs/Nicolas_Corfmat_Resume.pdf"
+                src="/media/docs/Nicolas_Corfmat_Resume.pdf"
                 className="resume-frame"
                 title="Resume"
                 />

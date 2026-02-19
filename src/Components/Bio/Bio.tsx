@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import './Bio.css'
-import profile from '../../../public/media/images/profile.jpg'
 
 const Bio = () => {
   return (
@@ -12,7 +11,7 @@ const Bio = () => {
 
         <Link to="/about" className="profile-overlay-link">
           <img
-            src={profile}
+            src="/media/images/profile.jpg"
             className='bio-profile-picture'
             alt="Nick Corfmat"
           />
@@ -27,16 +26,6 @@ const Bio = () => {
         <p className="bio-description">
           I’m a Computer Science: Game Design graduate from UC Santa Cruz who enjoys building performance-efficient games, real-time graphics experiences, and software applications. I specialize in Unity/C#, frontend + UI/UX development, and designing modular, maintainable code.
         </p>
-
-        {/* <div className="bio-actions">
-          <Link to="/projects" className="bio-btn primary">
-            View Projects ↗
-          </Link>
-
-          <Link to="/resume" className="bio-btn secondary">
-            Resume ↗
-          </Link>
-        </div> */}
       </div>
     </section>
   )
